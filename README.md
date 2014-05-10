@@ -53,7 +53,7 @@ generic:
     picture: '9(4)'
 
 104:
-  # Os seguintes campos são exclusivos da Caixa econômica federal
+  # Os seguintes campos são exclusivos da Caixa econômica federal (Código do Banco: 104)
   data_exemplo:
     pos: [8, 15]
     picture: '9(8)'
