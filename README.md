@@ -3,32 +3,38 @@ cnab_yaml
 
 O Objetivo deste projeto é fornecer arquivos Yaml com a estrutura dos arquivos Cnab240 e Cnab400, atualmente temos os Cnab240 da Caixa e o Cnab400 da Caixa e do Itaú
 
-== Como posso contribuir ==
+Como posso contribuir
+---------------------
 Você pode contribuir lendo a documentação do seu banco e criando um arquivo yaml com base nela
 
-== E para que isso serve? ==
+E para que isso serve?
+----------------------
 Esse projeto é usado para ser base para outros projeto, como por exempo o CnabPHP, cnab_python e
 muitos outros que poderão ser criados a partir deste projeto
 
-== O que eu preciso saber ==
-# Utilizamos nomes simples para o campo, por exmplo para "Código do banco" utilize o "codigo_banco" (com underline e sem o "do")
-# Para definir o tipo do campo utilizamos uma Picture
+O que eu preciso saber
+----------------------
+* Utilizamos nomes simples para o campo, por exmplo para "Código do banco" utilize o "codigo_banco" (com underline e sem o "do")
+* Para definir o tipo do campo utilizamos uma Picture
 
-== O que é uma Picture ==
+O que é uma Picture
+-------------------
 Essa Picture foi baseada na documentação do itaú, disponível em http://download.itau.com.br/bankline/layout_cobranca_400bytes_cnab_itau_mensagem.pdf
 
 Cada registro é formado por campos que são apresentados em dois formatos:
-# Alfanumérico (picture X): alinhados à esquerda com brancos à direita. Preferencialmente, todos os caracteres devem ser maiúsculos. Aconselhase a não utilização de caracteres especiais (ex.: “Ç”, “?”,, etc) e acentuação gráfica (ex.: “Á”, “É”, “Ê”, etc) e os campos não utiliza dos deverão ser preenchidos com brancos.
-# Numérico (picture 9): alinhado à direita com zeros à esquerda e os campos não utilizados deverão ser preenchidos com zeros. - Vírgula assumida (picture V): indica a posição da vírgula dentro de um campo numérico. E xemplo: num campo com picture “9(5)V9(2)”, o número “876,54” será representado por “0087654”
+* Alfanumérico (picture X): alinhados à esquerda com brancos à direita. Preferencialmente, todos os caracteres devem ser maiúsculos. Aconselhase a não utilização de caracteres especiais (ex.: “Ç”, “?”,, etc) e acentuação gráfica (ex.: “Á”, “É”, “Ê”, etc) e os campos não utiliza dos deverão ser preenchidos com brancos.
+* Numérico (picture 9): alinhado à direita com zeros à esquerda e os campos não utilizados deverão ser preenchidos com zeros. - Vírgula assumida (picture V): indica a posição da vírgula dentro de um campo numérico. E xemplo: num campo com picture “9(5)V9(2)”, o número “876,54” será representado por “0087654”
 
-== Exemplo de Arquivo ==
-<code>generic:
+Exemplo de Arquivo
+------------------
+```yaml
+generic:
   # Registro Header de Lote
-  
+
   # Baseado na documentação da Caixa
   # Disponível em: http://downloads.caixa.gov.br/_arquivos/cobrcaixasicob/manuaissicob/CNAB_240_SICOB.pdf (Acesso em 
 23/04/2014)
-  
+
   codigo_banco:
     # Código fornecido pelo Banco Central para identificação do Banco que está recebendo ou enviando o
     # arquivo, com o qual se firmou o contrato de prestação de serviços.
@@ -61,7 +67,7 @@ decimais
 
 341:
   # Os seguintes campos são exclusivos do Itaú (Código do Banco 341)
-  
+
   data_exemplo:
     pos: [8, 13]
     picture: '9(6)'
@@ -70,4 +76,5 @@ decimais
   outro_campo:
     pos: [14, 15]
     picture: 'X(2)' # Isso significa campo de texto com 2 caracteres (preenchido com espaço a direita)
-    default: 'T' # Valor padrão do campo<code>
+    default: 'T' # Valor padrão do campo
+```
