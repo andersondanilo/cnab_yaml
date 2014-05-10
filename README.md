@@ -32,8 +32,7 @@ generic:
   # Registro Header de Lote
 
   # Baseado na documentação da Caixa
-  # Disponível em: http://downloads.caixa.gov.br/_arquivos/cobrcaixasicob/manuaissicob/CNAB_240_SICOB.pdf (Acesso em 
-23/04/2014)
+  # Disponível em: http://downloads.caixa.gov.br/_arquivos/cobrcaixasicob/manuaissicob/CNAB_240_SICOB.pdf (Acesso em  23/04/2014)
 
   codigo_banco:
     # Código fornecido pelo Banco Central para identificação do Banco que está recebendo ou enviando o
@@ -62,8 +61,7 @@ generic:
 
   valor_exemplo:
     pos: [16, 25]
-    picture: '9(8)V9(2)' # isso significa 8 posições para a numero inteiro, mais 2 posições para as casas 
-decimais
+    picture: '9(8)V9(2)' # isso significa 8 posições para a numero inteiro, mais 2 posições para as casas decimais
 
 341:
   # Os seguintes campos são exclusivos do Itaú (Código do Banco 341)
