@@ -14,7 +14,7 @@ muitos outros que poderão ser criados a partir deste projeto
 
 O que eu preciso saber
 ----------------------
-* Utilizamos nomes simples para o campo, por exmplo para "Código do banco" utilize o "codigo_banco" (com underline e sem o "do")
+* Utilizamos nomes simples para o campo, por exemplo para "Código do banco" utilize o "codigo_banco" (com underline e sem o "do")
 * Para definir o tipo do campo utilizamos uma Picture
 
 O que é uma Picture
