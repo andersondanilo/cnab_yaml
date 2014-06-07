@@ -1,11 +1,11 @@
 generic:
   # Registro Header de Arquivo
-  
+
   # Baseado na documentação da Caixa
   # Disponível em: http://downloads.caixa.gov.br/_arquivos/cobrcaixasicob/manuaissicob/CNAB_240_SICOB.pdf
 
   codigo_banco:
-    # Caixa = 104
+    # Caixa = 104, Santander = 033
     pos: [1, 3]
     picture: '9(3)'
 
@@ -53,7 +53,7 @@ generic:
     pos: [33, 48]
     picture: '9(16)'
 
-  uso_exclusivo_banco:
+  uso_exclusivo_banco_01:
     # Padrão: deixar em branco
     pos: [49, 52]
     picture: 'X(4)'
@@ -206,8 +206,56 @@ generic:
     picture: 'X(20)'
     default: ''
 
-  uso_exclusivo_febraban03:
+  uso_exclusivo_febraban_03:
     # Texto de observações destinado para uso exclusivo da FEBRABAN. Preencher com Brancos.
     pos: [212, 240]
     picture: 'X(29)'
+    default: ''
+
+033:
+  uso_exclusivo_febraban_01:
+    pos: [9, 16]
+    picture: 'X(8)'
+    default: ''
+
+  codigo_inscricao:
+    pos: [17, 17]
+    picture: '9(1)'
+
+  numero_inscricao:
+    pos: [18, 32]
+    picture: '9(15)'
+
+  agencia:
+    pos: [33, 36]
+    picture: '9(4)'
+
+  agencia_dv:
+    pos: [37, 37]
+    picture: '9(1)'
+
+  conta:
+    pos: [38, 46]
+    picture: '9(9)'
+
+  conta_dv:
+    pos: [47, 47]
+    picture: '9(1)'
+
+  uso_exclusivo_banco_01:
+    pos: [48, 52]
+    picture: 'X(5)'
+    default: ''
+
+  codigo_cedente:
+    pos: [53, 61]
+    picture: '9(9)'
+
+  uso_exclusivo_banco_02:
+    pos: [62, 72]
+    picture: 'X(11)'
+
+  uso_exclusivo_febraban_03:
+    pos: [167, 240]
+    picture: 'X(74)'
     default: ''
