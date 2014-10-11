@@ -225,3 +225,43 @@ generic:
         pos: [219, 240]
         picture: 'X(22)'
         default: ''
+
+104:
+  # caixa economica federal CNAB240 SIGCB              
+  
+  cod_cedente:
+    pos: [24, 29]
+    picture: '9(6)'
+    
+  uso_exclusivo_banco_001:
+    pos: [30, 32]
+    picture: '9(3)'
+    default: '0'
+            
+  num_banco_sacado:
+    pos: [33, 35]
+    picture: '9(3)'
+    
+  uso_exclusivo_banco_002:
+    pos: [36, 39]
+    picture: '9(4)'
+    default: '0'
+            
+  mod_nosso_numero:		
+    # Nosso Número é formado pelo mod / nosso numero
+    #  ---------------- mod_nosso_numero
+    #  |       -------- nosso_numero
+    #  |       |
+    # 24/000000000000010
+    pos: [40, 41]
+    picture: '9(2)'
+    
+  nosso_numero:
+    pos: [42, 56]
+    picture: 'X(15)'
+            
+  uso_exclusivo_banco_003:
+    pos: [57, 57]
+    picture: '9(1)'
+    default: '0'
+    
