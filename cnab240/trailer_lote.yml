@@ -78,3 +78,28 @@ generic:
     pos: [53, 69]
     picture: '9(15)V9(2)'
     default: '0'
+
+104:
+  #caixa economica federal CNAB 240 SIGCB
+
+  qtde_titulo_cobranca_caucionada:
+    pos: [47, 52]
+    picture: 'X(6)'
+
+  valor_total_titulo_caucionada:
+    pos: [53, 69]
+    picture: '9(15)V9(2)'
+    default: '0'
+
+  qtde_titulo_cobranca_descontada:
+    pos: [70, 75]
+    picture: '9(6)'
+
+  valor_total_titulo_descontada:
+    pos: [76, 92]
+    picture: '9(15)V9(2)'
+
+  uso_exclusivo_febraban_04:
+    pos: [93, 123]
+    picture: 'X(31)'
+    default: ''
