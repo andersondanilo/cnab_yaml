@@ -50,4 +50,19 @@ generic:
         picture: 'X(126)'
 
     uso_exclusivo_febraban_02:
-        pos: [
+        pos: [158, 240]
+        picture: 'X(83)'
+        default: ''
+
+104:
+  #caixa economica federal CNAB 240 SIGCB
+
+  codigo_erro_01:
+    pos: [29, 30]
+    picture: 'X(2)'
+    
+  erro_branco:
+    pos: [31, 31]
+    picture: 'X(1)'
+    
+    
