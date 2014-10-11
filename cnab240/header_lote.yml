@@ -257,3 +257,28 @@ generic:
      pos: [200, 240]
      picture: 'X(41)'
      default: ''
+  
+  104: 
+  #caixa economica federal CNAB 240 SIGCB
+  
+  cod_cedente:
+    pos: [34, 39]
+    picture: '9(6)'
+	
+  uso_exclusivo_banco_01:
+    pos: [40, 53]
+    picture: '9(14)'
+    default: '0'
+		
+  codigo_cedente:
+    pos: [60, 65]
+    picture: '9(6)'
+		
+  codigo_modelo_personalizado:
+    pos: [66, 72]
+    picture: '9(7)'
+		
+  uso_exclusivo_banco_02:
+    pos: [73, 73]
+    picture: '9(1)'
+    default: '0'
