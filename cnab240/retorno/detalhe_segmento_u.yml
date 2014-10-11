@@ -104,3 +104,37 @@ generic:
         pos: [214, 240]
         picture: 'X(27)'
         default: ''
+
+104:
+  #caixa economica federal CNAB 240 SIGCB
+
+  uso_exclusivo_banco_01:
+    pos: [154, 157]
+    picture: '9(4)'
+    default: '0'
+    
+  data_debito_tarifa:
+    pos: [158, 165]
+    picture: '9(8)'
+    
+  cod_sacado_banco:
+    pos: [166, 180]
+    picture: '9(15)'
+        
+  uso_exclusivo_banco_02:
+    pos: [181, 210]
+    picture: '9(30)'
+    default: '0'
+    
+  codigo_banco_compensacao:
+    pos: [211, 213]
+    picture: '9(3)'
+
+  nosso_numero_banco_compensacao:
+    pos: [214, 233]
+    picture: '9(20)'
+        
+  uso_exclusivo_febraban_02:
+    pos: [234, 240]
+    picture: 'X(7)'
+    default: ''
