@@ -259,3 +259,32 @@ generic:
     pos: [167, 240]
     picture: 'X(74)'
     default: ''
+
+104:	
+  #caixa economica federal CNAB 240 SIGCB
+  # http://downloads.caixa.gov.br/_arquivos/cobranca_caixa/manuaissicob/LEIAUTE_CNAB_240_SIGCB_COBRANCA_CAIXA.pdf
+  
+  uso_exclusivo_banco_01:
+    pos: [33, 52]
+    picture: '9(20)'
+		
+  cod_cedente:
+    pos: [59, 64]
+    picture: '9(6)'
+	
+  uso_exclusivo_banco_02:
+    pos: [65, 71]
+    picture: '9(7)'
+	
+  uso_exclusivo_banco_03:
+    pos: [72, 72]
+    picture: '9(1)'
+	
+  versao_aplicativo:
+    pos: [212, 215]
+    picture: 'X(4)'
+	
+  uso_exclusivo_febraban_03:
+    pos: [216, 240]
+    picture: 'X(25)'
+    default: ''
