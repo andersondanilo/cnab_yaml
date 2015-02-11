@@ -65,7 +65,7 @@ numero_documento:
 data_vencimento:
   pos: [74, 81]
   picture: '9(8)'
-  #DDMMYYYY
+  date_format: '%d%m%Y'
 
 valor_titulo:
   pos: [82, 96]

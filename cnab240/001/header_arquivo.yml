@@ -17,6 +17,7 @@ cobranca_cedente:
   # Informar 0014 para cobrança cedente
   pos: [42, 45]
   picture: '9(4)'
+  default: 14
 
 carteira:
   pos: [46, 47]
@@ -29,6 +30,7 @@ variacao_carteira:
 uso_exclusivo_bb_01:
   pos: [51, 52]
   picture: 'X(2)'
+  default: ''
 
 conta:
   pos: [59, 70]
@@ -37,6 +39,12 @@ conta:
 conta_dv:
   pos: [71, 71]
   picture: '9(1)'
+
+agencia_mais_cedente_dv:
+  # Campo não tratado pelo Banco do Brasil. Informar 'branco' (espaço) OU zero.
+  pos: [72, 72]
+  picture: 'X(1)'
+  default: ''
 
 uso_exclusivo_febraban_03:
   pos: [212, 222]

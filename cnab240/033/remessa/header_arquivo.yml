@@ -1,0 +1,19 @@
+codigo_transmissao:
+  pos: [33, 47]
+  picture: '9(15)'
+
+reservado_santander_01:
+    pos: [48, 72]
+    picture: 'X(25)'
+    default: ''
+
+reservado_santander_02:
+  # Reservado
+  pos: [152, 157]
+  picture: 'X(6)'
+  default: ''
+
+versao_layout_arquivo:
+  pos: [164, 166]
+  picture: '9(3)'
+  default: '40'
