@@ -47,7 +47,7 @@ agencia_mais_conta_dv:
   picture: '9(1)'
   default: ''
 
-data_credito:
+data_credito_obsoleto:
   # Campo não tradado pelo banco do brasil
   pos: [200, 207]
   picture: '9(8)'
