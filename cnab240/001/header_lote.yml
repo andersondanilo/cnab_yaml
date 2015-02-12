@@ -46,3 +46,9 @@ agencia_mais_conta_dv:
   pos: [73, 73]
   picture: '9(1)'
   default: ''
+
+data_credito:
+  # Campo não tradado pelo banco do brasil
+  pos: [200, 207]
+  picture: '9(8)'
+  default: '0'
