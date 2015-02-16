@@ -44,7 +44,7 @@ conta_dv:
 
 agencia_mais_conta_dv:
   pos: [73, 73]
-  picture: '9(1)'
+  picture: 'X(1)'
   default: ''
 
 data_credito_obsoleto:
