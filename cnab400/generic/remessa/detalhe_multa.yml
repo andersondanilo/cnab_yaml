@@ -20,7 +20,8 @@ valor_multa:
 
 brancos01:
   pos: [24, 394]
-  picture: 'X(370)'
+  picture: 'X(371)'
+  default: ''
 
 numero_sequencial:
   pos: [395, 400]
