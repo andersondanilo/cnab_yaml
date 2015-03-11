@@ -16,7 +16,7 @@ data_multa:
 
 valor_multa:
   pos: [11, 23]
-  picture: '9(13)'
+  picture: '9(11)V9(2)'
 
 brancos01:
   pos: [24, 394]
