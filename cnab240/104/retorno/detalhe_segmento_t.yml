@@ -1,13 +1,14 @@
 # Registro Detalhe - Segmento T (Obrigatório - Retorno)
 # Baseado na documentação da caixa cef
+# @link http://www.caixa.gov.br/downloads/cobranca-caixa-manuais/LEIAUTE_CNAB_240_SIGCB_COBRANCA_CAIXA.pdf
 
 uso_exclusivo_cef_01:
-  pos: [38, 46]
-  picture: 'X(9)'
+  pos: [30, 32]
+  picture: 'X(3)'
 
 nosso_numero:
-  pos: [47, 57]
-  picture: '9(11)'
+  pos: [42, 56]
+  picture: '9(15)'
 
 numero_documento:
   pos: [59, 69]

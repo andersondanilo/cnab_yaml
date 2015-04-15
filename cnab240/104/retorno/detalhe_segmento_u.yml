@@ -2,10 +2,10 @@
 # Baseado na documentação da caixa cef
 
 data_debito_tarifa:
-  pos: [154, 161]
+  pos: [158, 165]
   picture: '9(8)'
   date_format: '%d%m%Y'
 
 uso_exclusivo_febraban_02:
-  pos: [162, 240]
+  pos: [234, 240]
   picture: '9(79)'
