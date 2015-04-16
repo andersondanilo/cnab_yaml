@@ -22,7 +22,7 @@ codigo_convenio:
 uso_exclusivo_banco:
   # Preenchar em branco
   pos: [40, 53]
-  picture: 'X(4)'
+  picture: 'X(14)'
   default: ''
 
 agencia:
