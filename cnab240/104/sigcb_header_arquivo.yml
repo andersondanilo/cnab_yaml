@@ -1,0 +1,104 @@
+# Registro Header de Arquivo
+
+# Baseado na documentação da Caixa SIGCB
+# Disponível em: http://www.caixa.gov.br/downloads/cobranca-caixa-manuais/LEIAUTE_CNAB_240_SIGCB_COBRANCA_CAIXA.pdf
+
+uso_exclusivo_banco_01:
+  # Padrão: deixar em branco
+  pos: [65, 71]
+  picture: 'X(7)'
+  default: ''
+
+agencia:
+  # Código da Agência mantenedora da conta, fornecido pela CAIXA.
+  pos: [53, 57]
+  picture: '9(5)'
+
+agencia_dv:
+  # Dígito Verificador da Agência mantendedora da conta, fornecido pela CAIXA.
+  pos: [58, 58]
+  picture: '9(1)'
+
+codigo_cedente:
+  pos: [59, 64]
+  picture: '9(6)'
+
+nome_empresa:
+  # Nome que identifica a pessoa, física ou jurídica, a qual se quer fazer referência
+  pos: [73, 102]
+  picture: 'X(30)'
+
+nome_banco:
+  # Nome que identifica o banco que está recebendo ou enviando o arquivo.
+  # Informar: CAIXA ECONÔMICA FEDERAL (se o banco for a caixa)
+  pos: [103, 132]
+  picture: 'X(30)'
+
+uso_exclusivo_febraban_02:
+  # Texto de observações destinado para uso exclusivo da FEBRABAN. Preencher com Brancos.
+  pos: [133, 142]
+  picture: 'X(10)'
+  default: ''
+
+codigo_remessa_retorno:
+  # Código Remessa / Retorno
+  # Código adotado pela febraban para qualificar o envio ou devolução de arquivo entre a empresa
+  # cliente e o banco prestador dos serviços. informar:
+  # '1' = remessa (cliente banco)
+  # '2' = retorno (banco cliente)
+  pos: [143, 143]
+  picture: '9(1)'
+
+data_geracao:
+  # Data da criação do arquivo. utilizar o formato DDMMAAAA, onde : dd = dia, mm = mês, aa = ano
+  pos: [144, 151]
+  picture: '9(8)'
+  date_format: '%d%m%Y'
+
+hora_geracao:
+  # Hora da criação do arquivo. utilizar o formato hhmmss, onde : HH = hora, MM = minuto, SS = segundo
+  pos: [152, 157]
+  picture: '9(6)'
+  date_format: '%H%M%S'
+
+numero_sequencial_arquivo:
+  # Número seqüencial adotado e controlado pelo responsável pela geração do arquivo para ordenar a
+  # disposição dos arquivos encaminhados.
+  # Evoluir um número seqüencial a cada header de arquivo.
+  pos: [158, 163]
+  picture: '9(6)'
+
+versao_layout_arquivo:
+  pos: [164, 166]
+  picture: '9(3)'
+  default: '030'
+
+densidade_gravacao_arquivo:
+  # Densidade de gravação (bpi), do arquivo encaminhado. Pode ser:
+  # 1600 BPI
+  # 6250 BPI
+  # Pode ser informado ‘0’. (Padrão)
+  pos: [167, 171]
+  picture: '9(5)'
+  default: '0'
+
+uso_reservado_banco:
+  # Para Uso Reservado do Banco
+  # Texto de observações destinado para uso exclusivo da caixa econômica federal.
+  # Durante a fase de testes (simulado) deverá conter a literal ‘RETORNO-TESTE’
+  pos: [172, 191]
+  picture: 'X(20)'
+  default: ''
+
+uso_reservado_empresa:
+  # Campo utilizado pelo cliente/cedente. Na fase de testes (simulado), deverá conter a literal
+  # ‘REMESSA-TESTE’ e na fase de produção deverá conter a literal ‘REMESSA-PRODUÇÃO’
+  pos: [192, 211]
+  picture: 'X(20)'
+  default: ''
+
+uso_exclusivo_febraban_03:
+  # Texto de observações destinado para uso exclusivo da FEBRABAN. Preencher com Brancos.
+  pos: [216, 240]
+  picture: 'X(25)'
+  default: ''
