@@ -1,0 +1,67 @@
+# 104 = Caixa Econômica
+# Formato SICOB
+
+codigo_cedente:
+  pos: [18, 33]
+  picture: 'X(16)'
+  default: ''
+
+brancos21:
+  #Complemento De Registro      
+  pos: [34, 35]
+  picture: 'X(2)'
+  default: ''
+
+taxa_de_permanencia:
+  pos: [36, 37]
+  picture: '9(2)'
+
+nosso_numero:
+  #Identificação Do Título No Banco 
+  pos: [63, 73]
+  picture: '9(11)'
+
+brancos22:
+  pos: [74, 76]
+  picture: 'X(3)'
+  default: ''
+
+mensagem:
+  pos: [77, 106]
+  picture: 'X(30)'
+
+numero_carteira:
+  pos: [107, 108]
+  picture: '9(2)'
+
+codigo_banco:
+  pos: [140, 142]
+  picture: '9(3)'
+  default: '104'
+
+nome:
+  pos: [235, 274]
+  picture: 'X(40)'
+
+data_multa:
+  pos: [352, 357]
+  picture: '9(6)'
+  date_format: '%d%m%y'
+
+valor_multa:
+  pos: [358, 367]
+  picture: '9(8)V9(2)'
+
+sacador:
+  pos: [368, 389]
+  picture: 'X(22)'
+
+instrucao3:
+  pos: [390, 391]
+  picture: '9(2)'
+  default: '0'
+
+moeda:
+  pos: [394, 394]
+  picture: 'X(1)'
+  default: '1'

@@ -1,0 +1,36 @@
+# 104 = Caixa Econômica
+# Formato SICOB
+
+codigo_banco:
+  pos: [77, 79]
+  picture: '9(3)'
+  default: '104'
+
+nome_banco:
+  pos: [80, 94]
+  picture: 'X(15)'
+
+codigo_cedente:
+  pos: [27, 42]
+  picture: '9(16)'
+
+brancos01:
+  pos: [43, 46]
+  picture: 'X(04)'
+  default: ''
+
+brancos02:
+  #Complemento Do Registro
+  pos: [101, 389]
+  picture: 'X(289)'
+  default: ''
+
+numero_sequencial_a:
+  pos: [390, 394]
+  picture: '9(05)'
+  default: '1'
+
+numero_sequencial:
+  pos: [395, 400]
+  picture: '9(06)'
+  default: '1'
