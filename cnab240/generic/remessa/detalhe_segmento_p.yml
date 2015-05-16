@@ -301,7 +301,7 @@ codigo_juros_mora:
 
 data_juros_mora:
   pos: [119,126]
-  picture: 'X(8)'
+  picture: '9(8)'
   date_format: '%d%m%Y'
 
 valor_juros_mora:

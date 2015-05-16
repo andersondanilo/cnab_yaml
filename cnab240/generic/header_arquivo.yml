@@ -204,7 +204,7 @@ uso_reservado_empresa:
   # ‘REMESSA-TESTE’ e na fase de produção deverá conter a literal ‘REMESSA-PRODUÇÃO’
   pos: [192, 211]
   picture: 'X(20)'
-  default: ''
+  default: 'REMESSA-PRODUCAO'
 
 uso_exclusivo_febraban_03:
   # Texto de observações destinado para uso exclusivo da FEBRABAN. Preencher com Brancos.

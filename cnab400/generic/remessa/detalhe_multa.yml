@@ -12,7 +12,7 @@ codigo_multa:
 data_multa:
   pos: [3, 10]
   picture: '9(8)'
-  date_format: '%d%m%y'
+  date_format: '%d%m%Y'
 
 valor_multa:
   pos: [11, 23]

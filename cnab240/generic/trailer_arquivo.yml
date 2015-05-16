@@ -8,7 +8,7 @@ codigo_banco:
 lote_servico:
   pos: [4, 7]
   picture: '9(4)'
-  default: '999'
+  default: '9999'
 
 tipo_registro:
   pos: [8, 8]

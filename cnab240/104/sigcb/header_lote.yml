@@ -39,10 +39,12 @@ codigo_cedente:
   pos: [60, 65]
   picture: '9(6)'
 
-codigo_cedente_dv:
+codigo_modelo:
   pos: [66, 72]
   picture: '9(7)'
+  default: '0'
 
-agencia_mais_cedente_dv:
+uso_exclusivo_banco_02:
   pos: [73, 73]
   picture: '9(1)'
+  default: '0'

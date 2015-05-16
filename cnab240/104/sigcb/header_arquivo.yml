@@ -3,6 +3,11 @@
 # Baseado na documentação da Caixa SIGCB
 # Disponível em: http://www.caixa.gov.br/downloads/cobranca-caixa-manuais/LEIAUTE_CNAB_240_SIGCB_COBRANCA_CAIXA.pdf
 
+uso_exclusivo_caixa_01:
+  pos: [33, 52]
+  picture: '9(20)'
+  default: '0'
+
 uso_exclusivo_banco_01:
   # Padrão: deixar em branco
   pos: [65, 71]
@@ -22,6 +27,16 @@ agencia_dv:
 codigo_cedente:
   pos: [59, 64]
   picture: '9(6)'
+
+uso_exclusivo_caixa_02:
+  pos: [65, 71]
+  picture: '9(7)'
+  default: '0'
+
+uso_exclusivo_caixa_03:
+  pos: [72, 72]
+  picture: '9(1)'
+  default: '0'
 
 nome_empresa:
   # Nome que identifica a pessoa, física ou jurídica, a qual se quer fazer referência
@@ -71,7 +86,7 @@ numero_sequencial_arquivo:
 versao_layout_arquivo:
   pos: [164, 166]
   picture: '9(3)'
-  default: '030'
+  default: '050'
 
 densidade_gravacao_arquivo:
   # Densidade de gravação (bpi), do arquivo encaminhado. Pode ser:
@@ -95,6 +110,11 @@ uso_reservado_empresa:
   # ‘REMESSA-TESTE’ e na fase de produção deverá conter a literal ‘REMESSA-PRODUÇÃO’
   pos: [192, 211]
   picture: 'X(20)'
+  default: 'REMESSA-PRODUCAO'
+
+versao_aplicativo_caixa:
+  pos: [212, 215]
+  picture: 'X(4)'
   default: ''
 
 uso_exclusivo_febraban_03:
