@@ -1,0 +1,36 @@
+# Com base na documentação do Sicoob
+# disponível em: http://www.bancoob.com.br/atendimentocobranca/CAS/2_Implanta%C3%A7%C3%A3o_do_Servi%C3%A7o/Sistema_Proprio/Layouts_para_troca_de_informa%C3%A7%C3%B5es.xls
+
+codigo_convenio:
+  # Padrão: deixar em branco
+  pos: [33, 52]
+  picture: 'X(20)'
+  default: ''
+
+codigo_cedente:
+  # Conta corrente sem o dv
+  pos: [59, 70]
+  picture: '9(12)'
+
+codigo_cedente_dv:
+  # Dv da conta corrente
+  pos: [71, 71]
+  picture: 'X(1)'
+
+agencia_mais_cedente_dv:
+  # Padrão: deixa em branco
+  pos: [72, 72]
+  picture: 'X(1)'
+  default: ''
+
+nome_banco:
+  pos: [103, 132]
+  picture: 'X(30)'
+  default: 'SICOOB'
+
+versao_layout_arquivo:
+  # Código adotado pela FEBRABAN para identificar qual a versão de layout do arquivo encaminhado. O
+  # 081, para SICOOB
+  pos: [164, 166]
+  picture: '9(3)'
+  default: '081'

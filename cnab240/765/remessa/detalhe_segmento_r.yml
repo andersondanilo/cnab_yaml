@@ -1,0 +1,38 @@
+codigo_segmento:
+  pos: [14, 14]
+  picture: 'X(1)'
+  default: 'R'
+
+codigo_desconto_02:
+  pos: [18, 18]
+  picture: '9(1)'
+  default: 0
+
+data_desconto_02:
+  pos: [19, 26]
+  picture: '9(8)'
+  date_format: '%d%m%Y'
+  default: ''
+
+valor_desconto_02:
+  # Valor ou Percentual (de acordo com o código)
+  pos: [27, 41]
+  picture: '9(13)V9(2)'
+  default: 0
+
+codigo_desconto_03:
+  pos: [42, 42]
+  picture: '9(1)'
+  default: 0
+
+data_desconto_03:
+  pos: [43, 50]
+  picture: '9(8)'
+  date_format: '%d%m%Y'
+  default: ''
+
+valor_desconto_03:
+  # Valor ou Percentual (de acordo com o código)
+  pos: [51, 65]
+  picture: '9(13)V9(2)'
+  default: 0

@@ -1,0 +1,36 @@
+agencia_dv:
+  pos: [23,23]
+  picture: 'X(1)'
+
+codigo_cedente_dv:
+  pos: [36,36]
+  picture: 'X(1)'
+
+agencia_mais_cedente_dv:
+  # Por padrão em branco no SICOOB
+  pos: [37,37]
+  picture: 'X(1)'
+  default: ''
+
+tipo_documento:
+  # Por padrão em branco no SICOOB
+  pos: [60,60]
+  picture: 'X(1)'
+  default: ''
+
+numero_documento:
+  # Número adotado e controlado pelo Cliente, para identificar o título de cobrança.
+  # Poderá conter número de duplicata, no caso de cobrança de duplicatas; número da apólice, no caso de
+  # cobrança de seguros, etc. Campo de preenchimento obrigatório.
+  pos: [63,77]
+  picture: 'X(11)'
+
+agencia_cobradora_dv:
+  # Preencher com zeros - o sistema atribuirá a agência encarregada da cobrança pelo CEP do sacado.
+  # Código adotado pelo Banco responsável pela cobrança, para identificar o estabelecimento bancário
+  # responsável pela cobrança do título.
+  # Código e Dígito Verificador da Agência Encarregada da Cobrança são fornecidos pela CAIXA. Para
+  # essa informação solicitar a relação de agências cobradoras à agência CAIXA de relacionamento.
+  pos: [106, 106]
+  picture: 'X(1)'
+  default: '0'
