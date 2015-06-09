@@ -7,6 +7,11 @@ codigo_convenio:
   picture: 'X(20)'
   default: ''
 
+agencia_dv:
+  pos: [58,58]
+  picture: 'X(1)'
+  default: ''
+
 agencia_mais_cedente_dv:
   # Padrão: deixa em branco
   pos: [72, 72]

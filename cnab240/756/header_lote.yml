@@ -1,11 +1,10 @@
-
 codigo_banco:
   # Código fornecido pelo Banco Central para identificação do Banco que está recebendo ou enviando o
   # arquivo, com o qual se firmou o contrato de prestação de serviços.
-  # SICOOB = ‘765’
+  # SICOOB = ‘756’
   pos: [1, 3]
   picture: '9(3)'
-  default: '765'
+  default: '756'
 
 lote_servico:
   # Lote de Serviço: Número seqüencial para identificar univocamente um lote de serviço. 
@@ -26,6 +25,11 @@ forma_lancamento:
 codigo_convenio:
   pos: [34, 49]
   picture: 'X(16)'
+  default: ''
+
+agencia_dv:
+  pos: [59,59]
+  picture: 'X(1)'
   default: ''
 
 agencia_mais_cedente_dv:
