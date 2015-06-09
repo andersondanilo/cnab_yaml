@@ -2,6 +2,12 @@ agencia_dv:
   pos: [23,23]
   picture: 'X(1)'
 
+agencia_mais_cedente_dv:
+  # Padrão: deixa em branco
+  pos: [37, 37]
+  picture: 'X(1)'
+  default: ''
+
 tipo_documento:
   # Por padrão em branco no SICOOB
   pos: [60,60]
