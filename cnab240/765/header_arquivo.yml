@@ -7,16 +7,6 @@ codigo_convenio:
   picture: 'X(20)'
   default: ''
 
-codigo_cedente:
-  # Conta corrente sem o dv
-  pos: [59, 70]
-  picture: '9(12)'
-
-codigo_cedente_dv:
-  # Dv da conta corrente
-  pos: [71, 71]
-  picture: 'X(1)'
-
 agencia_mais_cedente_dv:
   # Padrão: deixa em branco
   pos: [72, 72]

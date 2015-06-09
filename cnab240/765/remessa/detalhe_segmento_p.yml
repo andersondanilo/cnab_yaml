@@ -2,16 +2,6 @@ agencia_dv:
   pos: [23,23]
   picture: 'X(1)'
 
-codigo_cedente_dv:
-  pos: [36,36]
-  picture: 'X(1)'
-
-agencia_mais_cedente_dv:
-  # Por padrão em branco no SICOOB
-  pos: [37,37]
-  picture: 'X(1)'
-  default: ''
-
 tipo_documento:
   # Por padrão em branco no SICOOB
   pos: [60,60]
@@ -23,7 +13,7 @@ numero_documento:
   # Poderá conter número de duplicata, no caso de cobrança de duplicatas; número da apólice, no caso de
   # cobrança de seguros, etc. Campo de preenchimento obrigatório.
   pos: [63,77]
-  picture: 'X(11)'
+  picture: 'X(15)'
 
 agencia_cobradora_dv:
   # Preencher com zeros - o sistema atribuirá a agência encarregada da cobrança pelo CEP do sacado.

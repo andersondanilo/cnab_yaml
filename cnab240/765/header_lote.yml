@@ -1,3 +1,4 @@
+
 codigo_banco:
   # Código fornecido pelo Banco Central para identificação do Banco que está recebendo ou enviando o
   # arquivo, com o qual se firmou o contrato de prestação de serviços.
@@ -25,4 +26,10 @@ forma_lancamento:
 codigo_convenio:
   pos: [34, 49]
   picture: 'X(16)'
+  default: ''
+
+agencia_mais_cedente_dv:
+  # Padrão: deixa em branco
+  pos: [73, 73]
+  picture: 'X(1)'
   default: ''
