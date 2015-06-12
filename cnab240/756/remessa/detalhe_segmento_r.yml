@@ -37,12 +37,12 @@ valor_desconto_03:
   picture: '9(13)V9(2)'
   default: 0
 
-uso_exclusivo_febraban_03:
+uso_exclusivo_febraban_04:
   pos: [180, 199]
   picture: 'X(20)'
   default: ''
 
-codigo_ocrrencia_pagador:
+codigo_ocorrencia_pagador:
   pos: [200, 207]
   picture: '9(8)'
   default: 0
