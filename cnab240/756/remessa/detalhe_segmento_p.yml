@@ -30,3 +30,16 @@ agencia_cobradora_dv:
   pos: [106, 106]
   picture: 'X(1)'
   default: '0'
+
+nosso_numero:
+  # Identificação do Título no Banco
+  # Número adotado pelo Banco Cedente para identificar o Título.
+  # Para código de movimento igual a '01' (Entrada de Títulos), caso esteja preenchido com zeros, a
+  # numeração será atribuída pela CAIXA.
+  # Para montagem do Nosso Número, quando a emissão do título é feita pelo cliente (carteiras
+  # Cobrança Rápida, Sem Registro e SAD), solicitar especificação à Agência CAIXA de
+  # relacionamento.
+  # Obs: Nosso Número Sem Registro com 16 posições (arquivo Retorno) – posições 106 a 130 do
+  # Segmento T (ver Nota G072).
+  pos: [38,57]
+  picture: 'X(20)'
