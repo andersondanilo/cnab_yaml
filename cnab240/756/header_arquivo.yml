@@ -29,3 +29,10 @@ versao_layout_arquivo:
   pos: [164, 166]
   picture: '9(3)'
   default: '081'
+
+uso_reservado_empresa:
+  # Campo utilizado pelo cliente/cedente. Na fase de testes (simulado), deverá conter a literal
+  # ‘REMESSA-TESTE’ e na fase de produção deverá conter a literal ‘REMESSA-PRODUÇÃO’
+  pos: [192, 211]
+  picture: 'X(20)'
+  default: ''
