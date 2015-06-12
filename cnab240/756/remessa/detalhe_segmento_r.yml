@@ -36,3 +36,53 @@ valor_desconto_03:
   pos: [51, 65]
   picture: '9(13)V9(2)'
   default: 0
+
+uso_exclusivo_febraban_03:
+  pos: [180, 199]
+  picture: 'X(20)'
+  default: ''
+
+codigo_ocrrencia_pagador:
+  pos: [200, 207]
+  picture: '9(8)'
+  default: 0
+
+banco_conta_debito:
+  pos: [208, 210]
+  picture: '9(3)'
+  default: 0
+
+agencia_debito:
+  pos: [211, 215]
+  picture: '9(5)'
+  default: 0
+
+agencia_dv_debito:
+  pos: [216, 216]
+  picture: 'X(1)'
+  default: ''
+
+conta_corrente_debito:
+  pos: [217, 228]
+  picture: '9(12)'
+  default: 0
+
+conta_corrente_dv_debito:
+  pos: [229, 229]
+  picture: 'X(1)'
+  default: ''
+
+agencia_conta_dv_debito:
+  pos: [230, 230]
+  picture: 'X(1)'
+  default: ''
+
+aviso_debito_automatico:
+  pos: [231, 231]
+  picture: '9(1)'
+  default: 0
+
+uso_exclusivo_febraban_03:
+  pos: [232, 240]
+  picture: 'X(9)'
+  default: ''
