@@ -23,7 +23,7 @@ numero_sequencial_lote:
 codigo_segmento:
   pos: [14, 14]
   picture: 'X(1)'
-  default: 'Q'
+  default: 'R'
 
 uso_exclusivo_febraban_01:
   pos: [15, 15]
