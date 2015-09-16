@@ -1,0 +1,6 @@
+# 001 = Banco do Brasil
+
+nosso_numero:
+  #Identificação Do Título No Banco 
+  pos: [64, 80]
+  picture: '9(17)'
