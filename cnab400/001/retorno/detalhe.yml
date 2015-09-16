@@ -4,3 +4,7 @@ nosso_numero:
   #Identificação Do Título No Banco 
   pos: [64, 80]
   picture: '9(17)'
+
+carteira:
+  pos: [107, 108]
+  picture: '9(2)'
