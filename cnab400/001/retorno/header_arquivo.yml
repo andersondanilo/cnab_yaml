@@ -2,7 +2,7 @@
 
 codigo_cedente:
   pos: [27, 40]
-  picture: '9(16)'
+  picture: '9(14)'
 
 zeros01:
   pos: [41, 46]
