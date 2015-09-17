@@ -80,7 +80,7 @@ taxa_desconto:
 
 taxa_iof:
   pos: [101, 105]
-  picture: '9(04)'
+  picture: '9(05)'
 
 zeros02:
   pos: [106, 106]
