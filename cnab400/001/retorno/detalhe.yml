@@ -143,7 +143,7 @@ indicador_valor:
 
 valor_ajuste:
   pos: [321, 332]
-  picture: '9(11)V9(2)'
+  picture: '9(10)V9(2)'
 
 brancos02:
   pos: [333, 333]
