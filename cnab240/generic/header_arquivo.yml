@@ -49,8 +49,8 @@ codigo_convenio:
   # OOO = Operação
   # CCCCCCCC = Número da Conta Corrente ou seqüencial
   # D = Dígito Verificador
-  pos: [33, 49]
-  picture: '9(17)'
+  pos: [33, 48]
+  picture: '9(16)'
 
 uso_exclusivo_banco_01:
   # Padrão: deixar em branco
