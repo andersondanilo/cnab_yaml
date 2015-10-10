@@ -122,3 +122,16 @@ uso_exclusivo_febraban_03:
   pos: [216, 240]
   picture: 'X(25)'
   default: ''
+
+codigo_convenio:
+  # Código do Convênio no Banco (Código do Cedente)
+  # Código fornecido pela CAIXA, através da agência de relacionamento do cliente, específico para
+  # identificar determinados tipos de serviços / produtos.
+  # O campo CÓDIGO DO CEDENTE deverá ser preenchido da seguinte forma:
+  # AAAAOOOCCCCCCCCD, onde:
+  # AAAA = código da Agência CAIXA de relacionamento do cliente / cedente
+  # OOO = Operação
+  # CCCCCCCC = Número da Conta Corrente ou seqüencial
+  # D = Dígito Verificador
+  pos: [33, 49]
+  picture: '9(17)'
