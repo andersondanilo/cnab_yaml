@@ -4,8 +4,8 @@
 # Disponível em: http://www.caixa.gov.br/downloads/cobranca-caixa-manuais/LEIAUTE_CNAB_240_SIGCB_COBRANCA_CAIXA.pdf
 
 uso_exclusivo_caixa_01:
-  pos: [33, 52]
-  picture: '9(20)'
+  pos: [50, 52]
+  picture: '9(3)'
   default: '0'
 
 uso_exclusivo_banco_01:
