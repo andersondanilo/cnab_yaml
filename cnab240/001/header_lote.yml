@@ -1,38 +1,93 @@
-numero_inscricao:
-  # Informar o número de inscrição da Empresa (CNPJ) ou Pessoa Física (CPF).
+# Com base na documentação do banco do brasil
+# disponível em: http://www.bb.com.br/docs/pub/emp/empl/dwn/CbrVer04BB.pdf
+
+codigo_banco:
+  # 001 para Banco do Brasil S.A.
+  pos: [1, 3]
+  picture: '9(3)'
+  default: '001'
+
+lote_service:
+  # Começar com '0001'. Essa informação deve ser igual em todos os
+  # registros desse lote, até o seu trailer. Se o arquivo possui mais de um
+  # lote, incrementar em 1 cada lote, exemplo o 2º lote do arquivo é o
+  # '0002', e assim sucessivamente.
+  pos: [4, 7]
+  picture: '9(4)'
+  default: ''
+
+tipo_registro:
+  pos: [8, 8]
+  picture: '9(1)'
+  default: '1'
+
+tipo_operacao:
+  # R – para arquivo remessa, T – quando arquivo retorno.
+  pos: [9, 9]
+  picture: 'X(1)'
+  default: 'R'
+
+tipo_servico:
+  pos: [10, 11]
+  picture: '9(2)'
+  default: '01'
+
+uso_exclusivo_febraban_01:
+  pos: [12, 13]
+  picture: 'X(2)'
+  default: ''
+
+versao_layout_lote:
+  # Campo não criticado pelo sistema. Informar Zeros OU se preferir,
+  # informar número da versão do leiaute do Lote que foi utilizado como
+  # base para formatação dos campos. Versões disponíveis: 043, 042, 041,
+  # 040, 030 e 020. A versão do Lote quando informada deve estar
+  # condizente com a versão do Arquivo (posições 164 a 166 do Header de
+  # Arquivo). Ou seja, para utilizar 043 no lote o Header do arquivo deve
+  # conter 084, para 042 no lote o Header do arquivo deve conter 083, para
+  # 041 no lote o Header do arquivo deve conter 082, para 040 no lote o
+  # Header do arquivo deve conter 080, para 030 no lote o Header do
+  # arquivo deve conter 040, para 020 no lote o Header do arquivo deve
+  # conter 030.
+  pos: [14, 16]
+  picture: '9(3)'
+  default: '042'
+
+uso_exclusivo_febraban_02:
+  pos: [17, 17]
+  picture: 'X(1)'
+  default: ''
+
+tipo_inscricao_empresa:
+  # 1 – para CPF e 2 – para CNPJ.
+  pos: [18, 18]
+  picture: '9(1)'
+
+numero_inscricao_empresa:
+  # Informar número da inscrição (CPF ou CNPJ) da Empresa, alinhado à
+  # direita com zeros à esquerda.
   pos: [19, 33]
   picture: '9(15)'
 
 codigo_convenio:
-  # Código de convênio no Banco
-  # O código de convênio é composto pelo número do contrato do cliente junto
-  # ao Banco no sistema PAG com tamanho 9 e com '0' (Zeros) a esquerda e mais
-  # 11 espaços em branco.
-  #
-  # O contrato deve estar cadastrado no PAG (Pagamentos a terceiros) no 
-  # serviço 30 (Pagamentos de títulos do Banco do Brasil) e no serviço 31
-  # (Pagamentos de títulos de outros bancos).
-  pos: [34, 42]
-  picture: '9(9)'
+  # Preencher com “9999999990014CCVVV “, onde 999999999 informar o
+  # número do convênio de cobrança, alinhado à direita com zeros à
+  # esquerda; 0014 para cobrança cedente; CC informar o número da
+  # carteira; VVV o número da variação da carteira; e preencher as duas
+  # últimas posições com brancos (espaços). Obs.: Caso a empresa queira
+  # efetuar TESTE pelo sistema, com geração de arquivo retorno pelo
+  # Gerenciador Financeiro, basta substituir os espaços em branco
+  # (posições 52 e 53) por TS.
+  pos: [34, 53]
+  picture: 'X(20)'
 
-cobranca_cedente:
-  # Informar 0014 para cobrança cedente
-  pos: [43, 46]
-  picture: '9(4)'
-  default: 14
+agencia:
+  pos: [54, 58]
+  picture: '9(5)'
 
-carteira:
-  pos: [47, 48]
-  picture: '9(2)'
-
-variacao_carteira:
-  pos: [49, 51]
-  picture: '9(3)'
-
-remessa_teste:
-  pos: [52, 53]
-  picture: 'X(2)'
-  default: ''
+agencia_dv:
+  pos: [59, 59]
+  picture: 'X(1)'
 
 conta:
   pos: [60, 71]
@@ -40,15 +95,57 @@ conta:
 
 conta_dv:
   pos: [72, 72]
-  picture: '9(1)'
+  picture: 'X(1)'
 
-agencia_mais_conta_dv:
+agencia_mais_cedente_dv:
+  # Campo não tratado pelo Banco do Brasil. Informar 'branco' (espaço) OU zero.
   pos: [73, 73]
   picture: 'X(1)'
   default: ''
 
-data_credito_obsoleto:
-  # Campo não tradado pelo banco do brasil
+nome_empresa:
+  pos: [74, 103]
+  picture: 'X(30)'
+
+mensagem_1:
+  # Para utilizar a Mensagem 1 é necessário não ter informado
+  # sacador/avalista. Esse campo só é tratado quando a Mensagem 3, do
+  # segmento R, não estiver sendo utilizada ('brancos'). Além disso,
+  # quando acatada essa mensagem será impressa em todos os bloquetos
+  # do lote. Caso não queira utilizar o campo, informar 'brancos' (espaços).
+  pos: [104, 143]
+  picture: 'X(40)'
+  default: ''
+
+mensagem_2:
+  # Campo não tratado pelo Banco do Brasil. Informar 'brancos' (espaços).
+  pos: [144, 183]
+  picture: 'X(40)'
+  default: ''
+
+numero_remessa_retorno:
+  # Informação a cargo da empresa. Sugerimos informar número
+  # sequencial para controle. Campo não é criticado pelo Banco do Brasil.
+  pos: [184, 191]
+  picture: '9(8)'
+  default: '0'
+
+data_gravacao_remessa_retorno:
+  # Informar a data de Gravação da Remessa, lembrando que a data de
+  # gravação não deve ser maior que a data de envio do arquivo para o
+  # banco, OU informar Zeros.
+  pos: [192, 199]
+  picture: '9(8)'
+  default: '0'
+
+data_credito:
+  # Campo não tratado pelo Banco do Brasil. Informar 'brancos' (espaços) OU Zeros.
   pos: [200, 207]
   picture: '9(8)'
   default: '0'
+
+uso_exclusivo_febraban_03:
+  # Informar 'brancos' (espaços).
+  pos: [208, 240]
+  picture: 'X(33)'
+  default: ''
