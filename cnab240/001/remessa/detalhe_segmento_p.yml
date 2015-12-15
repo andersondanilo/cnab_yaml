@@ -1,6 +1,5 @@
 # Com base na documentação do banco do brasil
 # disponível em: http://www.bb.com.br/docs/pub/emp/empl/dwn/CbrVer04BB.pdf
-
 codigo_banco:
   pos: [1, 3]
   picture: '9(3)'
