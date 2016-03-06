@@ -1,0 +1,22 @@
+#SEGMENTO – E (OPCIONAL)
+#Este segmento só é obrigatório quando for contratado junto ao Banco o serviço “Holerite - Demonstrativo de
+#Pagamento de Salários / Informe de Rendimentos”.
+#Um pagamento de salários informado através do segmento “A” poderá conter quantos registros “E” forem
+#necessários, até que a soma dos valores informados (créditos e débitos) totalizem o “valor do pagamento”
+#informado para pagamento em “A”.
+#O arquivo de “Informe de Rendimentos” poderá conter mais de um registro “E”, para cada beneficiário
+#informado nos segmentos “A” e “B” (vide limitação no Anexo D).
+
+
+#CÓDIGO DO BANCO CÓDIGO BANCO NA COMPENSAÇÃO 001 003 9(03) 341
+#CÓDIGO DO LOTE LOTE DE SERVIÇO 004 007 9(04) NOTA 3
+#TIPO DE REGISTRO REGISTRO DETALHE DO LOTE 008 008 9(01) 3
+#NÚMERO DO REGISTRO Nº SEQÜENCIAL REGISTRO NO LOTE 009 013 9(05) NOTA 9
+#CÓDIGO DO SEGMENTO CÓDIGO SEGMENTO REG. DETALHE 014 014 X(01) E
+#BRANCOS COMPLEMENTO DE REGISTRO 015 017 X(03)
+#MOVIMENTO TIPO DE MOVIMENTO 018 018 X(01) NOTA 24
+#INFORMAÇÕES
+#COMPLEMENTARES
+#INFORMAÇÕES COMPLEMENTARES PARA HOLERITE OU INFORME DE RENDIMENTOS 019 218 X(200) ANEXO D
+#BRANCOS COMPLEMENTO DE REGISTRO 219 230 X(12)
+#(*) OCORRÊNCIAS CÓDIGO OCORRÊNCIA PARA RETORNO 231 240 X(10)
