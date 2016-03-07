@@ -1,7 +1,7 @@
 # Registro Header de Arquivo
 
 # Baseado na documentação do Itau
-# Disponível em: http://download.itau.com.br/bankline/cobranca_cnab240.pdf
+# Disponível em: http://download.itau.com.br/bankline/SISPAG_CNAB.pdf
 # leopucci - Este arquivo veio da pasta generic e foi alterado com as informacoes do pdf acima.
 
 codigo_banco:
