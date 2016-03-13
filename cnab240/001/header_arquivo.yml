@@ -1,4 +1,4 @@
-# Com base na documentação do bradesco
+# Com base na documentação do banco do brasil
 # disponível em: http://www.bb.com.br/docs/pub/emp/empl/dwn/CbrVer04BB.pdf
 
 codigo_convenio:
@@ -38,7 +38,7 @@ conta:
 
 conta_dv:
   pos: [71, 71]
-  picture: '9(1)'
+  picture: 'X(1)'
 
 agencia_mais_cedente_dv:
   # Campo não tratado pelo Banco do Brasil. Informar 'branco' (espaço) OU zero.

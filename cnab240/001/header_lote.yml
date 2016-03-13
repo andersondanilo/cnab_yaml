@@ -40,7 +40,7 @@ conta:
 
 conta_dv:
   pos: [72, 72]
-  picture: '9(1)'
+  picture: 'X(1)'
 
 agencia_mais_conta_dv:
   pos: [73, 73]
