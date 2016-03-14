@@ -20,7 +20,7 @@ codigo_convenio:
   picture: 'X(6)'
 
 uso_exclusivo_banco:
-  # Preenchar em branco
+  # Preenchar com zeros
   pos: [40, 53]
   picture: 'X(14)'
   default: '0'
