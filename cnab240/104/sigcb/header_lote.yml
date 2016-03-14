@@ -23,7 +23,7 @@ uso_exclusivo_banco:
   # Preenchar em branco
   pos: [40, 53]
   picture: 'X(14)'
-  default: ''
+  default: '0'
 
 agencia:
   # Código da Agência mantenedora da conta, fornecido pela CAIXA.
