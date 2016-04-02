@@ -74,5 +74,5 @@ generic:
   outro_campo:
     pos: [14, 15]
     picture: 'X(2)' # Isso significa campo de texto com 2 caracteres (preenchido com espaço a direita)
-    default: 'T' # Valor padrão do campo
+    default: 'T' # Valor padrão do campo 
 ```
