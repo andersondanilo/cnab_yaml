@@ -70,10 +70,10 @@ condicao_emissao:
   picture: '9(01)'
   default: '1'
 
-condicao_emissao:
+emissao_para_debito:
   pos: [94, 94]
   picture: 'X(01)'
-  default: 'S'
+  default: 'N'
 
 brancos01:
   pos: [95, 105]
