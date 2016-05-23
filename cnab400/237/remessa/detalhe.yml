@@ -16,7 +16,7 @@ zeros01:
   picture: '9(01)'
   default:  '0'
 
-carteira:
+numero_carteira:
   pos: [22, 24]
   picture: '9(03)'
 
@@ -36,7 +36,7 @@ uso_empresa:
   pos: [38, 62]
   picture: 'X(25)'
 
-nosso_numero:
+zeros02:
   pos: [63, 65]
   picture: '9(03)'
   default: '0'
@@ -52,9 +52,13 @@ percentual_multa:
   default: '0'
 
 nosso_numero:
-  pos: [71, 82]
+  pos: [71, 81]
   picture: '9(12)'
   default: '0'
+
+digito_nosso_numero:
+  pos: [82, 82]
+  picture: '9(01)'
 
 desconto_por_dia:
   pos: [83, 92]
@@ -76,7 +80,7 @@ brancos01:
   picture: 'X(11)'
   default:  ''
 
-zeros02:
+zeros03:
   pos: [106, 106]
   picture: '9(01)'
   default:  '2'
