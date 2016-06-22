@@ -126,7 +126,7 @@ numero_documento:
   pos: [74,93]
   picture: 'X(20)'
 
-pagamento:
+data_pagamento:
   # Campo de informação da data de pagamento do título.
   # Utilizar o formato DDMMAAAA, onde : dd = dia, mm = mês, aa = ano
   pos: [94,101]
