@@ -52,7 +52,6 @@ tipo_movimento:
   # ‘9’   | Indica EXCLUSÃO
   pos: [15, 15]
   picture: '9(1)'
-  default: ''
 
 codigo_instrucao_movimento:
   # Código de Movimento Remessa
