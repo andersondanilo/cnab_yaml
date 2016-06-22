@@ -1,0 +1,233 @@
+# Registro Detalhe - Segmento A (Obrigatório - Remessa)
+# Baseado na documentação do BB
+# Disponível em: http://www.bb.com.br/docs/pub/emp/empl/dwn/000Completo.pdf (Acesso em 22/06/2016)
+
+codigo_banco:
+  # Código fornecido pelo Banco Central para identificação do Banco que está recebendo ou enviando o
+  # arquivo, com o qual se firmou o contrato de prestação de serviços.
+  # CAIXA ECONÔMICA FEDERAL = ‘104’
+  pos: [1, 3]
+  picture: '9(3)'
+
+lote_servico:
+  # Lote de Serviço
+  # Número seqüencial para identificar cada lote de serviço.
+  # Preencher com '0001' para o primeiro lote do arquivo. Para os demais: número do lote anterior
+  # acrescido de 1. Deve ser o mesmo número dentro do lote. O número não poderá ser repetido dentro
+  # do arquivo.
+  # Se registro for Header do Arquivo = '0000'
+  # Se registro for Trailer do Arquivo = '9999'
+  pos: [4, 7]
+  picture: '9(4)'
+
+tipo_registro:
+  # Código adotado pela FEBRABAN para identificar o tipo de registro.
+  # '3' = Detalhe
+  pos: [8, 8]
+  picture: '9(1)'
+  default: '3'
+
+numero_sequencial_lote:
+  # Nº Sequencial do Registro no Lote
+  # Deve ser iniciado sempre em 1, em cada novo lote
+  pos: [9, 13]
+  picture: '9(5)'
+
+codigo_segmento:
+  # Código adotado pela FEBRABAN para identificar o segmento do registro. 
+  pos: [14, 14]
+  picture: 'X(1)'
+  default: 'A'
+
+tipo_movimento:
+  # Tipo de movimento de acordo com tabela.
+  # ---------------------------------
+  # Código | Descrição
+  # ---------------------------------
+  # ‘0’   | Indica INCLUSÃO
+  # ‘1’   | Indica CONSULTA
+  # ‘3’   | Indica ESTORNO (somente para retorno)
+  # ‘5’   | Indica ALTERAÇÃO
+  # ‘7’   | Indica LIQUIDAÇAO
+  # ‘9’   | Indica EXCLUSÃO
+  pos: [15, 15]
+  picture: '9(1)'
+  default: ''
+
+codigo_instrucao_movimento:
+  # Código de Movimento Remessa
+  # Código adotado pela FEBRABAN, para identificar o tipo de movimentação enviado nos registros do
+  # arquivo de remessa.
+  # ---------------------------------
+  # Código | Descrição
+  # ---------------------------------
+  # ‘00’   | Inclusão de Registro Detalhe Liberado
+  # ‘09’   | Inclusão do Registro Detalhe Bloqueado
+  # ‘10’   | Alteração do Pagamento Liberado para Bloqueado (Bloqueio)
+  # ‘11’   | Alteração do Pagamento Bloqueado para Liberado (Liberação)
+  # ‘17’   | Alteração do Valor do Título
+  # ‘19’   | Alteração da Data de Pagamento
+  # ‘23’   | Pagamento Direto ao Fornecedor - Baixar
+  # ‘25’   | Manutenção em Carteira - Não Pagar
+  # ‘27’   | Retirada de Carteira - Não Pagar
+  # ‘33’   | Estorno por Devolução da Câmara Centralizadora (somente para Tipo de Movimento = '3')
+  # ‘40’   | Alegação do Sacado
+  # ‘99’   | Exclusão do Registro Detalhe Incluído Anteriormente
+  pos: [16, 17]
+  picture: '9(2)'
+
+camara_centralizadora:
+  # Camara centralizadora.
+  # ---------------------------------
+  # Código | Descrição
+  # ---------------------------------
+  # ‘018’  | TED (STR,CIP)
+  # ‘700’  | DOC (COMPE)
+  pos: [18, 20]
+  picture: '9(3)'
+
+banco_favorecido:
+  # Código do banco do favorecido.
+  pos: [21, 23]
+  picture: '9(3)'
+
+agencia_favorecido:
+  # Agencia do favorecido.
+  pos: [24,28]
+  picture: '9(5)'
+
+agencia_dv_favorecido:
+  # Digito verificador da agencia do favorecido.
+  pos: [29,29]
+  picture: 'X(1)'
+
+conta_favorecido:
+  # Conta do favorecido.
+  pos: [30,41]
+  picture: '9(12)'
+
+conta_dv_favorecido:
+  # Digito Verificador da conta do favorecido.
+  pos: [42,42]
+  picture: 'X(1)'
+
+agencia_conta_dv_favorecido:
+  # Digito Verificador da conta + agencia do favorecido.
+  pos: [43,43]
+  picture: 'X(1)'
+
+nome_favorecido:
+  # Nome do favorecido.
+  pos: [44,73]
+  picture: 'X(30)'
+
+numero_documento:
+  # Número adotado e controlado pelo Cliente, para identificar o título de cobrança.
+  pos: [74,93]
+  picture: 'X(20)'
+
+data_pagamento:
+  # Campo de informação da data de pagamento do título.
+  # Utilizar o formato DDMMAAAA, onde : dd = dia, mm = mês, aa = ano
+  pos: [94,101]
+  picture: '9(8)'
+  date_format: '%d%m%Y'
+
+tipo_moeda:
+  pos: [102, 104]
+  picture: 'X(3)'
+  default: 'BRL'
+
+quantidade_moeda:
+  pos: [105, 119]
+  picture: '9(10)V9(5)'
+
+valor_pagamento:
+  # Valor para pagamento
+  pos: [120, 134]
+  picture: '9(13)V9(2)'
+
+nosso_numero:
+  # Número atribuido pelo banco
+  pos: [135, 154]
+  picture: 'X(20)'
+
+data_real:
+  # Data real da efetivação do pagamento.
+  pos: [155,162]
+  picture: '9(8)'
+  date_format: '%d%m%Y'
+
+valor_real:
+  # Valor real da efetivação do pagamento
+  pos: [163, 177]
+  picture: '9(13)V9(2)'
+
+informacao_2:
+  # Outras informações.
+  pos: [178,217]
+  picture: 'X(40)'
+
+finalidade_doc:
+  # Código complementar da finalidade do DOC.
+  # ---------------------------------
+  # Código | Descrição
+  # ---------------------------------
+  # ‘01’  | Crédito em Conta
+  # ‘02’  | Pagamento de Aluguel/Condomínio
+  # ‘03’  | Pagamento de Duplicata/Títulos
+  # ‘04’  | Pagamento de Dividendos
+  # ‘05’  | Pagamento de Mensalidade Escolar
+  # ‘06’  | Pagamento de Salários
+  # ‘07’  | Pagamento a Fornecedores
+  # ‘08’  | Operações de Câmbios/Fundos/Bolsa de Valores
+  # ‘09’  | Repasse de Arrecadação/Pagamento de Tributos
+  # ‘10’  | Transferência Internacional em Real
+  # ‘11’  | DOC para Poupança
+  # ‘12’  | DOC para Depósito Judicial
+  # ‘13’  | Outros
+  # ‘16’  | Pagamento de bolsa auxílio
+  # ‘17’  | Remuneração à cooperado
+  # ‘18’  | Pagamento de honorários
+  # ‘19’  | Pagamento de prebenda (Remuneração a padres e sacerdotes) 
+  pos: [218, 219]
+  picture: 'X(2)'
+
+finalidade_ted:
+  # Código complementar da finalidade do TED.
+  # Codigo adotado pelo Banco Central para identificar a finalidade da TED. Utitilizar os
+  # códigos de finalidade cliente, disponíveis no site do Banco Central do Brasil  
+  pos: [220, 224]
+  picture: 'X(5)'
+
+finalidade_complementar:
+  # Código da finalidade complementar.
+  # Código adotado para complemento da finalidade pagamento. A forma de utilização deverá
+  # ser acordada entre banco e cliente. 
+  pos: [225, 226]
+  picture: 'X(2)'
+
+uso_exclusivo_febraban:
+  pos: [227, 229]
+  picture: 'X(3)'
+  default: ''
+
+aviso:
+  # Código adotado pela FEBRABAN para identificar a necessidade de emissão de aviso de
+  # pagamento ao Favorecido.
+  # ---------------------------------
+  # Código | Descrição
+  # ---------------------------------
+  # ‘0’   | Não Emite Aviso
+  # ‘2’   | Emite Aviso Somente para o Remetente
+  # ‘5’   | Emite Aviso Somente para o Favorecido
+  # ‘6’   | Emite Aviso para o Remetente e Favorecido
+  # ‘7’   | Emite Aviso para o Favorecido e 2 Vias para o Remetente
+  pos: [230, 230]
+  picture: '9(1)'
+
+ocorencias:
+  # Código da ocorrencia para retorno
+  pos: [231, 240]
+  picture: 'X(10)'
+  default: ''
