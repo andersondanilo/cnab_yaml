@@ -1,13 +1,45 @@
 # Com base na documentação do banco do brasil
 # disponível em: http://www.bb.com.br/docs/pub/emp/empl/dwn/CbrVer04BB.pdf
 
+codigo_banco:
+  #001 para Banco do Brasil S.A.
+  pos: [1, 3]
+  picture: '9(3)'
+  default: '001'
+
+lote_servico:
+  pos: [4, 7]
+  picture: '9(4)'
+  default: '0000'
+
+tipo_registro:
+  pos: [8, 8]
+  picture: '9(1)'
+  default: '0'
+
+uso_exclusivo_febraban_01:
+  pos: [9, 17]
+  picture: 'X(9)'
+  deafult: ''
+
+tipo_inscricao_empresa:
+  # 1 – para CPF e 2 – para CNPJ
+  pos: [18, 18]
+  picture: '9(1)'
+
+numero_inscricao_empresa:
+  # Informar número da inscrição (CPF ou CNPJ) da Empresa,
+  # alinhado à direita com zeros à esquerda.
+  pos: [19, 32]
+  picture: '9(14)'
+
 codigo_convenio:
   # Código de convênio no Banco
   # O código de convênio é composto pelo número do contrato do cliente junto
   # ao Banco no sistema PAG com tamanho 9 e com '0' (Zeros) a esquerda e mais
   # 11 espaços em branco.
   #
-  # O contrato deve estar cadastrado no PAG (Pagamentos a terceiros) no 
+  # O contrato deve estar cadastrado no PAG (Pagamentos a terceiros) no
   # serviço 30 (Pagamentos de títulos do Banco do Brasil) e no serviço 31
   # (Pagamentos de títulos de outros bancos).
   pos: [33, 41]
@@ -32,6 +64,14 @@ uso_exclusivo_bb_01:
   picture: 'X(2)'
   default: ''
 
+agencia:
+  pos: [53, 57]
+  picture: '9(5)'
+
+agencia_dv:
+  pos: [58, 58]
+  picture: 'X(1)'
+
 conta:
   pos: [59, 70]
   picture: '9(12)'
@@ -46,27 +86,70 @@ agencia_mais_cedente_dv:
   picture: 'X(1)'
   default: ''
 
-uso_exclusivo_febraban_03:
-  pos: [212, 222]
-  picture: 'X(11)'
+nome_empresa:
+  pos: [73, 102]
+  picture: 'X(30)'
+
+nome_banco:
+  pos: [103, 132]
+  picture: 'X(30)'
+  default: 'BANCO DO BRASIL S.A.'
+
+uso_exclusivo_febraban_02:
+  # Informar 'brancos' (espaços).
+  pos: [133, 142]
+  picture: 'X(10)'
   default: ''
 
-identificacao_cobranca_sem_papel:
-  pos: [223, 225]
-  picture: 'X(3)'
-  default: ''
+codigo_remessa_retorno:
+  pos: [143, 143]
+  picture: '9(1)'
 
-controle_vans:
-  pos: [226, 228]
+data_geracao:
+  # Informar no formato DDMMAAAA, observando que a data de
+  # geração do arquivo não pode ser maior que a data de envio do
+  # arquivo para o banco.
+  pos: [144, 151]
+  picture: '9(8)'
+
+hora_geracao:
+  # Zeros OU informar no formato HHMMSS, HH horas, MM minutos e SS segundos.
+  pos: [152, 157]
+  picture: '9(6)'
+
+numero_sequencial_arquivo:
+  # Informação a cargo da empresa. O campo não é criticado pelo
+  # sistema do Banco do Brasil. Informar zeros OU um número
+  # sequencial, incrementando a cada novo arquivo.
+  pos: [158, 163]
+  picture: '9(6)'
+  default: '0'
+
+versao_layout_arquivo:
+  # Campo não criticado pelo sistema. Informar zeros ou número
+  # da versão do leiaute do arquivo que foi usado para formatação
+  # dos campos. Versões disponíveis: 084, 083, 082, 080, 050, 040, ou 030.
+  pos: [164, 166]
   picture: '9(3)'
+  default: '083'
+
+densidade_gravacao:
+  # Campo não criticado pelo sistema do Banco do Brasil. Informar zeros, 'brancos', 01600 ou 06250.
+  pos: [167, 171]
+  picture: '9(5)'
   default: '0'
 
-tipo_servico:
-  pos: [229, 230]
-  picture: '9(2)'
-  default: '0'
+uso_exclusivo_bb_02:
+  pos: [172, 191]
+  picture: 'X(20)'
 
-ocorrencias:
-  pos: [231, 240]
-  picture: '9(10)'
-  default: '0'
+uso_exclusivo_empresa_01:
+  # Campo não tratado pelo Banco do Brasil. Informar 'brancos' (espaços) OU zeros.
+  pos: [192, 211]
+  picture: 'X(20)'
+  default: ''
+
+uso_exclusivo_febraban_03:
+  pos: [212, 240]
+  picture: 'X(29)'
+  default: ''

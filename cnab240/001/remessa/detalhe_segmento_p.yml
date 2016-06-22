@@ -1,36 +1,91 @@
-conta:
-  pos: [24,35]
-  picture: '9(12)'
+# Com base na documentação do banco do brasil
+# disponível em: http://www.bb.com.br/docs/pub/emp/empl/dwn/CbrVer04BB.pdf
+codigo_banco:
+  pos: [1, 3]
+  picture: '9(3)'
+  default: '001'
 
-conta_dv:
-  pos: [36,36]
+lote_servico:
+  # Informar o número do lote ao qual pertence o
+  # registro. Deve ser igual ao número informado
+  # no Header do lote.
+  pos: [4, 7]
+  picture: '9(4)'
+
+tipo_registro:
+  pos: [8, 8]
   picture: '9(1)'
+  default: '3'
 
-agencia_mais_conta_dv:
-  # Campo não tratado pelo Banco do Brasil. Informar 'branco' (espaço) OU zero
-  pos: [37,37]
+numero_sequencial:
+  # Começar com 00001 e ir incrementando em 1 a cada nova linha de registro detalhe.
+  pos: [9, 13]
+  picture: '9(5)'
+
+codigo_segmento:
+  pos: [14, 14]
+  picture: 'X(1)'
+  default: 'P'
+
+uso_exclusivo_febraban_01:
+  pos: [15, 15]
   picture: 'X(1)'
   default: ''
 
-nosso_numero:
+codigo_movimento_remessa:
+  # Códigos de Movimento para Remessa tratados pelo
+  # Banco do Brasil: 01 – Entrada de títulos, 02 – Pedido de
+  # baixa, 04 – Concessão de Abatimento, 05 – Cancelamento de Abatimento, 06 – Alteração de Vencimento, 07
+  # – Concessão de Desconto, 08 – Cancelamento de Desconto, 09 – Protestar, 10 – Cancela/Sustação da
+  # Instrução de protesto, 30 – Recusa da Alegação do Sacado, 31 – Alteração de Outros Dados, 40 – Alteração
+  # de Modalidade.
+  pos: [16, 17]
+  picture: '9(2)'
+  default: '01'
+
+agencia:
+  pos: [18, 22]
+  picture: '9(5)'
+
+agencia_dv:
+  # Obs. Em caso de dígito X informar maiúsculo.
+  pos: [23, 23]
+  picture: 'X(1)'
+
+conta:
+  pos: [24, 35]
+  picture: '9(12)'
+
+conta_dv:
+  # Obs. Em caso de dígito X informar maiúsculo.
+  pos: [36, 36]
+  picture: 'X(1)'
+
+agencia_mais_conta_dv:
+  # Campo não tratado pelo Banco do Brasil. Informar 'branco' (espaço) OU zero.
+  pos: [37, 37]
+  picture: 'X(1)'
+  default: ''
+
+identificacao_titulo:
   # 1. Caso seja o Banco do Brasil quem gera o "Nosso Número", informar 'brancos' (espaços) ou Zeros.
-  # 2. Caso seja a empresa quem gera o "Nosso Número", informar de acordo com o número do convênio de 
+  # 2. Caso seja a empresa quem gera o "Nosso Número", informar de acordo com o número do convênio de
   # cobrança conforme as seguintes regras:
-  # a) Para número de convênio de 4 posições (carteira 17 até 9.999) informar o nosso número com 
-  # 11 posições mais o DV (dígito verificador), sendo as 4 primeiras posições o número do convênio, 
+  # a) Para número de convênio de 4 posições (carteira 17 até 9.999) informar o nosso número com
+  # 11 posições mais o DV (dígito verificador), sendo as 4 primeiras posições o número do convênio,
   # as 7 posições seguintes um número sequencial para controle e mais o DV.
   # Exemplo: CONVÊNIOS DE 0001 ATÉ 9.999
   # 123412345671
   # CCCCSSSSSSSD
-  # Onde: C = Convênio S = Sequencial D = dígito verificador 
-  # b) Para número de convênio de 6 posições (de 10.000 a 999.999), informar o nosso número com 
-  # 11 posições mais o DV, sendo as 6 primeiras posições o número do convênio, as 5 posições 
-  # seguintes um número sequencial para controle e mais o DV. 
+  # Onde: C = Convênio S = Sequencial D = dígito verificador
+  # b) Para número de convênio de 6 posições (de 10.000 a 999.999), informar o nosso número com
+  # 11 posições mais o DV, sendo as 6 primeiras posições o número do convênio, as 5 posições
+  # seguintes um número sequencial para controle e mais o DV.
   # Exemplo: CONVÊNIOS DE 010.000 ATÉ 999.999
   # 123456123451
   # CCCCCCSSSSSD
   # Onde: C = Convênio S = Sequencial D = dígito verificador
-  # c) Para número de convênio de 7 posições (acima de 1.000.000) informar o nosso número com 
+  # c) Para número de convênio de 7 posições (acima de 1.000.000) informar o nosso número com
   # 17 posições sem DV, sendo as 7 primeiras posições o número do convênio e as 10 posições seguintes
   # um número sequencial para controle. Esse é o padrão mais utilizado atualmente.
   # Exemplo: CONVÊNIOS DE 1.000.000 ATÉ 9.999.999
@@ -41,12 +96,238 @@ nosso_numero:
   # todos os "nosso número" devem ser alinhados à esquerda com brancos à direita.
   pos: [38, 57]
   picture: 'X(20)'
+  default: ''
+
+codigo_carteira:
+  # Informar 1 – para carteira 11/12 na modalidade Simples;
+  # 2 ou 3 – para carteira 11/17 modalidade Vinculada/Caucionada e carteira 31;
+  # 4 – para carteira 11/17 modalidade Descontada e carteira 51; e
+  # 7 – para carteira 17 modalidade Simples.
+  pos: [58, 58]
+  picture: '9(1)'
+  default: '1'
+
+forma_cadastro_titulo:
+  # Campo não tratado pelo sistema do Banco do Brasil. Pode ser informado 'branco', Zero, 1 – com
+  # cadastramento (Cobrança registrada) ou 2 – sem cadastramento (Cobrança sem registro).
+  pos: [59, 59]
+  picture: '9(1)'
+  default: '1'
+
+tipo_documento:
+  # Campo não tratado pelo sistema do Banco do Brasil. Pode ser informado 'branco', Zero, 1 – Tradicional, ou 2 –
+  # Escritural.
+  pos: [60, 60]
+  picture: 'X(1)'
+  default: ''
+
+identificacao_emissao_bloqueto:
+  # Campo não tratado pelo sistema do Banco do Brasil. Pode ser informado 'branco', Zero, ou de acordo com a
+  # carteira e quem fará a emissão dos bloquetos. No caso de carteira 11/12/31/51, utilizar código 1 – Banco
+  # emite, OU códigos 4 – Banco reemite e 5 – Banco não reemite, porém nestes dois últimos casos, o código de
+  # Movimento Remessa (posições 16 a 17) deve ser código '31' Alteração de outros dados (para títulos que já
+  # estão registrados no Banco do Brasil). No caso de carteira 17, podem ser usados os códigos: 1 – Banco emite,
+  # 2 – Cliente emite, 3 – Banco pre-emite e cliente complementa, 6 – Cobrança sem papel. Permite ainda,
+  # códigos 4 – Banco reemite e 5 – Banco não reemite, porém o código de Movimento Remessa (posições 16 a
+  # 17) deve ser código '31' Alteração de outros dados (para títulos que já estão registrados no Banco do Brasil).
+  # Obs.: Quando utilizar código, informar de acordo com o que foi cadastrado para a carteira junto ao Banco do
+  # Brasil, consulte seu gerente de relacionamento.
+  pos: [61, 61]
+  picture: '9(1)'
+  default: '0'
+
+identificacao_distribuicao:
+  # Campo não tratado pelo Banco do Brasil. Informar 'branco' (espaço) OU zero ou de acordo com a carteira e
+  # quem fará a distribuição dos bloquetos. Para carteira 11/12/31/51 utilizar código 1– Banco distribui. Para
+  # carteira 17, pode ser utilizado código 1 – Banco distribui, 2 – Cliente distribui ou 3 – Banco envia e-mail (nesse
+  # caso complementar com registro S), de acordo com o que foi cadastrado para a carteira junto ao Banco do
+  # Brasil, consulte seu gerente de relacionamento.
+  pos: [62, 62]
+  picture: 'X(1)'
+  default: ''
 
 numero_documento:
-  # Número adotado e controlado pelo Cliente, para identificar o título de cobrança.
-  # Poderá conter número de duplicata, no caso de cobrança de duplicatas; número da apólice, no caso de
-  # cobrança de seguros, etc. Campo de preenchimento obrigatório.
-  pos: [63,77]
+  # No caso de carteira 17, na modalidade onde a impressão dos bloquetos é feita pela empresa, atentar para que
+  # o número informado nesse campo seja exatemente igual ao campo Número do Documento do bloqueto
+  # impresso (considerando inclusive zeros à esquerda, espaços, barras, etc).
+  pos: [63, 77]
   picture: 'X(15)'
 
+data_vencimento:
+  # Não deve ser menor que a data de emissão do bloqueto. Para carteira 11, 12, 15, 17 e 31, admite o registro
+  # de títulos com prazo de vencimento até 2500 dias. Para carteira 11,17 modalidade Descontada e carteira 51,
+  # admite o registro de títulos com prazo de vencimento até 360 dias. Para vencimento “A vista” preencher com
+  # '11111111', e “Contra-apresentação” preencher com '99999999'. Obs.: O prazo legal para vencimento “a vista”
+  # ou “contra-apresentação” é de 15 dias da data do registro do bloqueto no banco.
+  pos: [78, 85]
+  picture: '9(8)'
 
+valor_nominal:
+  pos: [86, 100]
+  picture: '9(13)V(2)'
+
+agencia_cobranca:
+  # Informar Zeros. A agência encarregada da Cobrança é definida de acordo com o CEP do sacado.
+  pos: [101, 105]
+  picture: '9(5)'
+  default: '0'
+
+agencia_cobranca_dv:
+  pos: [106, 106]
+  picture: 'X(1)'
+  default: ''
+
+especie:
+  # Para carteira 11 e 17 modalidade Simples, pode ser usado:
+  # 01 – Cheque,
+  # 02 – Duplicata Mercantil,
+  # 04 – Duplicata de Serviço,
+  # 06 – Duplicata Rural,
+  # 07 – Letra de Câmbio,
+  # 12 – Nota Promissória,
+  # 17 - Recibo,
+  # 19 – Nota de Debito,
+  # 26 – Warrant,
+  # 27 – Dívida Ativa de Estado,
+  # 28 – Divida Ativa de Município e
+  # 29 – Dívida Ativa União.
+  #
+  # Para carteira 12 (moeda variável) pode ser usado:
+  # 02 – Duplicata Mercantil,
+  # 04 – Duplicata de Serviço,
+  # 07 – Letra de Câmbio,
+  # 12 – Nota Promissória,
+  # 17 – Recibo e
+  # 19 – Nota de Débito.
+  #
+  # Para carteira 15 (prêmio de seguro) pode ser usado:
+  # 16 – Nota de Seguro e
+  # 20 – Apólice de Seguro.
+  #
+  # Para carteira 11/17 modalidade Vinculada e carteira 31, pode ser usado:
+  # 02 – Duplicata Mercantil e
+  # 04 – Duplicata de Serviço.
+  #
+  # Para carteira 11/17 modalidade Descontada e carteira 51, pode ser usado:
+  # 02 – Duplicata Mercantil,
+  # 04 – Duplicata de Serviço, e
+  # 07 – Letra de Câmbio.
+  #
+  # Obs.: O Banco do Brasil encaminha para protesto os seguintes títulos:
+  # Duplicata Mercantil, Rural e de Serviço, Letra de Câmbio, e Certidão de Dívida Ativa da União, dos Estados e do Município.
+  pos: [107, 108]
+  picture: '9(2)'
+  default: '02'
+
+aceite:
+  # Informar 'A' – para sim, ou 'N' – para não. Os bloquetos registrados com aceite 'A' (sim) somente podem ser
+  # encaminhados a cartório com o título original assinado pelo sacado e endossadas ao Banco do Brasil S.A.
+  pos: [109, 109]
+  picture: 'X(1)'
+  default: 'N'
+
+data_emissao:
+  # A data de emissão não pode ser maior que a data do vencimento, nem maior que a data de envio de arquivo.
+  # No caso, da carteira 11, além das observações anteriores, não pode ser igual a data de vencimento.
+  pos: [110, 117]
+  picture: '9(8)'
+
+codigo_juros:
+  # O código '3' – isento, não é tratado automaticamente pelo Banco. Para que haja isenção de juros esta
+  # informação deve ser cadastrada na sua carteira de cobrança, junto a sua agência de relacionamento.
+  pos: [118, 118]
+  picture: '9(1)'
+
+data_juros:
+  # Não há carência de juros.
+  pos: [119, 126]
+  picture: '9(8)'
+
+juros_de_um_dia:
+  # A taxa de juros impostada no arquivo sobrepõe a taxa cadastrada no banco. Obs.: no caso de carteira
+  # Descontada, o banco cobra juros específicos para essa modalidade, desconsiderando a informação colocada
+  # no arquivo e/ou cadastrada na carteira de cobrança.
+  pos: [127, 141]
+  picture: '9(13)V(2)'
+
+codigo_desconto:
+  # O Banco do Brasil só trata os códigos '1', '2' e '3'. No caso em que não há desconto, informar '0' (zero). Para
+  # os códigos '1' e '2' é obrigatório a informação dos demais campos referentes ao desconto, caso contrário, o
+  # registro do título será recusado.
+  pos: [142, 142]
+  picture: '9(1)'
+  default: '0'
+
+data_desconto:
+  # Zeros, quando não houver desconto a ser concedido.
+  pos: [143, 150]
+  picture: '9(8)'
+  default: '0'
+
+valor_desconto:
+  # Zeros, quando não houver desconto a ser concedido.
+  pos: [151, 165]
+  picture: '9(13)V(2)'
+  default: '0'
+
+valor_iof:
+  # Zeros, quando não houver IOF a ser cobrando.
+  pos: [166, 180]
+  picture: '9(13)V(2)'
+  default: '0'
+
+valor_abatimento:
+  # O valor do abatimento, sempre que informado, é deduzido do valor original do título, não importa quando o
+  # sacado efetue o pagamento.
+  pos: [181, 195]
+  picture: '9(13)V(2)'
+  default: '0'
+
+identificacao_titulo_empresa:
+  pos: [196, 220]
+  picture: 'X(25)'
+  default: ''
+
+codigo_protesto:
+  # O Banco do Brasil trata somente os códigos '1' – Protestar dias corridos, '2' – Protestar dias úteis, e '3' – Não
+  # protestar. No caso de carteira 31 ou carteira 11/17 modalidade Vinculada, se não informado nenhum código, o
+  # sistema assume automaticamente Protesto em 3 dias úteis
+  pos: [221, 221]
+  picture: '9(1)'
+  default: '3'
+
+numero_dias_protesto:
+  # Preencher de acordo com o código informado na posição 221. Para código '1' – é possível, de 6 a 29 dias,
+  # 35º, 40º, dia corrido. Para código '2' – é possível, 3º, 4º ou 5º dia útil. Para código '3' preencher com Zeros.
+  pos: [222, 223]
+  picture: '9(2)'
+  default: '0'
+
+codigo_baixa:
+  # Campo não tratado pelo sistema. Informar 'zeros'. O sistema considera a informação que foi cadastrada na
+  # sua carteira junto ao Banco do Brasil.
+  pos: [224, 224]
+  picture: '9(1)'
+  default: '0'
+
+numero_dias_baixa:
+  # Campo não tratado pelo sistema. Informar 'zeros'. O sistema acata a informação que foi cadastrada na sua
+  # carteira junto ao Banco do Brasil.
+  pos: [225, 227]
+  picture: 'X(3)'
+
+codigo_moeda:
+  pos: [228, 229]
+  picture: '9(2)'
+
+contrato_operacao_credito:
+  # Campo não tratado pelo sistema. Pode ser informado 'zeros' ou o número do contrato de cobrança.
+  pos: [230, 239]
+  picture: '9(10)'
+  default: '0'
+
+uso_exclusivo_febraban_02:
+  # Informar 'brancos' (espaços).
+  pos: [240, 240]
+  picture: 'X(1)'
+  default: ''
