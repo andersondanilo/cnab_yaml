@@ -49,4 +49,37 @@ numero_documento:
   pos: [63,77]
   picture: 'X(15)'
 
+agencia_cobradora_dv:
+  # Preencher com zeros - o sistema atribuirá a agência encarregada da cobrança pelo CEP do sacado.
+  # Código adotado pelo Banco responsável pela cobrança, para identificar o estabelecimento bancário
+  # responsável pela cobrança do título.
+  # Código e Dígito Verificador da Agência Encarregada da Cobrança são fornecidos pela CAIXA. Para
+  # essa informação solicitar a relação de agências cobradoras à agência CAIXA de relacionamento.
+  pos: [106, 106]
+  # picture: '9(1)'
+  picture: 'X(1)'
+  default: ''
+
+codigo_desconto_1:
+  # ‘0’ = Sem Desconto ‘1’ = Valor Fixo até a data informada ‘2’ = Percentual até a data informada
+  pos: [142, 142]
+  picture: '9(1)'
+  default: '0'
+
+valor_desconto_1:
+  # Valor ou percentual de desconto a ser concedido sobre o título de cobrança.
+  pos: [151, 165]
+  picture: '9(13)V9(2)'
+  default: '0000000000000'
+
+valor_juros_mora:
+  # Valor ou porcentagem sobre o valor do título a ser cobrado de juros de mora.
+  pos: [127, 141]
+  picture: '9(15)'
+
+uso_exclusivo_febraban_02:
+  pos: [240, 240]
+  picture: 'X(1)'
+  default: '0'
+
 
