@@ -30,7 +30,7 @@ literal_de_servico:
   picture: 'X(15)'
 
 nome_da_empresa:
-  #Nome Por Extenso Da "empresa Mãe"  
+  #Nome Por Extenso Da "empresa Mãe"
   pos: [47, 76]
   picture: 'X(30)'
 

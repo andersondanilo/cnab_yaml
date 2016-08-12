@@ -34,7 +34,7 @@ numero_sequencial_lote:
   picture: '9(5)'
 
 codigo_segmento:
-  # Código adotado pela FEBRABAN para identificar o segmento do registro. 
+  # Código adotado pela FEBRABAN para identificar o segmento do registro.
   pos: [14, 14]
   picture: 'X(1)'
   default: 'P'
@@ -53,6 +53,7 @@ codigo_ocorrencia:
   # ---------------------------------
   # Código | Descrição
   # ---------------------------------
+  # ‘00’   | "Nosso Número" será feita pelo Banco
   # ‘01’   | Entrada de Títulos
   # ‘02’   | Pedido de Baixa
   # ‘04’   | Concessão de Abatimento
@@ -164,7 +165,7 @@ codigo_carteira:
   # O Código ‘1’ Cobrança Simples deve ser obrigatoriamente informado nas modalidades Cobrança Simples
   # e Cobrança Rápida.
   pos: [58,58]
-  picture: '9(1)' 
+  picture: '9(1)'
 
 forma_cadastramento:
   # Código adotado pela FEBRABAN, para indicar a existência de registro do título no banco.

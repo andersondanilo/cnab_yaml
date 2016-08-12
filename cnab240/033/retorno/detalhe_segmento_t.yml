@@ -29,7 +29,7 @@ codigo_carteira:
   # 3 = Cobraça Caucionada (Eletrônica com registro e convencional com registro)
   # 4 = Cobrança Descontada (Convencionlal com Registro / Eletrônica com registro)
   # 5 = Cobrança Simples (Rápida com Registro)
-  # 6 = Cobrança Caucionada (Rápida com Registro) 
+  # 6 = Cobrança Caucionada (Rápida com Registro)
   pos: [54, 54]
   picture: '9(1)'
 

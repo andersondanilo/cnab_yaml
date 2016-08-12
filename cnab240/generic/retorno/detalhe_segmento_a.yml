@@ -34,7 +34,7 @@ numero_sequencial_lote:
   picture: '9(5)'
 
 codigo_segmento:
-  # Código adotado pela FEBRABAN para identificar o segmento do registro. 
+  # Código adotado pela FEBRABAN para identificar o segmento do registro.
   pos: [14, 14]
   picture: 'X(1)'
   default: 'A'
@@ -189,21 +189,21 @@ finalidade_doc:
   # ‘16’  | Pagamento de bolsa auxílio
   # ‘17’  | Remuneração à cooperado
   # ‘18’  | Pagamento de honorários
-  # ‘19’  | Pagamento de prebenda (Remuneração a padres e sacerdotes) 
+  # ‘19’  | Pagamento de prebenda (Remuneração a padres e sacerdotes)
   pos: [218, 219]
   picture: 'X(2)'
 
 finalidade_ted:
   # Código complementar da finalidade do TED.
   # Codigo adotado pelo Banco Central para identificar a finalidade da TED. Utitilizar os
-  # códigos de finalidade cliente, disponíveis no site do Banco Central do Brasil  
+  # códigos de finalidade cliente, disponíveis no site do Banco Central do Brasil
   pos: [220, 224]
   picture: 'X(5)'
 
 finalidade_complementar:
   # Código da finalidade complementar.
   # Código adotado para complemento da finalidade pagamento. A forma de utilização deverá
-  # ser acordada entre banco e cliente. 
+  # ser acordada entre banco e cliente.
   pos: [225, 226]
   picture: 'X(2)'
 

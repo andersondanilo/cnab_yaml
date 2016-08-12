@@ -13,7 +13,7 @@ codigo_de_inscricao:
   picture: '9(02)'
 
 numero_de_inscricao:
-  #Número De Inscrição Da Empresa (cpf/cnpj)    
+  #Número De Inscrição Da Empresa (cpf/cnpj)
   pos: [4, 17]
   picture: '9(14)'
 
@@ -95,6 +95,6 @@ valor_principal:
   picture: '9(11)V9(2)'
 
 numero_sequencial:
-  #Número Seqüencial Do Registro No Arquivo  
+  #Número Seqüencial Do Registro No Arquivo
   pos: [395, 400]
   picture: '9(06)'

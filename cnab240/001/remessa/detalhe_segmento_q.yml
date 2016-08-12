@@ -1,0 +1,49 @@
+bairro:
+  # São tratadas somente 12 posições, da posição 114 a 125
+  pos: [114, 128]
+  picture: 'X(15)'
+  default: ''
+
+sacador_codigo_inscricao:
+  # Este campo deve estar preenchido somente quando o
+  # Cedente original do título for outro. Caso não haja
+  # sacador/avalista preencher com '0' (zero) ou 'branco' (espaço)
+  pos: [154, 154]
+  picture: '9(1)'
+  default: '0'
+
+sacador_numero_inscricao:
+  # Este campo deve estar preenchido somente quando o
+  # Cedente original do título for outro. Caso não haja
+  # sacador/avalista preencher com Zeros ou 'brancos' (espaços).
+  pos: [155, 169]
+  picture: '9(15)'
+  default: '0'
+
+sacador_nome:
+  # Este campo deve estar preenchido somente quando o
+  # Cedente original do título for outro. São tratadas somente 21
+  # posições, da posição 170 a 190. Caso não haja sacador/avalista,
+  # preencher com 'brancos'. Se informado sacador/avalista não
+  # será possível a utilização da Mensagem 1 ou 3.
+  pos: [170, 209]
+  picture: 'X(40)'
+  default: ''
+
+codigo_do_banco_correspondente_na_compensacao:
+  # Campo não tratado. Preencher com 'zeros'.
+  pos: [210, 212]
+  picture: '9(3)'
+  default: '0'
+
+nosso_numero_no_banco_correspondente:
+  # Campo não tratado. Preencher com 'brancos'.
+  pos: [213, 232]
+  picture: 'X(20)'
+  default: ''
+
+uso_exclusivo_febraban_04:
+  # Informar 'brancos' (espaços).
+  pos: [233, 240]
+  picture: 'X(8)'
+  default: ''
