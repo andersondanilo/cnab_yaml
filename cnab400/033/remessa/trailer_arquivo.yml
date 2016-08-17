@@ -1,14 +1,10 @@
-# Baseado na documentação do ITAU
-
 qtd_documentos:
   pos: [2, 7]
   picture: '9(06)'
-  default: '0'
-  
+
 valor_total:
   pos: [8, 20]
-  picture: '9(13)'
-  default: '0'
+  picture: '9(11)V9(2)'
 
 zeros01:
   pos: [21, 394]
