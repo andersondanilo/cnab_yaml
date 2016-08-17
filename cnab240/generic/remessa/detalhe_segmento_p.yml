@@ -311,19 +311,24 @@ valor_juros_mora:
   picture: '9(13)V9(2)'
 
 codigo_desconto_1:
-  # ‘0’ = Sem Desconto ‘1’ = Valor Fixo até a data informada ‘2’ = Percentual até a data informada
+  # ‘0’ = Sem Desconto
+  # ‘1’ = Valor Fixo até a data informada
+  # ‘2’ = Percentual até a data informada
   pos: [142, 142]
   picture: '9(1)'
+  default: '0'
 
 data_desconto_1:
-   pos: [143, 150]
-   picture: '9(8)'
-   date_format: '%d%m%Y'
+  pos: [143, 150]
+  picture: '9(8)'
+  date_format: '%d%m%Y'
+  default: '0'
 
 valor_desconto_1:
   # Valor ou percentual de desconto a ser concedido sobre o título de cobrança.
   pos: [151, 165]
   picture: '9(13)V9(2)'
+  default: '0'
 
 valor_iof:
   pos: [166, 180]
