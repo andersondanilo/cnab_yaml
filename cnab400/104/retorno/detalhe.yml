@@ -6,13 +6,13 @@ codigo_cedente:
   default: ''
 
 brancos01:
-  #Complemento De Registro      
+  #Complemento De Registro
   pos: [34, 37]
   picture: 'X(04)'
   default: ''
 
 nosso_numero:
-  #Identificação Do Título No Banco 
+  #Identificação Do Título No Banco
   pos: [63, 73]
   picture: '9(11)'
 

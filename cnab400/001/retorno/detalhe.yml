@@ -36,12 +36,12 @@ controle_participante:
   picture: 'X(25)'
 
 nosso_numero:
-  #Identificação Do Título No Banco 
+  #Identificação Do Título No Banco
   pos: [64, 80]
   picture: '9(17)'
 
 tipo_cobranca:
-  #Nota 2 
+  #Nota 2
   pos: [81, 81]
   picture: '9(01)'
 

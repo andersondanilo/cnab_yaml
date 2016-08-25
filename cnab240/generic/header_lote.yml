@@ -210,7 +210,7 @@ data_credito:
   default: '0'
 
 uso_exclusivo_febraban_02:
-  # Texto de observações destinado para uso exclusivo da FEBRABAN. 
+  # Texto de observações destinado para uso exclusivo da FEBRABAN.
   # Preencher com Brancos.
   pos: [208, 240]
   picture: 'X(33)'

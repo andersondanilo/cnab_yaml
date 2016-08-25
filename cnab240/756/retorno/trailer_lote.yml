@@ -7,10 +7,10 @@ codigo_banco:
   default: '756'
 
 lote_servico:
-  # Lote de Serviço: Número seqüencial para identificar univocamente um lote de serviço. 
+  # Lote de Serviço: Número seqüencial para identificar univocamente um lote de serviço.
   # Criado e controlado pelo responsável pela geração magnética dos dados contidos no arquivo.
-  # Preencher com '0001' para o primeiro lote do arquivo. 
-  # Para os demais: número do lote anterior acrescido de 1. 
+  # Preencher com '0001' para o primeiro lote do arquivo.
+  # Para os demais: número do lote anterior acrescido de 1.
   # O número não poderá ser repetido dentro do arquivo.
   pos: [4, 7]
   picture: '9(4)'

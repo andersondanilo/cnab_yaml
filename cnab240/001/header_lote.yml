@@ -1,3 +1,29 @@
+# Uso Exclusivo FEBRABAN/CNAB
+uso_exclusivo_febraban_hl01:
+  # Informar 'brancos' (espaços).
+  pos: [12, 13]
+  picture: 'X(2)'
+  default: ''
+
+versao_layout_lote:
+  # Campo não criticado pelo sistema. Informar Zeros OU se preferir,
+  # informar número da versão do leiaute do Lote que foi utilizado como
+  # base para formatação dos campos.
+  # Versões disponíveis: 043, 042, 041, 040, 030 e 020.
+  #
+  # A versão do Lote quando informada deve estar condizente com a versão
+  # do Arquivo (posições 164 a 166 do Header de Arquivo).
+  # Ou seja, para utilizar:
+  #   043 no lote o Header do arquivo deve conter 084,
+  #   042 no lote o Header do arquivo deve conter 083,
+  #   041 no lote o Header do arquivo deve conter 082,
+  #   040 no lote o Header do arquivo deve conter 080,
+  #   030 no lote o Header do arquivo deve conter 040,
+  #   020 no lote o Header do arquivo deve conter 030.
+  pos: [14, 16]
+  picture: '9(3)'
+  default: '020'
+
 numero_inscricao:
   # Informar o número de inscrição da Empresa (CNPJ) ou Pessoa Física (CPF).
   pos: [19, 33]
@@ -9,7 +35,7 @@ codigo_convenio:
   # ao Banco no sistema PAG com tamanho 9 e com '0' (Zeros) a esquerda e mais
   # 11 espaços em branco.
   #
-  # O contrato deve estar cadastrado no PAG (Pagamentos a terceiros) no 
+  # O contrato deve estar cadastrado no PAG (Pagamentos a terceiros) no
   # serviço 30 (Pagamentos de títulos do Banco do Brasil) e no serviço 31
   # (Pagamentos de títulos de outros bancos).
   pos: [34, 42]

@@ -22,7 +22,7 @@ dac:
   picture: '9(01)'
 
 brancos01:
-  #Complemento De Registro  
+  #Complemento De Registro
   pos: [30, 37]
   picture: 'X(08)'
 
@@ -72,7 +72,7 @@ brancos04:
   picture: 'X(12)'
 
 brancos05:
-  #Complemento Do Registro  
+  #Complemento Do Registro
   pos: [189, 214]
   picture: 'X(26)'
 

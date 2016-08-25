@@ -7,7 +7,7 @@ codigo_convenio:
   # ao Banco no sistema PAG com tamanho 9 e com '0' (Zeros) a esquerda e mais
   # 11 espaços em branco.
   #
-  # O contrato deve estar cadastrado no PAG (Pagamentos a terceiros) no 
+  # O contrato deve estar cadastrado no PAG (Pagamentos a terceiros) no
   # serviço 30 (Pagamentos de títulos do Banco do Brasil) e no serviço 31
   # (Pagamentos de títulos de outros bancos).
   pos: [33, 41]
@@ -47,6 +47,10 @@ agencia_mais_cedente_dv:
   default: ''
 
 uso_exclusivo_febraban_03:
+  # Informar 'brancos', porém se o arquivo foi formatado com a
+  # versão do layout 030, pode ser informado 'CSP' nas posições
+  # 223 a 225, e 'zeros' nas posições 226 a 228.
+  #pos: [212, 240]
   pos: [212, 222]
   picture: 'X(11)'
   default: ''
@@ -54,7 +58,7 @@ uso_exclusivo_febraban_03:
 identificacao_cobranca_sem_papel:
   pos: [223, 225]
   picture: 'X(3)'
-  default: ''
+  default: 'CSP'
 
 controle_vans:
   pos: [226, 228]
