@@ -1,0 +1,23 @@
+# 237 = Bradesco
+
+tipo_registro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '9'
+
+quantidade_registros:
+  pos: [2, 7]
+  picture: '9(06)'
+
+valor_total:
+  pos: [8, 20]
+  picture: '9(13)'
+
+zeros01:
+  pos: [21, 394]
+  picture: 'X(374)'
+  default:  ''
+
+numero_sequencial:
+  pos: [395, 400]
+  picture: '9(06)'
