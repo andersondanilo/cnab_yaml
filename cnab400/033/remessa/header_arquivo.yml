@@ -26,7 +26,7 @@ literal_servico:
   picture: 'X(15)'
   default:  'COBRANCA'
 
-codigo_cedente:
+codigo_transmissao:
   # Código da Empresa, Número da Empresa
   pos: [27, 46]
   picture: '9(20)'
@@ -45,37 +45,27 @@ nome_banco:
   picture: 'X(15)'
   default:  'SANTANDER'
 
-data_geracao:
+data_gravacao:
   pos: [95, 100]
   picture: '9(06)'
   date_format: '%d%m%y'
 
-brancos01:
-  pos: [101, 108]
-  picture: 'X(09)'
-  default: ''
-
-numero_aviso_bancario:
-  pos: [109, 110]
-  picture: 'X(02)'
-  default: 'MX'
-
-sequencial_remessa:
-  pos: [111, 117]
-  picture: '9(07)'
-  default:  '1'
+zeros01:
+  pos: [101, 116]
+  picture: '9(16)'
+  default: 0
 
 brancos02:
-  pos: [118, 391]
+  pos: [117, 391]
   picture: 'X(274)'
   default: ''
 
-zeros01:
+versao:
   pos: [392, 394]
   picture: '9(03)'
   default: '000'
 
-numero_sequencial:
+sequencial:
   pos: [395, 400]
   picture: '9(06)'
-  default:  '1'
+  default:  '000001'

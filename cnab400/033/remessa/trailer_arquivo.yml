@@ -15,9 +15,9 @@ valor_total:
 
 zeros01:
   pos: [21, 394]
-  picture: 'X(374)'
-  default:  ''
+  picture: '9(374)'
+  default:  0
 
-numero_sequencial:
+sequencial:
   pos: [395, 400]
   picture: '9(06)'

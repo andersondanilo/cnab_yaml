@@ -10,7 +10,7 @@ tipo_inscricao_cedente:
   picture: '9(02)'
   default: '02'
   
-tipo_inscricao_cedente:
+inscricao_cedente:
   pos: [4, 17]
   picture: '9(14)'
   default: '0'
@@ -20,7 +20,7 @@ codigo_transmissao:
   picture: '9(20)'
   default: '0'
 
-controle_cedente:
+controle_participante:
   pos: [38, 62]
   picture: 'X(25)'
   default: ''
