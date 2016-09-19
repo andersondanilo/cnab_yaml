@@ -1,10 +1,7 @@
-conta_movimento:
-  pos: [22, 29]
-  picture: '9(08)'
-
-conta_cobranca:
-  pos: [30, 37]
-  picture: '9(08)'
+codigo_transmissao:
+  pos: [18, 37]
+  picture: '9(20)'
+  default: '0'
 
 uso_empresa:
   pos: [38, 62]
