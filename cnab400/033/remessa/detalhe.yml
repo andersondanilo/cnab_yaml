@@ -158,7 +158,7 @@ tipo_inscricao_pagador:
   default:  '01'
 
 cpf_pagador:
-  pos: [220, 234]
+  pos: [221, 234]
   picture: '9(14)'
   default:  '0'
   
@@ -204,8 +204,8 @@ brancos03:
   
 identificador_complemento:
   pos: [383, 383]
-  picture: '9(01)'
-  default:  '0'
+  picture: 'X(01)'
+  default:  'I'
   
 complemento:
   pos: [384, 385]

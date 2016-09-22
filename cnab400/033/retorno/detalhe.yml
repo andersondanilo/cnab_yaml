@@ -189,7 +189,7 @@ nome_sacado:
 identificador_complemento:
   pos: [338, 338]
   picture: 'X(01)'
-  default: ''
+  default: 'I'
 
 moeda_corrente:
   pos: [339, 340]
