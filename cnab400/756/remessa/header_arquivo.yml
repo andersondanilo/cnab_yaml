@@ -1,0 +1,83 @@
+# Baseado na documentação do SICOOB
+
+tipo_registro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '0'
+
+tipo_operacao:
+  # 1 = Remessa
+  pos: [2, 2]
+  picture: '9(01)'
+  default:  '1'
+
+literal_remessa:
+  pos: [3, 9]
+  picture: 'X(07)'
+  default:  'REMESSA'
+
+codigo_servico:
+  pos: [10, 11]
+  picture: '9(02)'
+  default:  '01'
+
+literal_servico:
+  pos: [12, 26]
+  picture: 'X(15)'
+  default:  'COBRANCA'
+
+agencia:
+  pos: [27, 30]
+  picture: '9(04)'
+
+agencia_dv:
+  pos: [31, 31]
+  picture: 'X(01)'
+  default:  '0'
+
+codigo_cliente:
+  pos: [32, 39]
+  picture: '9(08)'
+
+codigo_cliente_dv:
+  pos: [40, 40]
+  picture: 'X(01)'
+
+brancos01:
+  pos: [41, 46]
+  picture: 'X(06)'
+  default:  ''
+
+nome_empresa:
+  pos: [47, 76]
+  picture: 'X(30)'
+
+codigo_banco:
+  pos: [77, 79]
+  picture: '9(03)'
+  default:  '756'
+
+nome_banco:
+  pos: [80, 94]
+  picture: 'X(15)'
+  default:  'BANCOOBCED'
+
+data_geracao:
+  pos: [95, 100]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+
+sequencial_remesssa:
+  pos: [101, 107]
+  picture: '9(07)'
+  default:  '1'
+
+brancos02:
+  pos: [108, 394]
+  picture: 'X(287)'
+  default: ''
+
+numero_sequencial:
+  pos: [395, 400]
+  picture: '9(06)'
+  default:  '1'
