@@ -24,7 +24,7 @@ codigo_servico:
 literal_servico:
   pos: [12, 26]
   picture: 'X(15)'
-  default:  'COBRANCA'
+  default:  'COBRANÇA'
 
 agencia:
   pos: [27, 30]
