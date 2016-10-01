@@ -194,7 +194,7 @@ codigo_moeda:
 
 qtde_moeda:
   pos: [194, 205]
-  picture: '9(13)'
+  picture: '9(12)'
   default: '0'
 
 abatimento:
