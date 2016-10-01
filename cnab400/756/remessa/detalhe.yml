@@ -187,7 +187,7 @@ valor_desconto:
   picture: '9(11)V9(2)'
   default:  '0'
 
-codigo_moeda:
+qtde_moeda:
   pos: [193, 205]
   picture: '9(13)'
   default: '0'
