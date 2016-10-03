@@ -1,6 +1,7 @@
 # Baseado na documentação do SICOOB
 
 tipo_registro:
+  # Complemento do Registro: Brancos
   pos: [1, 1]
   picture: '9(01)'
   default:  '9'
@@ -11,5 +12,6 @@ brancos01:
   default:  ''
 
 numero_sequencial:
+  # Seqüencial do Registro: Incrementado em 1 a cada registro 
   pos: [395, 400]
   picture: '9(06)'
