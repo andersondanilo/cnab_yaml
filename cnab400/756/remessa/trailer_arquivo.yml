@@ -12,6 +12,6 @@ brancos01:
   default:  ''
 
 numero_sequencial:
-  # Seqüencial do Registro: Incrementado em 1 a cada registro 
+  # Seqüencial do Registro: Incrementado em 1 a cada registro
   pos: [395, 400]
   picture: '9(06)'
