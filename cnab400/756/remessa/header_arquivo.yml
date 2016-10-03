@@ -27,9 +27,15 @@ codigo_servico:
 
 literal_servico:
   #Identificação por Extenso do Tipo de Serviço: “COBRANÇA”
-  pos: [12, 26]
-  picture: 'X(15)'
+  pos: [12, 19]
+  picture: 'X(08)'
   default:  'COBRANÇA'
+
+brancos01:
+  # Complemento do Registro: Brancos
+  pos: [20, 26]
+  picture: 'X(07)'
+  default:  ''
 
 agencia:
   #Prefixo da Cooperativa
@@ -52,7 +58,7 @@ codigo_cliente_dv:
   pos: [40, 40]
   picture: 'X(01)'
 
-brancos01:
+brancos02:
   #Número do convênio líder: Brancos
   pos: [41, 46]
   picture: 'X(06)'
@@ -86,7 +92,7 @@ sequencial_remesssa:
   picture: '9(07)'
   default:  '1'
 
-brancos02:
+brancos03:
   #Complemento do Registro: Brancos
   pos: [108, 394]
   picture: 'X(287)'
