@@ -118,7 +118,7 @@ numero_bordero:
   # Numero do borderô: preencher em caso de carteira 3
   pos: [96, 101]
   picture: '9(06)'
-  default:  ''
+  default:  '0'
 
 brancos05:
   pos: [102, 105]
