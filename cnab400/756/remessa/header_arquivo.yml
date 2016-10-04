@@ -86,7 +86,7 @@ data_geracao:
   picture: '9(06)'
   date_format: '%d%m%y'
 
-sequencial_remesssa:
+sequencial_remessa:
   #Seqüencial da Remessa: número seqüencial acrescido de 1 a cada remessa. Inicia com "0000001"
   pos: [101, 107]
   picture: '9(07)'
