@@ -118,7 +118,7 @@ numero_bordero:
   # Numero do borderô: preencher em caso de carteira 3
   pos: [96, 101]
   picture: '9(06)'
-  default:  '0'
+  default:  ''
 
 brancos05:
   pos: [102, 105]
@@ -161,7 +161,7 @@ comando_movimento:
 numero_documento:
   # Seu Número/Número atribuído pela Empresa
   pos: [111, 120]
-  picture: 'X(10)'
+  picture: '9(10)'
 
 vencimento:
   # Data Vencimento: Formato DDMMAA
