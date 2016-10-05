@@ -1,0 +1,105 @@
+# CNAB400 - Header do Arquivo - Baseado na documentação do SICOOB
+# @author Wemerson Januario wemerson.januario@gmail.com
+
+tipo_registro:
+  #Identificação do Registro Header: “0” (zero)
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '0'
+
+tipo_operacao:
+  #Tipo de Operação: “1” (um)
+  pos: [2, 2]
+  picture: '9(01)'
+  default:  '1'
+
+literal_remessa:
+  #Identificação por Extenso do Tipo de Operação: "REMESSA"
+  pos: [3, 9]
+  picture: 'X(07)'
+  default:  'REMESSA'
+
+codigo_servico:
+  #Identificação do Tipo de Serviço: “01” (um)
+  pos: [10, 11]
+  picture: '9(02)'
+  default:  '01'
+
+literal_servico:
+  #Identificação por Extenso do Tipo de Serviço: “COBRANÇA”
+  pos: [12, 19]
+  picture: 'X(08)'
+  default:  'COBRANÇA'
+
+brancos01:
+  # Complemento do Registro: Brancos
+  pos: [20, 26]
+  picture: 'X(07)'
+  default:  ''
+
+agencia:
+  #Prefixo da Cooperativa
+  pos: [27, 30]
+  picture: '9(04)'
+
+agencia_dv:
+  #Dígito Verificador do Prefixo
+  pos: [31, 31]
+  picture: 'X(01)'
+  default:  '0'
+
+codigo_cliente:
+  #Código do Cliente/Beneficiário
+  pos: [32, 39]
+  picture: '9(08)'
+
+codigo_cliente_dv:
+  #Dígito Verificador do Código
+  pos: [40, 40]
+  picture: 'X(01)'
+
+brancos02:
+  #Número do convênio líder: Brancos
+  pos: [41, 46]
+  picture: 'X(06)'
+  default:  ''
+
+nome_empresa:
+  #Nome do Beneficiário
+  pos: [47, 76]
+  picture: 'X(30)'
+
+codigo_banco:
+  pos: [77, 79]
+  picture: '9(03)'
+  default:  '756'
+
+nome_banco:
+  #Identificação do Banco: "BANCOOBCED"
+  pos: [80, 94]
+  picture: 'X(15)'
+  default:  'BANCOOBCED'
+
+data_geracao:
+  #Data da Gravação da Remessa: formato ddmmaa
+  pos: [95, 100]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+
+sequencial_remessa:
+  #Seqüencial da Remessa: número seqüencial acrescido de 1 a cada remessa. Inicia com "0000001"
+  pos: [101, 107]
+  picture: '9(07)'
+  default:  '1'
+
+brancos03:
+  #Complemento do Registro: Brancos
+  pos: [108, 394]
+  picture: 'X(287)'
+  default: ''
+
+numero_sequencial:
+  #Seqüencial do Registro:”000001”
+  pos: [395, 400]
+  picture: '9(06)'
+  default:  '1'

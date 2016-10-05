@@ -1,0 +1,80 @@
+# CNAB400 - Trailer do Arquivo retorno - Baseado na documentação do SICOOB
+# @author Wemerson Januario wemerson.januario@gmail.com
+
+tipo_registro:
+  # Identificação do Registro Trailer: “9”
+  pos: [1, 1]
+  picture: '9(01)'
+  default: '9'
+
+tipo_servico:
+  # Identificação do Tipo de Serviço: “02”
+  pos: [2, 3]
+  picture: '9(02)'
+  default: '2'
+
+codigo_do_banco:
+  # Número Banco: "756"
+  pos: [4, 6]
+  picture: '9(03)'
+
+codigo_cooperativa_remetente:
+  # Código da Cooperativa Remetente
+  pos: [7, 10]
+  picture: '9(04)'
+
+sigla_cooperativa_remetente:
+  # Sigla da Cooperativa Remetente
+  pos: [11, 35]
+  picture: 'X(25)'
+
+endereco_cooperativa_remetente:
+  # Endereço da Cooperativa Remetente
+  pos: [36, 85]
+  picture: 'X(50)'
+
+bairro_cooperativa_remetente:
+  # Bairro da Cooperativa Remetente
+  pos: [86, 115]
+  picture: 'X(30)'
+
+cep_cooperativa_remetente:
+  # CEP da Cooperativa Remetente
+  pos: [116, 123]
+  picture: 'X(08)'
+
+cidade_cooperativa_remetente:
+  # Cidade da Cooperativa Remetente
+  pos: [124, 153]
+  picture: 'X(30)'
+
+uf_cooperativa_remetente:
+  # Cidade da Cooperativa Remetente
+  pos: [154, 155]
+  picture: 'X(02)'
+
+data_movimento:
+  # Data do movimento: formato ddmmaaaa
+  pos: [156, 163]
+  picture: '9(08)'
+  date_format: '%d%m%y'
+
+qtde_registros_detalhe:
+  # Quantidade de registros no Detalhe
+  pos: [164, 171]
+  picture: '9(08)'
+
+ultimo_nosso_numero:
+  # Último Nosso Número Beneficiário
+  pos: [172, 182]
+  picture: '9(11)'
+
+brancos01:
+  # Complemento do Registro: Brancos
+  pos: [183, 394]
+  picture: 'X(212)'
+
+numero_sequencial:
+  # Número Seqüencial Do Registro No Arquivo
+  pos: [395, 400]
+  picture: '9(06)'

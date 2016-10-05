@@ -1,0 +1,315 @@
+# CNAB400 - Detalhe do Arquivo Retorno - Baseado na documentação do SICOOB
+# @author Wemerson Januario wemerson.januario@gmail.com
+
+tipo_de_registro:
+  #Identificação Do Registro Transação
+  pos: [1, 1]
+  picture: '9(01)'
+  default: '1'
+
+codigo_de_inscricao:
+  # Tipo de Inscrição do Beneficiário:
+  #  "01" = CPF
+  #  "02" = CNPJ
+  pos: [2, 3]
+  picture: '9(02)'
+
+numero_de_inscricao:
+  # Número do CPF/CNPJ do Beneficiário
+  pos: [4, 17]
+  picture: '9(14)'
+
+agencia:
+  # Prefixo da Cooperativa
+  pos: [18, 21]
+  picture: '9(04)'
+
+agencia_dv:
+  # Dígito Verificador do Prefixo
+  pos: [22, 22]
+  picture: '9(01)'
+
+conta:
+  # Conta Corrente
+  pos: [23, 30]
+  picture: '9(08)'
+
+conta_dv:
+  # Dígito Verificador da Conta
+  pos: [31, 31]
+  picture: 'X(01)'
+
+numero_convenio:
+  # Número do Convênio de Cobrança do Beneficiário: "000000"
+  pos: [32, 37]
+  picture: '9(06)'
+  default:  '0'
+
+numero_controle_participante:
+  # Número de Controle do Participante: Brancos
+  pos: [38, 62]
+  picture: 'X(25)'
+  default:  ''
+
+nosso_numero:
+  # Nosso Número:
+  pos: [63, 73]
+  picture: '9(11)'
+
+nosso_numero_dv:
+  # Dígito verificador do nosso Número:
+  pos: [74, 74]
+  picture: 'X(01)'
+
+numero_parcela:
+  # Número da Parcela: "01" se parcela única
+  pos: [75, 76]
+  picture: '9(02)'
+
+grupo_de_valor:
+  # Grupo de Valor: "00"
+  pos: [77, 80]
+  picture: '9(04)'
+
+codigo_baixa:
+  # Código de Baixa/Recusa
+  pos: [81, 82]
+  picture: '9(02)'
+
+prefixo_titulo:
+  # Prefixo do Título: Informa Espécie do Título
+  # DM = Duplicata Mercantil
+  # CH = Cheque
+  # DS = Duplicata de Serviço
+  # PC  = Parcela de Consórcio
+  # OU = Outros
+  pos: [83, 85]
+  picture: 'X(03)'
+
+variacao_carteira:
+  # Variação da Carteira: "000"
+  pos: [86, 88]
+  picture: '9(03)'
+  default:  '0'
+
+conta_caucao:
+  # Conta Caução: "0"
+  pos: [89, 89]
+  picture: '9(01)'
+  default:  '0'
+
+codigo_responsabilidade:
+  # Código de responsabilidade: "00000"
+  pos: [90, 94]
+  picture: '9(05)'
+  default:  '0'
+
+codigo_responsabilidade_dv:
+  # DV do código de responsabilidade: "0"
+  pos: [95, 95]
+  picture: 'X(01)'
+  default:  '0'
+
+numero_bordero:
+  # Taxa de desconto
+  pos: [96, 100]
+  picture: '9(03)V9(02)
+  default:  '0'
+
+taxa_iof:
+  #Taxa de IOF
+  pos: [101, 105]
+  picture: '9(01)V9(04)'
+
+brancos01:
+  # Complemento do Registro: Brancos
+  pos: [106, 106]
+  picture: 'X(01)'
+  default:  ''
+
+numero_carteira:
+  # Carteira/Modalidade:
+  # 01 = Simples Com Registro
+  # 02 = Simples Sem Registro
+  # 03 = Garantida Caucionada
+  pos: [107, 108]
+  picture: '9(02)'
+
+comando_movimento:
+  # Comando/Movimento:
+  # 02 = Confirmação Entrada Título;
+  # 05 = Liquidação Sem Registro: Identifica a liquidação de título da modalidade "SEM REGISTRO";
+  # 06 = Liquidação Normal: Identificar a liquidação de título de modalidade ""REGISTRADA"", com exceção dos títulos que forem liquidados em cartório (Cód. de movimento 15=Liquidação em Cartório);
+  # 09 = Baixa de Titulo: Identificar as baixas de títulos, com exceção da baixa realizada com o cód. de movimento 10 (Baixa - Pedido Beneficiário);
+  # 10 = Baixa Solicitada (Baixa - Pedido Beneficiário): Identificar as baixas de títulos comandadas a pedido do Beneficiário;
+  # 11 = Títulos em Ser: Identifica os títulos em carteira, que estiverem com a situação ""em abarto"" (vencidos e a vencer).
+  # 14 = Alteração de Vencimento;
+  # 15 = Liquidação em Cartório: Identifica as liquidações dos títulos ocorridas em cartórios de protesto;
+  # 23 = Encaminhado a Protesto: Identifica o recebimento da instrução de protesto
+  # 27 = Confirmação Alteração Dados.
+  # 48 = Confirmação de instrução de transferência de carteira/modalidade de cobrança
+  pos: [109, 110]
+  picture: '9(02)'
+  default: '01'
+
+data_liquidacao:
+  # Data da Entrada/Liquidação: formato ddmmaa
+  pos: [111, 116]
+  picture: '9(06)'
+
+numero_documento:
+  # Seu Número/Número atribuído pela Empresa
+  pos: [117, 126]
+  picture: 'X(10)'
+
+brancos02:
+  # Complemento do Registro: Brancos
+  pos: [127, 146]
+  picture: 'X(20)',
+  default: ''
+
+vencimento:
+  # Data Vencimento Título: formato ddmmaa
+  pos: [147, 152]
+  picture: 'X(06)'
+  date_format: '%d%m%y'
+
+valor_titulo:
+  # Valor do Titulo
+  pos: [153, 165]
+  picture: '9(11)V9(02)'
+
+codigo_banco:
+  # Código do banco recebedor: Informado o prefixo de agência do banco recebedor. Quando este prefixo não for informado, o campo vem preenchido com zeros
+  pos: [166, 168]
+  picture: '9(03)'
+
+agencia_recebedora:
+  # Prefixo da agência recebedora: Informado o prefixo de agência do banco recebedor. Quando este prefixo não for informado, o campo vem preenchido com zeros
+  pos: [169, 172]
+  picture: '9(04)'
+
+agencia_recebedora_dv:
+  # DV prefixo recebedora
+  pos: [173, 173]
+  picture: 'X(01)'
+
+especie:
+  # Espécie do Título :
+  # 01 = Duplicata Mercantil
+  # 02 = Nota Promissória
+  # 03 = Nota de Seguro
+  # 05 = Recibo
+  # 06 = Duplicata Rural
+  # 08 = Letra de Câmbio
+  # 09 = Warrant
+  # 10 = Cheque
+  # 12 = Duplicata de Serviço
+  # 13 = Nota de Débito
+  # 14 = Triplicata Mercantil
+  # 15 = Triplicata de Serviço
+  # 18 = Fatura
+  # 20 = Apólice de Seguro
+  # 21 = Mensalidade Escolar
+  # 22 = Parcela de Consórcio
+  # 99 = Outros
+  pos: [174, 175]
+  picture: '9(02)'
+
+data_credito:
+  # Data do crédito: formato ddmmaa
+  pos: [176, 181]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+
+valor_tarifa:
+  # Valor da Tarifa
+  pos: [182, 188]
+  picture: '9(05)V9(02)'
+
+outras_despesas:
+  # Outras despesas
+  pos: [189, 201]
+  picture: '9(11)V9(02)'
+
+juros_desconto:
+  # Juros do desconto
+  pos: [202, 214]
+  picture: '9(11)V9(02)'
+
+iof_desconto:
+  # IOF do desconto
+  pos: [215, 227]
+  picture: '9(11)V9(02)'
+
+valor_abatimento:
+  # Valor do Abatimento
+  pos: [228, 240]
+  picture: '9(11)V9(02)'
+
+desconto_concedido:
+  # Desconto concedido (diferença entre valor do título e valor recebido)
+  pos: [241, 253]
+  picture: '9(11)V9(02)'
+
+valor_recebido:
+  # Valor recebido (valor recebido parcial)
+  pos: [254, 266]
+  picture: '9(11)V9(02)'
+
+juros_mora:
+  # Juros de Mora
+  pos: [267, 279]
+  picture: '9(11)V9(02)'
+
+outros_recebimentos:
+  # Outros recebimentos
+  pos: [280, 292]
+  picture: '9(11)V9(02)'
+
+abatimento_nao_aproveitado_pagador:
+  # Abatimento não aproveitado pelo Pagador
+  pos: [293, 305]
+  picture: '9(11)V9(02)'
+
+outros_recebimentos:
+  # Valor do Lançamento
+  pos: [306, 318]
+  picture: '9(11)V9(02)'
+
+indicativo_debito_credito:
+  # Indicativo débito/crédito
+  pos: [319, 319]
+  picture: '9(01)'
+
+indicativo_valor:
+  # Indicativo débito/crédito
+  pos: [320, 320]
+  picture: '9(01)'
+
+valor_ajuste:
+  # Valor do ajuste
+  pos: [321, 332]
+  picture: '9(10)V9(02)'
+
+brancos03:
+  # Complemento do Registro: Brancos
+  pos: [333, 342]
+  picture: 'X(10)',
+  default: ''
+
+cpf_cnpj_pagador:
+  # CPF/CNPJ do Pagador
+  pos: [343, 357]
+  picture: '9(14)'
+
+brancos04:
+  # Complemento do Registro: Brancos
+  pos: [358, 394]
+  picture: 'X(38)',
+  default: ''
+
+numero_sequencial:
+  # Seqüencial do Registro: Incrementado em 1 a cada registro
+  pos: [395, 400]
+  picture: '9(06)'
