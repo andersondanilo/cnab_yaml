@@ -1,10 +1,22 @@
-conta_movimento:
-  pos: [22, 29]
-  picture: '9(08)'
+# Baseado na documentação do Santander
 
-conta_cobranca:
-  pos: [30, 37]
-  picture: '9(08)'
+tipo_registro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '1'
+
+codigo_inscricao:
+  pos: [2, 3]
+  picture: '9(02)'
+
+numero_inscricao:
+  pos: [4, 17]
+  picture: '9(14)'
+
+codigo_transmissao:
+  # Código de Transmissão
+  pos: [18, 37]
+  picture: '9(20)'
 
 uso_empresa:
   pos: [38, 62]
