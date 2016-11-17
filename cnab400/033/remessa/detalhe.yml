@@ -38,7 +38,7 @@ branco01:
 info_multa:
   pos: [78, 78]
   picture: '9(01)'
-  default: '4'
+  default: '0'
 
 pct_multa_atraso:
   pos: [79, 82]
