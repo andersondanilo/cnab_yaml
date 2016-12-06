@@ -1,0 +1,75 @@
+# 104 = Caixa
+
+tipo_registro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '0'
+
+tipo_operacao:
+  # 1 = Remessa
+  pos: [2, 2]
+  picture: '9(01)'
+  default:  '1'
+
+literal_remessa:
+  pos: [3, 9]
+  picture: 'X(07)'
+  default:  'REMESSA'
+
+codigo_servico:
+  pos: [10, 11]
+  picture: '9(02)'
+  default:  '1'
+
+literal_servico:
+  pos: [12, 26]
+  picture: 'X(15)'
+  default:  'COBRANCA'
+
+agencia:
+  pos: [27, 30]
+  picture: '9(04)'
+
+codigo_cedente:
+  # Código da Empresa, Número da Empresa
+  pos: [31, 36]
+  picture: '9(06)'
+
+brancos01:
+  pos: [37, 46]
+  picture: 'X(10)'
+  default: ''
+
+nome_empresa:
+  pos: [47, 76]
+  picture: 'X(30)'
+
+codigo_banco:
+  pos: [77, 79]
+  picture: '9(03)'
+  default:  '237'
+
+nome_banco:
+  pos: [80, 94]
+  picture: 'X(15)'
+  default: 'C ECON FEDERAL'
+
+data_geracao:
+  pos: [95, 100]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+
+brancos02:
+  pos: [101, 389]
+  picture: 'X(289)'
+  default: ''
+
+sequencial_remessas:
+  pos: [390, 394]
+  picture: '9(05)'
+  default:  '1'
+
+numero_sequencial:
+  pos: [395, 400]
+  picture: '9(06)'
+  default:  '1'
