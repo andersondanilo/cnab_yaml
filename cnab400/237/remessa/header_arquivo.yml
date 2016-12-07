@@ -52,7 +52,7 @@ data_geracao:
 
 brancos01:
   pos: [101, 108]
-  picture: 'X(09)'
+  picture: 'X(08)'
   default: ''
 
 numero_aviso_bancario:
