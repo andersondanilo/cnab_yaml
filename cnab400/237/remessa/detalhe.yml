@@ -46,9 +46,9 @@ multa:
   picture: '9(01)'
   default: '0'
 
-percentual_multa:
+valor_multa:
   pos: [67, 70]
-  picture: '9(04)'
+  picture: '9(02)V9(02)'
   default: '0'
 
 nosso_numero:
@@ -105,7 +105,7 @@ vencimento:
 
 valor_titulo:
   pos: [127, 139]
-  picture: '9(13)'
+  picture: '9(11)V9(2)'
 
 codigo_banco:
   pos: [140, 142]
