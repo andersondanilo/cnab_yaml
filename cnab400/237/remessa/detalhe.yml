@@ -68,7 +68,7 @@ desconto_por_dia:
 condicao_emissao:
   pos: [93, 93]
   picture: '9(01)'
-  default: '1'
+  default: '2'
 
 emissao_para_debito:
   pos: [94, 94]
