@@ -1,0 +1,71 @@
+# 033 = Santander
+
+tipo_registro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '0'
+
+tipo_operacao:
+  # 1 = Remessa
+  pos: [2, 2]
+  picture: '9(01)'
+  default:  '1'
+
+literal_remessa:
+  pos: [3, 9]
+  picture: 'X(07)'
+  default:  'REMESSA'
+
+codigo_servico:
+  pos: [10, 11]
+  picture: '9(02)'
+  default:  '1'
+
+literal_servico:
+  pos: [12, 26]
+  picture: 'X(15)'
+  default:  'COBRANCA'
+
+codigo_transmissao:
+  # Código da Empresa, Número da Empresa
+  pos: [27, 46]
+  picture: '9(20)'
+
+razao_social:
+  pos: [47, 76]
+  picture: 'X(30)'
+
+codigo_banco:
+  pos: [77, 79]
+  picture: '9(03)'
+  default:  '033'
+
+nome_banco:
+  pos: [80, 94]
+  picture: 'X(15)'
+  default:  'SANTANDER'
+
+data_gravacao:
+  pos: [95, 100]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+
+zeros01:
+  pos: [101, 116]
+  picture: '9(16)'
+  default: 0
+
+brancos02:
+  pos: [117, 391]
+  picture: 'X(274)'
+  default: ''
+
+versao:
+  pos: [392, 394]
+  picture: '9(03)'
+  default: '000'
+
+sequencial:
+  pos: [395, 400]
+  picture: '9(06)'
+  default:  '000001'

@@ -1,0 +1,82 @@
+# 033 - Santander
+
+tipo_registro:
+  pos: [01, 01]
+  picture: '9(01)'
+  default: '0'
+
+codigo_remessa:
+  pos: [02, 02]
+  picture: '9(1)'
+  default: '2'
+
+literal_transmissao:
+  pos: [03, 09]
+  picture: 'X(07)'
+  default: 'RETORNO'
+
+codigo_servico:
+  pos: [10, 11]
+  picture: '9(02)'
+  default: '01'
+
+literal_servico:
+  pos: [12, 26]
+  picture: 'X(15)'
+  default: 'COBRANCA'
+
+agencia:
+  pos: [27, 30]
+  picture: '9(04)'
+
+conta_movimento:
+  pos: [31, 38]
+  picture: '9(08)'
+
+conta_cobranca:
+  pos: [39, 46]
+  picture: '9(08)'
+
+nome_beneficiario:
+  pos: [47, 76]
+  picture: 'X(30)'
+
+codigo_banco:
+  pos: [77, 79]
+  picture: '9(03)'
+  default: '033'
+
+nome_banco:
+  pos: [80, 94]
+  picture: 'X(15)'
+  default: 'SANTANDER'
+
+data_movimento:
+  pos: [95, 100]
+  picture: '9(06)'
+  default: 0
+  
+zeros01:
+  pos: [101, 110]
+  picture: '9(10)'
+  default: 0
+
+codigo_cedente:
+  pos: [111, 117]
+  picture: '9(07)'
+  default: ''
+
+brancos02:
+  pos: [118, 391]
+  picture: 'X(2)'
+  default: ''
+
+versao:
+  pos: [392, 394]
+  picture: '9(3)'
+  default: ''
+
+sequencial:
+  pos: [395, 400]
+  picture: '9(06)'
+  default: '1'

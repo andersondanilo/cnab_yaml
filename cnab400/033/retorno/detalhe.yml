@@ -1,0 +1,232 @@
+# 033 - Santander
+
+tipo_registro:
+  pos: [1, 1]
+  picture: '9(1)'
+  default: 1
+
+tipo_inscricao_cedente:
+  pos: [2, 3]
+  picture: '9(2)'
+  default: '02'
+
+cnpj_cedente:
+  pos: [3, 17]
+  picture: '9(14)'
+
+agencia:
+  pos: [18, 21]
+  picture: '9(04)'
+
+conta_movimento:
+  pos: [22, 29]
+  picture: '9(08)'
+
+conta_cobranca:
+  pos: [30, 37]
+  picture: '9(08)'
+
+controle_participante:
+  pos: [38, 62]
+  picture: 'X(25)'
+  default: ''
+
+nosso_numero:
+  pos: [63, 70]
+  picture: '9(08)'
+  default: 0
+  
+brancos01:
+  pos: [71, 107]
+  picture: 'X(37)'
+  default: 0
+
+codigo_carteira:
+  pos: [108, 108]
+  picture: '9(01)'
+  default: 2
+
+codigo_ocorrencia:
+  pos: [109, 110]
+  picture: '9(02)'
+  default: 2
+
+data_ocorrencia:
+  pos: [111, 116]
+  picture: '9(06)'
+  default: 0
+
+seu_numero:
+  pos: [117, 126]
+  picture: 'X(10)'
+  default: ''
+
+nosso_numero:
+  pos: [127, 134]
+  picture: '9(08)'
+  default: 0
+
+codigo_original_remessa:
+  pos: [135, 136]
+  picture: '9(02)'
+  default: '00'
+
+codigo_erro1:
+  pos: [137, 139]
+  picture: 'X(03)'
+  default: ''
+
+codigo_erro2:
+  pos: [140, 142]
+  picture: 'X(03)'
+  default: ''
+
+codigo_erro3:
+  pos: [143, 145]
+  picture: 'X(03)'
+  default: ''
+
+brancos02:
+  pos: [146, 146]
+  picture: 'X(01)'
+  default: ''
+
+vencimento:
+  pos: [147, 152]
+  picture: '9(06)'
+  default: 9
+
+valor:
+  pos: [153, 165]
+  picture: '9(13)'
+  default: 9
+
+banco_cobrador:
+  pos: [166, 168]
+  picture: '9(03)'
+  default: 0
+
+agencia_recebedora:
+  pos: [169, 173]
+  picture: '9(05)'
+  default: 0
+
+especie_documento:
+  pos: [174, 175]
+  picture: '9(02)'
+  default: '01'
+
+tarifa_cobrada:
+  pos: [176, 188]
+  picture: '9(13)'
+  default: 0
+
+outras_despesas:
+  pos: [189, 201]
+  picture: '9(13)'
+  default: 0
+
+juros_atrazo:
+  pos: [202, 214]
+  picture: '9(13)'
+  default: 0
+
+iof:
+  pos: [215, 227]
+  picture: '9(13)'
+  default: 0
+
+abatimento:
+  pos: [228, 240]
+  picture: '9(13)'
+  default: 0
+
+desconto:
+  pos: [241, 253]
+  picture: '9(13)'
+  default: 0
+
+valor_total:
+  pos: [254, 266]
+  picture: '9(13)'
+  default: 0
+
+juros_mora:
+  pos: [267, 279]
+  picture: '9(13)'
+  default: 0
+
+juros_mora:
+  pos: [280, 292]
+  picture: '9(13)'
+  default: 0
+
+brancos01:
+  pos: [293, 293]
+  picture: 'X(01)'
+  default: ' '
+
+codigo_aceite:
+  pos: [294, 294]
+  picture: 'X(01)'
+  default: 'N'
+
+brancos02:
+  pos: [295, 295]
+  picture: 'X(01)'
+  default: ' '
+
+data_credito:
+  pos: [296, 301]
+  picture: '9(06)'
+  default: 0
+
+nome_sacado:
+  pos: [302, 337]
+  picture: 'X(36)'
+  default: ''
+
+identificador_complemento:
+  pos: [338, 338]
+  picture: 'X(01)'
+  default: 'I'
+
+moeda_corrente:
+  pos: [339, 340]
+  picture: '9(02)'
+  default: '00'
+
+valor_outra_unidade:
+  pos: [341, 353]
+  picture: '9(13)'
+  default: 0
+
+ioc_outra_unidade:
+  pos: [343, 366]
+  picture: '9(13)'
+  default: 0
+
+valor_debito_credito:
+  pos: [367, 379]
+  picture: '9(13)'
+  default: 0
+
+debito_credito:
+  pos: [380, 380]
+  picture: 'X(01)'
+  default: ''
+
+brancos03:
+  pos: [381, 391]
+  picture: 'X(11)'
+  default: ''
+
+versao:
+  pos: [392, 394]
+  picture: '9(03)'
+  default: 0
+
+sequencial:
+  pos: [395, 400]
+  picture: '9(06)'
+  default: 0

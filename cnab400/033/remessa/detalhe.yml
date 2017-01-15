@@ -1,0 +1,232 @@
+# Baseado na documentação do Brasdesco
+
+tipo_registro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '1'
+
+tipo_inscricao_cedente:
+  pos: [2, 3]
+  picture: '9(02)'
+  default: '02'
+  
+inscricao_cedente:
+  pos: [4, 17]
+  picture: '9(14)'
+  default: '0'
+
+codigo_transmissao:
+  pos: [18, 37]
+  picture: '9(20)'
+  default: '0'
+
+controle_participante:
+  pos: [38, 62]
+  picture: 'X(25)'
+  default: ''
+
+nosso_numero:
+  pos: [63, 70]
+  picture: '9(08)'
+  default: '0'
+
+data_segundo_desconto:
+  pos: [71, 76]
+  picture: '9(06)'
+  default: '0'
+
+brancos01:
+  pos: [77, 77]
+  picture: 'X(01)'
+  default:  ''
+
+informacao_multa:
+  pos: [78, 78]
+  picture: '9(01)'
+  default:  '0'
+
+percentual_multa:
+  pos: [79, 82]
+  picture: '9(04)'
+  default:  '0'
+
+unidade_valor:
+  pos: [83, 84]
+  picture: '9(02)'
+  default:  '00'
+
+valor_outra_unidade:
+  pos: [85, 97]
+  picture: '9(13)'
+  default:  '00'
+
+brancos02:
+  pos: [98, 101]
+  picture: 'X(04)'
+  default:  ''
+
+data_cobranca_multa:
+  pos: [102, 107]
+  picture: '9(06)'
+  default:  '0'
+
+codigo_carteira:
+  pos: [108, 108]
+  picture: '9(01)'
+  default:  '1'
+
+codigo_ocorrencia:
+  pos: [109, 110]
+  picture: '9(02)'
+  default:  '01'
+
+seu_numero:
+  pos: [111, 120]
+  picture: 'X(10)'
+  default:  ''
+
+vencimento:
+  pos: [121, 126]
+  picture: '9(06)'
+
+valor:
+  pos: [127, 139]
+  picture: '9(13)'
+
+numero_banco:
+  pos: [140, 142]
+  picture: '9(03)'
+  default:  '033'
+
+agencia:
+  pos: [143, 147]
+  picture: '9(05)'
+
+especie:
+  pos: [148, 149]
+  picture: '9(02)'
+  default:  '01'
+  
+tipo_aceite:
+  pos: [150, 150]
+  picture: 'X(01)'
+  default:  'N'
+
+data_emissao:
+  pos: [151, 156]
+  picture: 'X(01)'
+  default:  'N'
+
+primeira_instrucao_cobranca:
+  pos: [157, 158]
+  picture: '9(02)'
+  default:  '00'
+
+segunda_instrucao_cobranca:
+  pos: [159, 160]
+  picture: '9(02)'
+  default:  '00'
+
+valor_dia_atrazo:
+  pos: [161, 173]
+  picture: '9(13)'
+  default:  '0'
+
+data_desconto:
+  pos: [174, 179]
+  picture: '9(06)'
+  default:  '0'
+
+valor_desconto:
+  pos: [180, 192]
+  picture: '9(13)'
+  default:  '0'
+
+valor_iof:
+  pos: [193, 205]
+  picture: '9(13)'
+  default:  '0'
+
+valor_abatimento:
+  pos: [206, 218]
+  picture: '9(13)'
+  default:  '0'
+
+tipo_inscricao_pagador:
+  pos: [219, 220]
+  picture: '9(02)'
+  default:  '01'
+
+cpf_pagador:
+  pos: [221, 234]
+  picture: '9(14)'
+  default:  '0'
+  
+nome_pagador:
+  pos: [235, 274]
+  picture: 'X(40)'
+  default:  ''
+  
+endereco_pagador:
+  pos: [275, 314]
+  picture: 'X(40)'
+  default:  ''
+  
+bairro_pagador:
+  pos: [315, 326]
+  picture: 'X(12)'
+  default:  ''
+  
+cep_pagador:
+  pos: [327, 334]
+  picture: '9(08)'
+  default:  '0'
+  
+municipio_pagador:
+  pos: [335, 349]
+  picture: 'X(15)'
+  default:  ''
+  
+uf_pagador:
+  pos: [350, 351]
+  picture: 'X(02)'
+  default:  ''
+  
+nome_sacador:
+  pos: [352, 381]
+  picture: 'X(30)'
+  default:  ''
+  
+brancos03:
+  pos: [382, 382]
+  picture: 'X(01)'
+  default:  ''
+  
+identificador_complemento:
+  pos: [383, 383]
+  picture: 'X(01)'
+  default:  'I'
+  
+complemento:
+  pos: [384, 385]
+  picture: '9(02)'
+  default:  '0'
+  
+brancos04:
+  pos: [386, 391]
+  picture: 'X(06)'
+  default:  ''
+  
+dias_para_protesto:
+  pos: [392, 393]
+  picture: '9(02)'
+  default:  '00'
+  
+brancos05:
+  pos: [394, 394]
+  picture: 'X(01)'
+  default:  ''
+  
+sequencial_registro:
+  pos: [395, 400]
+  picture: '9(06)'
