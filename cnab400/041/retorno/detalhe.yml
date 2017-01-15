@@ -1,0 +1,94 @@
+# 041 = Banrisul
+
+codigo_cedente:
+  pos: [18, 29]
+  picture: 'X(12)'
+
+especie_cobranca:
+  pos: [30, 35]
+  picture: '9(6)'
+
+brancos01:
+  pos: [36, 37]
+  picture: 'X(2)'
+
+nosso_numero:
+  pos: [63, 70]
+  picture: '9(8)'
+
+nosso_numero_opcional:
+  pos: [73, 82]
+  picture: 'X(10)'
+
+numero_contrato_blu:
+  pos: [83, 104]
+  picture: '9(22)'
+
+brancos02:
+  pos: [105, 107]
+  picture: 'X(3)'
+
+carteira:
+  pos: [108, 108]
+  picture: 'X(1)'
+
+nosso_numero_dup:
+  # Esta duplicado, é a mesma coisa que nosso_numero
+  pos: [127, 146]
+  picture: '9(20)'
+
+agencia_cobradora:
+  #Nota 9 - Ag. Cobradora, Ag. De Liquidação Ou Baixa
+  pos: [169, 173]
+  picture: '9(05)'
+
+valor_outras_despesas:
+  pos: [189, 201]
+  picture: '9(11)V9(2)'
+
+zeros01:
+  pos: [202, 227]
+  picture: '9(26)'
+
+valor_mora_multa:
+  pos: [267, 279]
+  picture: '9(11)V9(2)'
+
+valor_outros_creditos:
+  pos: [280, 292]
+  picture: '9(11)V9(2)'
+
+brancos03:
+  pos: [293, 295]
+  picture: 'X(3)'
+
+data_credito:
+  pos: [296, 301]
+  picture: '9(6)'
+  date_format: '%d%m%y'
+
+brancos04:
+  pos: [302, 342]
+  picture: 'X(41)'
+
+forma_pagamento:
+  pos: [343, 343]
+  picture: 'X(1)'
+
+canal_pagamento:
+  pos: [344, 344]
+  picture: 'X(1)'
+
+brancos05:
+  pos: [345, 382]
+  picture: 'X(38)'
+
+motivo_ocorrencia:
+  pos: [383, 392]
+  picture: 'X(10)'
+
+brancos06:
+  pos: [393, 394]
+  picture: 'X(2)'
+
+

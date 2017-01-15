@@ -1,0 +1,22 @@
+# 041 = Banrisul
+
+codigo_cedente:
+  # Código da Empresa, Número da Empresa
+  pos: [27, 39]
+  picture: '9(13)'
+
+brancos01:
+  pos: [40, 46]
+  picture: 'X(7)'
+  default: ''
+
+brancos02:
+  pos: [101, 394]
+  picture: 'X(294)'
+  default: ''
+
+numero_sequencial:
+  #Número Seqüencial Do Registro No Arquivo
+  pos: [395, 400]
+  picture: '9(06)'
+  default: 1
