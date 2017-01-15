@@ -7,7 +7,7 @@ data_desconto_02:
   pos: [19, 26]
   picture: '9(8)'
   date_format: '%d%m%Y'
-  default: ''
+  default: 0
 
 valor_desconto_02:
   # Valor ou Percentual (de acordo com o código)

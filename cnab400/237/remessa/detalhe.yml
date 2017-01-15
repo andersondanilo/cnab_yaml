@@ -8,7 +8,7 @@ tipo_registro:
 # Não utilizado para boletos com e sem registro
 dados_conta_pagador:
   pos: [2, 20]
-  picture: '9(05)'
+  picture: '9(19)'
   default: '0'
 
 zeros01:
@@ -46,14 +46,14 @@ multa:
   picture: '9(01)'
   default: '0'
 
-percentual_multa:
+valor_multa:
   pos: [67, 70]
-  picture: '9(01)'
+  picture: '9(02)V9(02)'
   default: '0'
 
 nosso_numero:
   pos: [71, 81]
-  picture: '9(12)'
+  picture: '9(11)'
   default: '0'
 
 digito_nosso_numero:
@@ -68,7 +68,7 @@ desconto_por_dia:
 condicao_emissao:
   pos: [93, 93]
   picture: '9(01)'
-  default: '1'
+  default: '2'
 
 emissao_para_debito:
   pos: [94, 94]
@@ -105,7 +105,7 @@ vencimento:
 
 valor_titulo:
   pos: [127, 139]
-  picture: '9(13)'
+  picture: '9(11)V9(2)'
 
 codigo_banco:
   pos: [140, 142]
@@ -177,7 +177,7 @@ sacado_numero_inscricao:
   picture: '9(14)'
 
 nome:
-  pos: [235, 264]
+  pos: [235, 274]
   picture: 'X(40)'
 
 logradouro:

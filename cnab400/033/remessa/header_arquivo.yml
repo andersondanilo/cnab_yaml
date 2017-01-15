@@ -1,0 +1,73 @@
+codigo_transmissao:
+  # Código de Transmissão
+  pos: [27, 46]
+  picture: '9(20)'
+
+nome_empresa:
+  # Nome do Beneficiário
+  pos: [47, 76]
+  picture: 'X(30)'
+
+codigo_banco:
+  # Código do Banco = 353/033
+  pos: [77, 79]
+  picture: '9(03)'
+  default:  '033'
+
+nome_banco:
+  # Nome do Banco
+  pos: [80, 94]
+  picture: 'X(15)'
+  default:  'SANTANDER'
+
+data_geracao:
+  # Data de Gravação
+  pos: [95, 100]
+  picture: '9(06)'
+
+zeros01:
+  # Zeros
+  pos: [101, 116]
+  picture: '9(16)'
+  default: '0'
+
+mensagem01:
+  pos: [117, 163]
+  picture: 'X(47)'
+  default: ''
+
+mensagem02:
+  pos: [164, 210]
+  picture: 'X(47)'
+  default: ''
+
+mensagem03:
+  pos: [211, 257]
+  picture: 'X(47)'
+  default: ''
+
+mensagem04:
+  pos: [258, 304]
+  picture: 'X(47)'
+  default: ''
+
+mensagem05:
+  pos: [305, 351]
+  picture: 'X(47)'
+  default: ''
+
+mensagem06:
+  pos: [352, 391]
+  picture: 'X(40)'
+  default: ''
+
+numero_versao:
+  # Número da versão da remessa opcional, se informada, será controlada pelo sistema
+  pos: [392, 394]
+  picture: '9(03)'
+  default: '0'
+
+numero_sequencial:
+  # Número sequencial do registro no arquivo
+  pos: [395, 400]
+  picture: '9(06)'

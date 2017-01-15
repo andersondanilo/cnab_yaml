@@ -39,6 +39,7 @@ codigo_cedente:
 uso_exclusivo_banco_02:
   pos: [62, 72]
   picture: 'X(11)'
+  default: ''
 
 uso_exclusivo_febraban_03:
   pos: [167, 240]

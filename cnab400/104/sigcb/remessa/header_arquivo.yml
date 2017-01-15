@@ -1,4 +1,4 @@
-# 237 = Bradesco
+# 104 = Caixa
 
 tipo_registro:
   pos: [1, 1]
@@ -26,12 +26,21 @@ literal_servico:
   picture: 'X(15)'
   default:  'COBRANCA'
 
+agencia:
+  pos: [27, 30]
+  picture: '9(04)'
+
 codigo_cedente:
   # Código da Empresa, Número da Empresa
-  pos: [27, 46]
-  picture: '9(20)'
+  pos: [31, 36]
+  picture: '9(06)'
 
-razao_social:
+brancos01:
+  pos: [37, 46]
+  picture: 'X(10)'
+  default: ''
+
+nome_empresa:
   pos: [47, 76]
   picture: 'X(30)'
 
@@ -43,32 +52,22 @@ codigo_banco:
 nome_banco:
   pos: [80, 94]
   picture: 'X(15)'
-  default:  'Bradesco'
+  default: 'C ECON FEDERAL'
 
 data_geracao:
   pos: [95, 100]
   picture: '9(06)'
   date_format: '%d%m%y'
 
-brancos01:
-  pos: [101, 108]
-  picture: 'X(08)'
-  default: ''
-
-numero_aviso_bancario:
-  pos: [109, 110]
-  picture: 'X(02)'
-  default: 'MX'
-
-sequencial_remessa:
-  pos: [111, 117]
-  picture: '9(07)'
-  default:  '1'
-
 brancos02:
-  pos: [118, 394]
-  picture: 'X(277)'
+  pos: [101, 389]
+  picture: 'X(289)'
   default: ''
+
+sequencial_remessas:
+  pos: [390, 394]
+  picture: '9(05)'
+  default:  '1'
 
 numero_sequencial:
   pos: [395, 400]
