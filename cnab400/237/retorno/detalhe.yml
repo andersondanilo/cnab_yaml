@@ -33,8 +33,8 @@ zeros03:
   picture: '9(8)'
 
 nosso_numero:
-  pos: [71, 82]
-  picture: '9(12)'
+  pos: [71, 81]
+  picture: '9(11)'
 
 uso_banco01:
   pos: [83, 92]
