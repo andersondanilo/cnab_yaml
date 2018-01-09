@@ -1,0 +1,220 @@
+# Baseado na documentação do Banco do Brasil
+
+tipo_registro:
+  pos: [1, 1]
+  picture: '9(01)'
+  default:  '7'
+
+codigo_inscricao:
+  pos: [2, 3]
+  picture: '9(02)'
+
+numero_inscricao:
+  pos: [4, 17]
+  picture: '9(14)'
+
+agencia:
+  pos: [18, 21]
+  picture: '9(04)'
+
+agencia_dv:
+  pos: [22, 22]
+  picture: 'X(01)'  
+  default:  ''
+
+conta:
+  pos: [23, 30]
+  picture: '9(08)'
+
+conta_dv:
+  pos: [31, 31]
+  picture: 'X(01)'
+  default:  ''
+
+numero_convenio:
+  pos: [32, 38]
+  picture: '9(07)'
+  default:  '0'
+
+uso_empresa:
+  pos: [39, 63]
+  picture: 'X(25)'
+  default:  ''
+
+nosso_numero:
+  pos: [64, 80]
+  picture: '9(17)'  
+
+zeros01:
+  pos: [81, 84]
+  picture: '9(04)'
+  default:  '0'    
+
+brancos01:
+  pos: [85, 87]
+  picture: 'X(03)'
+  default: ''   
+
+codigo_instrucao:
+  pos: [88, 88]
+  picture: 'X(01)'
+  default:  '' 
+
+brancos02:
+  pos: [89, 91]
+  picture: 'X(03)'
+  default: ''  
+
+variacao_carteira:
+  pos: [92, 94]
+  picture: '9(03)'  
+
+brancos03:
+  pos: [95, 101]
+  picture: '9(07)'
+  default: '0' 
+
+tipo_cobranca:
+  pos: [102, 106]
+  picture: 'X(05)'
+  default: ''   
+
+numero_carteira:
+  pos: [107, 108]
+  picture: '9(02)'    
+
+codigo_ocorrencia:
+  pos: [109, 110]
+  picture: '9(02)'
+  default:  '1'
+
+numero_documento:
+  pos: [111, 120]
+  picture: 'X(10)'
+
+vencimento:
+  pos: [121, 126]
+  picture: '9(06)'
+
+valor_titulo:
+  pos: [127, 139]
+  picture: '9(11)V9(2)'
+
+codigo_banco:
+  pos: [140, 142]
+  picture: '9(03)'
+  default:  '001'
+
+zeros02:
+  pos: [143, 146]
+  picture: '9(04)'
+  default:  '0'
+
+brancos04:
+  pos: [147, 147]
+  picture: 'X(1)'
+  default:  ''
+
+especie:
+  pos: [148, 149]
+  picture: '9(02)'
+
+aceite:
+  pos: [150, 150]
+  picture: 'X(01)'
+
+data_emissao:
+  pos: [151, 156]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+
+instrucao1:
+  pos: [157, 158]
+  picture: '9(02)'
+  default:  '05'
+  
+instrucao2:
+  pos: [159, 160]
+  picture: '9(02)'
+  default:  '00'  
+
+juros_um_dia:
+  pos: [161, 173]
+  picture: '9(11)V9(2)'
+  default:  '0'  
+
+desconto_ate:
+  pos: [174, 179]
+  picture: '9(06)'
+  default:  '0'
+  date_format: '%d%m%y'  
+
+valor_desconto:
+  pos: [180, 192]
+  picture: '9(11)V9(2)'
+  default:  '0'
+
+valor_iof:
+  pos: [193, 205]
+  picture: '9(11)V9(2)'
+  default:  '0'
+
+abatimento:
+  pos: [206, 218]
+  picture: '9(11)V9(2)'
+  default:  '0'
+
+sacado_codigo_inscricao:
+  pos: [219, 220]
+  picture: '9(02)'
+
+sacado_numero_inscricao:
+  pos: [221, 234]
+  picture: '9(14)'
+
+nome:
+  pos: [235, 271]
+  picture: 'X(37)'  
+
+brancos05:
+  pos: [272, 274]
+  picture: 'X(03)'
+  default:  ''  
+
+logradouro:
+  pos: [275, 314]
+  picture: 'X(40)'  
+  
+bairro:
+  pos: [315, 326]
+  picture: 'X(12)'
+
+cep:
+  pos: [327, 334]
+  picture: '9(08)'
+
+cidade:
+  pos: [335, 349]
+  picture: 'X(15)'
+
+estado:
+  pos: [350, 351]
+  picture: 'X(02)'    
+
+sacador:
+  pos: [352, 391]
+  picture: 'X(40)'  
+
+prazo:
+  pos: [392, 393]
+  picture: 'X(02)'
+  default:  ''
+
+brancos06:
+  pos: [394, 394]
+  picture: 'X(01)'
+  default:  ''
+
+numero_sequencial:
+  pos: [395, 400]
+  picture: '9(06)'
