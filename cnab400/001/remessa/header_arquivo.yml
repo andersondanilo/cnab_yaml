@@ -71,6 +71,7 @@ data_geracao:
 numero_sequencial:
   pos: [101, 107]
   picture: '9(07)'
+  default: '1'
 
 brancos01:
   pos: [108, 129]
