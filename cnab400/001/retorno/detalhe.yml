@@ -11,7 +11,7 @@ zeros01:
   picture: '9(16)'
   default: 0
 
-agencia_cobradora:
+agencia:
   pos: [18, 21]
   picture: '9(04)'
 
@@ -19,11 +19,11 @@ agencia_cobradora_dac:
   pos: [22, 22]
   picture: '9(01)'
 
-conta_cedente:
+conta:
   pos: [23, 30]
   picture: '9(08)'
 
-conta_cedente_dac:
+dac:
   pos: [31, 31]
   picture: 'X(01)'
 
