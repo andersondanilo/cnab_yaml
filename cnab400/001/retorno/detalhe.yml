@@ -119,7 +119,7 @@ valor_juros:
   pos: [267, 279]
   picture: '9(11)V9(2)'
 
-valor_outros_recebimentos:
+valor_outros_creditos:
   pos: [280, 292]
   picture: '9(11)V9(2)'
 
