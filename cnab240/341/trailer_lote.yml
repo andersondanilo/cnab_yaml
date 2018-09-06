@@ -1,0 +1,60 @@
+# Registro Trailer de Lote
+# Baseado na documentação do itaú
+
+codigo_banco:
+#CÓDIGO DO BANCO CÓDIGO BANCO NA COMPENSAÇÃO 001 003 9(03) 341
+  pos: [1, 3]
+  picture: '9(3)'
+
+lote_servico:
+#CÓDIGO DO LOTE LOTE DE SERVIÇO 004 007 9(04) NOTA 3
+  pos: [4, 7]
+  picture: '9(4)'
+
+tipo_registro:
+#TIPO DE REGISTRO REGISTRO TRAILER DE LOTE 008 008 9(01) 5
+  pos: [8, 8]
+  picture: '9(1)'
+  default: '5'
+
+uso_exclusivo_febraban_01:
+#BRANCOS COMPLEMENTO DE REGISTRO 009 017 X(09)
+  pos: [9, 17]
+  picture: 'X(9)'
+  default: ''
+
+qtde_registro_lote:
+#TOTAL QTDE REGISTROS QTDE REGISTROS DO LOTE 018 023 9(06) NOTA 17
+  pos: [18, 23]
+  picture: '9(6)'
+
+total_valor_principal:
+#TOTAL VALOR PRINCIPAL SOMA VALOR PRINCIPAL DOS PGTOS DO LOTE 024 037 9(12)V9(02) NOTA 17
+  pos: [24, 37]
+  picture: '9(12)V9(2)'
+
+total_outras_entidades:
+#(1) TOTAL OUTRAS ENTIDAD. SOMA VALORES DE OUTRAS ENTIDADES DO LOTE 038 051 9(12)V9(02) NOTA 17
+  pos: [38, 51]
+  picture: '9(12)V9(2)'
+
+total_valor_acrescimos:
+#TOTAL VAL. ACRESCIMOS SOMA VALORES ATUALIZ. MONET/MULTA/MORA 052 065 9(12)V9(02) NOTA 17
+  pos: [52, 65]
+  picture: '9(12)V9(02)'
+  
+total_valor_arrecadado:
+#TOTAL VALOR ARRECAD. SOMA VALOR DOS PAGAMENTOS DO LOTE 066 079 9(12)V9(02) NOTA 17
+  pos: [66, 79]
+  picture: '9(15)V9(2)'
+  default: '0'
+
+brancos_01:
+#BRANCOS COMPLEMENTO DE REGISTRO 080 230 X(151)
+  pos: [80, 230]
+  picture: 'X(151)'
+
+codigo_ocorrencias_retorno:
+#(*) OCORRÊNCIAS CÓDIGOS OCORRÊNCIAS P/ RETORNO 231 240 X(10) NOTA 8
+  pos: [231, 240]
+  picture: 'X(10)'

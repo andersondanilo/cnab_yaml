@@ -1,0 +1,139 @@
+#SEGMENTO J - OBRIGATÓRIO
+#Liquidação de títulos (bloquetos) em cobrança no Itaú e em outros Bancos
+codigo_banco:
+  #CÓDIGO DO BANCO CÓDIGO BANCO NA COMPENSAÇÃO 001 003 9(03) 341
+  pos: [1, 3]
+  picture: '9(3)'
+
+lote_servico:
+  #CÓDIGO DO LOTE LOTE DE SERVIÇO 004 007 9(04) NOTA 3
+  pos: [4, 7]
+  picture: '9(4)'
+  default: '0000'
+
+tipo_registro:
+  #TIPO DE REGISTRO REGISTRO DETALHE DO LOTE 008 008 9(01) 3
+  pos: [8, 8]
+  picture: '9(1)'
+  default: '3'
+
+numero_registro:
+  #NÚMERO DO REGISTRO Nº SEQÜENCIAL REGISTRO NO LOTE 009 013 9(05) NOTA 9
+  pos: [9, 13]
+  picture: '9(5)'
+  default: '0'
+
+codigo_segmento:
+  #CÓDIGO DO SEGMENTO CÓDIGO SEGMENTO REG. DETALHE 014 014 X(01) C
+  pos: [14, 14]
+  picture: 'X(1)'
+  default: 'J'
+
+tipo_movimento:
+  #TIPO DE MOVIMENTO TIPO DE MOVIMENTO 015 017 9(03) NOTA 10
+  pos: [15, 17]
+  picture: '9(3)'
+
+codigo_barras_banco_favorecido:
+  #BANCO FAVORECIDO CÓD. DE BARRAS – CÓDIGO BANCO FAVORECIDO 018 020 9(03) NOTA 18
+  pos: [18, 20]
+  picture: '9(3)'
+
+
+codigo_barras_codigo_moeda:
+  #MOEDA CÓD. DE BARRAS – CÓDIGO DA MOEDA 021 021 9(01) NOTA 18
+  pos: [21, 21]
+  picture: '9(1)'
+
+codigo_barras_digito_verificador:
+  #DV CÓD. DE BARRAS – DÍGITO VERIF. DO CÓD. BARRAS 022 022 9(01) NOTA 18
+  pos: [22, 22]
+  picture: '9(1)'
+
+codigo_barras_vencimento:
+  #VENCIMENTO CÓD. DE BARRAS – FATOR DE VENCIMENTO 023 026 9(04) NOTA 18
+  pos: [23, 26]
+  picture: '9(4)'
+
+codigo_barras_valor:
+  #VALOR CÓD. DE BARRAS – VALOR 027 036 9(08)V9(02) NOTA 18
+  pos: [27, 36]
+  picture: '9(8)V9(2)'
+
+codigo_barras_campo_livre:
+  #CAMPO LIVRE CÓD. DE BARRAS - 'CAMPO LIVRE' 037 061 9(25) NOTA 18
+  pos: [37, 61]
+  picture: '9(25)'
+
+
+nome_favorecido:
+  #NOME DO FAVORECIDO NOME DO FAVORECIDO 062 091 X(30)
+  pos: [62, 91]
+  picture: 'X(30)'
+
+
+data_vencimento:
+  #DATA VENCTO DATA DO VENCIMENTO (NOMINAL) 092 099 9(08) DDMMAAAA
+  pos: [92, 99]
+  picture: '9(8)'
+
+
+valor_titulo:
+  #VALOR DO TÍTULO VALOR DO TÍTULO (NOMINAL) 100 114 9(13)V9(02)
+  pos: [100, 114]
+  picture: '9(13)V9(2)'
+
+
+descontos_abatimentos:
+  #DESCONTOS VALOR DO DESCONTO + ABATIMENTO 115 129 9(13)V9(02)
+  pos: [115, 129]
+  picture: '9(13)V9(2)'
+
+
+acrescimos_mora_multa:
+  #ACRÉSCIMOS VALOR DA MORA + MULTA 130 144 9(13)V9(02)
+  pos: [130, 144]
+  picture: '9(13)V9(2)'
+
+
+data_pagamento:
+  #DATA PAGAMENTO DATA DO PAGAMENTO 145 152 9(08) DDMMAAAA
+  pos: [145, 152]
+  picture: '9(8)'
+  date_format: '%d%m%Y'
+
+valor_pagamento:
+  #VALOR PAGAMENTO VALOR DO PAGAMENTO 153 167 9(13)V9(02)
+  pos: [153, 167]
+  picture: '9(13)V9(2)'
+
+
+complemento_registro:
+  #ZEROS COMPLEMENTO DE REGISTRO 168 182 9(15)
+  pos: [168, 182]
+  picture: '9(15)'
+
+
+seu_numero:
+  #SEU NÚMERO Nº DOCTO ATRIBUÍDO PELA EMPRESA 183 202 X(20)
+  pos: [183, 202]
+  picture: 'X(20)'
+
+
+brancos_01:
+  #BRANCOS COMPLEMENTO DE REGISTRO 203 215 X(13)
+  pos: [203, 215]
+  picture: 'X(13)'
+
+
+nosso_numero:
+  #(*) NOSSO NÚMERO NÚMERO ATRIBUÍDO PELO BANCO 216 230 X(15) NOTA 12
+  pos: [216, 230]
+  picture: 'X(15)'
+
+codigo_ocorrencias_retorno:
+#(*) OCORRÊNCIAS CÓDIGO DE OCORRÊNCIAS P/ RETORNO 231 240 X(10) NOTA 8
+  pos: [231, 240]
+  picture: 'X(10)'
+
+
