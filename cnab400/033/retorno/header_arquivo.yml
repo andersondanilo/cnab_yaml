@@ -1,0 +1,43 @@
+#033 = Santander
+
+data_movimento:
+#data do movimento
+pos[95,100]
+picture: '9(06)'
+
+zeros:
+#complemento do registro
+pos[101,108]
+picture: '9(08)'
+
+codigo_beneficiario:
+#Código do Beneficiario
+pos[109,117]
+picture: '9(09)'
+
+brancos:
+#complemento de registro
+pos[118,385]
+picture: 'X(268)'
+default: ''
+
+sigla_empresa:
+#Sigla da empresa no sistema
+pos[386,389]
+picture: 'X(04)'
+
+brancos01:
+pos[390,391]
+picture: 'X(02)'
+default: ''
+
+numero_versao:
+pos[392,394]
+picture: '9(03)'
+
+numero_sequencial:
+pos[395,400]
+picture: '9(06)'
+
+
+
