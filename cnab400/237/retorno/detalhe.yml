@@ -36,6 +36,12 @@ nosso_numero:
   pos: [71, 81]
   picture: '9(11)'
 
+# onde este já vem no retorno com o digito verificador logo o ultimo digito é o dv, 
+# mas o grande problema é que em alguns casos o dv é o "P" que siginifica ignorar digito verificador
+nosso_numero_dv:
+  pos: [82, 82]
+  picture: 'X(1)'
+
 uso_banco01:
   pos: [83, 92]
   picture: 'X(10)'
