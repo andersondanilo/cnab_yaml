@@ -1,0 +1,129 @@
+codigo_banco:
+  pos: [01, 03]
+  picture: '9(3)'
+  default: '341'
+
+codigo_lote:
+  pos: [04, 07]
+  picture: '9(4)'
+
+tipo_registro:
+  pos: [08,  08]
+  picture: '9(1)'
+  default: '1'
+
+tipo_operacao:
+  pos: [09,  09]
+  picture: 'X(1)'
+  default: 'C'
+
+tipo_pagamento:
+  pos: [10, 11]
+  picture: '9(2)'
+  
+forma_pagamento:
+  pos: [12, 13]
+  picture: '9(2)'
+
+layout_lote:
+  pos: [14, 16]
+  picture: '9(3)'
+  default: '040'
+
+brancos_01:
+  pos: [17, 17]
+  picture: 'X(1)'
+
+empresa_inscricao:
+  # TIPO INSCRIÇÃO EMPRESA DEBITADA
+  # 1 = CPF
+  # 2 = CNPJ
+  pos: [18, 18]
+  picture: '9(1)'
+ 
+inscricao_numero:
+  # CNPJ EMPRESA DEBITADA
+  pos: [19, 32]
+  picture: '9(14)'
+
+identificacao_lancamento:
+  # IDENTIFICACAO LANCAMENTO NO EXTRATO DO FAVORECIDO
+  pos: [33, 36]
+  picture: 'X(4)'
+  
+brancos_02:
+  pos: [37, 52]
+  picture: 'X(16)'
+
+agencia:
+  pos: [53, 57]
+  picture: '9(5)'
+
+brancos_03:
+  pos: [58, 58]
+  picture: 'X(1)'
+
+conta:
+  pos: [59, 70]
+  picture: '9(12)'
+
+brancos_04:
+  pos: [71, 71]
+  picture: 'X(1)'
+
+dac:
+#DAC DA AGÊNCIA/CONTA DEBITADA
+  pos: [72, 72]
+  picture: '9(1)'
+  default: ''
+
+nome_empresa_debitada:
+   pos: [73, 102]
+   picture: 'X(30)'
+   default: ''
+
+finalidade_lote:
+   pos: [103, 132]
+   picture: 'X(30)'
+   default: ''
+   
+historico_conta_corrente:
+   pos: [133, 142]
+   picture: 'X(10)'
+   default: ''
+   
+endereco_empresa:
+   pos: [143, 172]
+   picture: 'X(30)'
+   default: ''
+   
+numero_empresa:
+   pos: [173, 177]
+   picture: '9(5)'
+   default: ''
+
+complemento_endereco:
+   pos: [178, 192]
+   picture: 'X(15)'
+   default: ''
+   
+cidade:
+   pos: [193, 212]
+   picture: 'X(20)'
+
+cep:
+   pos: [213, 220]
+   picture: '9(08)'
+
+estado:
+   pos: [221, 222]
+   picture: 'X(2)'
+
+brancos_05:
+   pos: [223, 230]
+   picture: 'X(8)'
+   
+ocorrencias:
+#Campo que consta apenas no arquivo de retorno, na remessa enviar com 0 ou em branco.
+   pos: [231, 240]
+   picture: 'X(10)'
