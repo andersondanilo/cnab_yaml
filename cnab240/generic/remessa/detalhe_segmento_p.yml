@@ -198,6 +198,14 @@ identificacao_distribuicao:
   # Código adotado pela FEBRABAN para identificar o responsável pela distribuição do bloqueto.
   # ‘1’ = Banco Distribui
   # ‘2’ = Cliente Distribui
+
+  # No caso da CAIXA
+  # http://www.caixa.gov.br/Downloads/cobranca-caixa-manuais/Manual_Leiaute_CNAB240_SIGCB.pdf
+  # ‘0’ = Postagem pelo Beneficiário
+  # ‘1’ = Pagador via Correios
+  # ‘2’ = Beneficiário via Agência CAIXA
+  # ‘3’ = Pagador via e-mail
+  # ‘4’ = Pagador via SMS
   pos: [62,62]
   picture: '9(1)'
   default: '2'
