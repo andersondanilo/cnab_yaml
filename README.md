@@ -3,20 +3,29 @@ cnab_yaml
 
 [![Build Status](https://travis-ci.com/banco-br/cnab_yaml.svg?branch=master)](https://travis-ci.com/banco-br/cnab_yaml)
 
-O Objetivo deste projeto é fornecer arquivos Yaml com a estrutura dos arquivos Cnab240 e Cnab400 para os bancos brasileiros.
+Arquivos Yaml com a estrutura dos arquivos Cnab240 e Cnab400 para os bancos brasileiros, para envio de arquivo remessa e recebimento de arquivo retorno. 
 
-Temos o `nodejs-cnab` que faz uma interface de json com esses yml e servem também como plataforma de teste dos cnab.
+Para instalar use:
+
+`npm i @banco-br/cnab_yaml`
+
+Pode ser utilizado em diversas linguagens para criação de arquivos remessa e retorno, como por exempo o CnabPHP, cnab_python e muitos outros que poderão ser criados a partir deste projeto
+
+Temos o `nodejs-cnab` que faz uma interface de json com esses yml utilizando JS, e servem também como plataforma de teste para este projeto.
+
 
 * https://github.com/banco-br/nodejs-cnab
 
 Como posso contribuir
 ---------------------
-Você pode contribuir lendo a documentação do seu banco e criando um arquivo yaml com base nela
+Você pode contribuir lendo a documentação do seu banco e criando um arquivo yaml com base nela.
 
-E para que isso serve?
-----------------------
-Esse projeto é usado para ser base para outros projeto, como por exempo o CnabPHP, cnab_python e
-muitos outros que poderão ser criados a partir deste projeto
+Fork o projeto e:
+
+1. `npm i`
+2. Crie seus arquivos yml na pasta correta (ex.: cnab240/001/remessa)
+3. Execute o teste para validar o formato yml `npm t`
+4. Nos envie o PR
 
 O que eu preciso saber
 ----------------------

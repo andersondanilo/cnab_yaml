@@ -113,7 +113,7 @@ codigo_responsabilidade_dv:
 numero_bordero:
   # Taxa de desconto
   pos: [96, 100]
-  picture: '9(03)V9(02)
+  picture: '9(03)V9(02)'
   default:  '0'
 
 taxa_iof:
@@ -165,7 +165,7 @@ numero_documento:
 brancos02:
   # Complemento do Registro: Brancos
   pos: [127, 146]
-  picture: 'X(20)',
+  picture: 'X(20)'
   default: ''
 
 vencimento:
@@ -272,7 +272,8 @@ abatimento_nao_aproveitado_pagador:
   pos: [293, 305]
   picture: '9(11)V9(02)'
 
-outros_recebimentos:
+# TODO: tem dois campos outros_recebimentos , mudei o valor do segundo para outros_recebimentos2
+outros_recebimentos2:
   # Valor do Lançamento
   pos: [306, 318]
   picture: '9(11)V9(02)'
@@ -295,7 +296,7 @@ valor_ajuste:
 brancos03:
   # Complemento do Registro: Brancos
   pos: [333, 342]
-  picture: 'X(10)',
+  picture: 'X(10)'
   default: ''
 
 cpf_cnpj_pagador:
@@ -306,7 +307,7 @@ cpf_cnpj_pagador:
 brancos04:
   # Complemento do Registro: Brancos
   pos: [358, 394]
-  picture: 'X(38)',
+  picture: 'X(38)'
   default: ''
 
 numero_sequencial:
