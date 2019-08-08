@@ -3,11 +3,6 @@ reservado_santander_01:
   picture: 'X(20)'
   default: ''
 
-reservado_santander_01:
-    pos: [34, 53]
-    picture: 'X(20)'
-    default: ''
-
 codigo_transmissao:
   pos: [54, 68]
   picture: '9(15)'

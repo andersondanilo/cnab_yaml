@@ -1,7 +1,7 @@
 cnab_yaml
 =========
 
-[![Build Status](https://travis-ci.com/mariohmol/nodejs-cnab.svg?branch=master)](https://travis-ci.com/mariohmol/nodejs-cnab)
+[![Build Status](https://travis-ci.com/banco-br/cnab_yaml.svg?branch=master)](https://travis-ci.com/banco-br/cnab_yaml)
 
 O Objetivo deste projeto é fornecer arquivos Yaml com a estrutura dos arquivos Cnab240 e Cnab400 para os bancos brasileiros.
 

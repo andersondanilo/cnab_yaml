@@ -1,7 +1,23 @@
-
 {
   "name": "@banco-br/cnab_yaml",
   "version": "2.0.0",
   "license": "MIT",
-  "repository": "https://github.com/banco-br/cnab_yaml"
+  "author": "Mario Mol <mariohmol@gmail.com>",
+  "scripts": {
+    "test": "mocha -r ts-node/register test/*.ts",
+    "typings": "typings install"
+  },
+  "repository": "https://github.com/banco-br/cnab_yaml",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.1",
+    "js-yaml": "^3.13.1",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3",
+    "typings": "^2.1.1"
+  }
 }
