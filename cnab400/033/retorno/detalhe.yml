@@ -1,0 +1,253 @@
+#033 = Santander
+
+codigo_registro:
+#codigo de registro = 1
+pos[1,1]
+picture: '9(01)'
+default: '1'
+
+tipo_inscricao:
+#tipo de inscricao do beneficiario 01=CPF ou 02=CNPJ
+pos[2,3]
+picture: '9(02)'
+
+cnpj_beneficiario:
+#CNPJ ou CPF do beneficiario
+pos[4,17]
+picture: '9(14)'
+
+codigo_agencia:
+#codigo da agencia do beneficiario Verificar nota 2.
+pos[18,21]
+picture: '9(04)'
+
+conta_movimento:
+#conta movimento do beneficiario. Verificar nota 2.
+pos[22,29]
+picture: '9(08)'
+
+conta_cobranca
+#conta cobranca do beneficiario. Verificar nota 2.
+pos[30,37]
+picture: '9(08)'
+
+numero_controle:
+#numero de controle do participante(controle cliente)
+pos[38,62]
+picture: 'X(25)
+
+nosso_numero:
+#Nosso numero
+pos[63,70]
+picture: '9(08)'
+
+brancos:
+#Brancos
+pos[71,107]
+picture: 'X(37)'
+default: ''
+
+codigo_carteira:
+#codigo da carteira. 2= eletronica com registro, 3= caucionada eletronica, 5= rapida com registro(bloquete emitido pelo cliente)
+pos[108,108]
+picture: '9(01)'
+
+codigo_ocorrencia:
+#codigo da ocorrencia do titulo
+pos[109,110]
+picture: '9(02)'
+
+data_ocorrencia:
+#data da ocorrencia do titulo
+pos[111,116]
+picture: '9(06)'
+
+seu_numero:
+#numero do titulo na empresa
+pos[117,126]
+picture: 'X(10)'
+
+nosso_numero1:
+#nosso numero
+pos[127,134]
+picture: '9(08)'
+
+codigo_remessa:
+#Codigo original da Remessa. Este campo terá conteudo diferente de zero caso ocorra erro no arquivo remessa
+pos[135,136]
+picture: '9(02)'
+
+codigo_erro1:
+#codigo do erro 1 ocorrencia. caso nao houver erros vira com zeros
+pos[137,139]
+picture: 'X(03)'
+
+codigo_erro2:
+#codigo do erro 2 ocorrencia. caso nao houver erros vira com zeros
+pos[137,139]
+picture: 'X(03)'
+
+codigo_erro3:
+#codigo do erro 3 ocorrencia. caso nao houver erros vira com zeros
+pos[137,139]
+picture: 'X(03)'
+
+brancos01:
+#brancos
+pos[146,146]
+picture: 'X(01)'
+
+data_vencimento:
+#data do vencimento do titulo
+pos[147,175]
+picture: '9(06)'
+
+valor_titulo:
+#valor do titulo em moeda corrente
+pos[153,165]
+picture: '9(11)V9(9)'
+
+banco_cobrador:
+#numero banco cobrador
+pos[166,168]
+picture: '9(03)'
+
+agencia_recebedora:
+#codigo da agencia recebedora
+pos[169,173]
+picture: '9(05)'
+
+especie_documento:
+#Especie do documento
+pos[174,175]
+picture: '9(02)'
+
+valor_tarifa:
+#valor da tarifa cobrada
+pos[176,188]
+picture: '9(11)V9(9)'
+
+outras_despesas:
+#valor de outras despesas
+pos[189,201]
+picture: '9(11)V9(9)'
+
+juros_atraso:
+#valor dos juros de atraso
+pos[202,214]
+picture: '9(11)V9(9)'
+
+iof_devido:
+#valor do IOF devido
+pos[215,227]
+picture: '9(11)V9(9)'
+
+abatimento_concedido:
+#valor do abatimento concedido
+pos[228,240]
+picture: '9(11)V9(9)'
+
+desconto_concedido:
+#valor do desconto concedido
+pos[241,253]
+picture: '9(11)V9(9)'
+
+juros_mora:
+#valor do juros de mora
+pos[267,279]
+picture: '9(11)V9(9)'
+
+outros_creditos:
+#valor de outros creditos
+pos[280,292]
+picture: '9(11)V9(9)'
+
+branco02:
+#brancos
+pos[293,293]
+picture: 'X(01)'
+
+codigo_aceite:
+#codigo de aceite
+pos[294,294]
+picture: 'X(01)'
+default: 'N'
+
+branco03:
+#Brancos
+pos[295,295]
+picture: 'X(01)'
+
+data_credito:
+#data do credito
+pos[296,301]
+picture: '9(06)'
+
+nome_pagador:
+#nome do pagador
+pos[302,337]
+picture: 'X(36)'
+
+identificador_complemento:
+#Identificador de complemento (nota2)
+pos[338,338]
+picture: 'X(01)'
+
+unidade_moeda:
+#Unidade de valor moeda corrente
+pos[339,340]
+picture: '9(02)'
+default: '00'
+
+outro_valor:
+#Valor do titulo em outra unidade de valor
+pos[341,353]
+picture: '9(08)V9(5)'
+
+iof_outros:
+#Valor do IOF em outra unidade de valor
+pos[354,366]
+picture: '9(8)V9(5)'
+
+debito_credito:
+#Valor do débito ou crédito
+pos[367,379]
+picture: '9(11)V9(9)'
+
+d_c:
+#Debito ou credito. D=Debito ou C=Credito
+pos[380,380]
+picture: 'X(01)'
+
+brancos04:
+#Brancos
+pos[381,383]
+picture: '9(03)'
+
+complemento:
+#complemento(nota2)
+pos[384,385]
+picture: '9(01)'
+
+sigla_sistema:
+#sigla da empresa no sistema
+pos[386,389]
+picture: 'X(04)'
+
+Brancos5:
+#Brancos
+pos[390,391]
+picture: 'X(02)'
+
+numero_versao:
+#Numero de Versao
+pos[392,394]
+picture: '9(03)'
+
+numero_sequencial:
+#Numero sequencial do registro no arquivo
+pos[395,400]
+picture: '9(06)'
+
+
+
