@@ -1,7 +1,13 @@
 cnab_yaml
 =========
 
-O Objetivo deste projeto é fornecer arquivos Yaml com a estrutura dos arquivos Cnab240 e Cnab400, atualmente temos os Cnab240 da Caixa e o Cnab400 da Caixa e do Itaú
+[![Build Status](https://travis-ci.com/mariohmol/nodejs-cnab.svg?branch=master)](https://travis-ci.com/mariohmol/nodejs-cnab)
+
+O Objetivo deste projeto é fornecer arquivos Yaml com a estrutura dos arquivos Cnab240 e Cnab400 para os bancos brasileiros.
+
+Temos o `nodejs-cnab` que faz uma interface de json com esses yml e servem também como plataforma de teste dos cnab.
+
+* https://github.com/banco-br/nodejs-cnab
 
 Como posso contribuir
 ---------------------
@@ -76,3 +82,6 @@ generic:
     picture: 'X(2)' # Isso significa campo de texto com 2 caracteres (preenchido com espaço a direita)
     default: 'T' # Valor padrão do campo
 ```
+
+
+Este projeto foi criado a partir do https://github.com/andersondanilo/cnab_yaml.
