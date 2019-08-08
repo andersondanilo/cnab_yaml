@@ -1,12 +1,12 @@
 
 codigo_banco:
-  #CÓDIGO DO BANCO CÓDIGO BANCO NA COMPENSAÇÃO 001 003 9(03) 341
+  #Cï¿½DIGO DO BANCO Cï¿½DIGO BANCO NA COMPENSAï¿½ï¿½O 001 003 9(03) 341
   # Caixa = 104, Santander = 033, Itau = 341
   pos: [1, 3]
   picture: '9(3)'
 
 lote_servico:
-  #CÓDIGO DO LOTE LOTE DE SERVIÇO 004 007 9(04) NOTA 3
+  #Cï¿½DIGO DO LOTE LOTE DE SERVIï¿½O 004 007 9(04) NOTA 3
   pos: [4, 7]
   picture: '9(4)'
   default: '0000'
@@ -21,7 +21,7 @@ tipo_registro:
   
 
 numero_registro:
-  #NÚMERO DO REGISTRO Nº SEQUENCIAL REGISTRO NO LOTE 009 013 9(05) NOTA 9
+  #Nï¿½MERO DO REGISTRO Nï¿½ SEQUENCIAL REGISTRO NO LOTE 009 013 9(05) NOTA 9
   # '0' = Header de Arquivo
   pos: [8, 8]
   picture: '9(1)'
@@ -29,7 +29,7 @@ numero_registro:
   
 
 codigo_segmento:
-  #SEGMENTO CÓDIGO SEGMENTO REG. DETALHE 014 014 X(01) A
+  #SEGMENTO Cï¿½DIGO SEGMENTO REG. DETALHE 014 014 X(01) A
   pos: [14, 14]
   picture: 'X(1)'
   default: 'A'
@@ -42,22 +42,22 @@ tipo_movimento:
 
 
 codigo_camara:
-  #CÂMARA CÓDIGO DA CÂMARA CENTRALIZADORA 018 020 9(03) NOTA 37
-  #Obrigatorio para: Pagamentos através de cheque, OP, DOC, TED e crédito em conta corrente
-  #Para pagamentos através de Nota Fiscal – Liquidação Eletrônica ele vira zeros complemento de registro. 
+  #Cï¿½MARA Cï¿½DIGO DA Cï¿½MARA CENTRALIZADORA 018 020 9(03) NOTA 37
+  #Obrigatorio para: Pagamentos atravï¿½s de cheque, OP, DOC, TED e crï¿½dito em conta corrente
+  #Para pagamentos atravï¿½s de Nota Fiscal ï¿½ Liquidaï¿½ï¿½o Eletrï¿½nica ele vira zeros complemento de registro. 
   #Sera feito manual ou se nao inserido sera zerado.
   #Vira: ZEROS COMPLEMENTO DE REGISTRO 018 020 9(03)
   pos: [18, 20]
   picture: '9(3)'
-  default '000'
+  default: '000'
 
 banco_favorecido:
-  #BANCO FAVORECIDO CÓDIGO BANCO FAVORECIDO 021 023 9(03)
+  #BANCO FAVORECIDO Cï¿½DIGO BANCO FAVORECIDO 021 023 9(03)
   pos: [21, 23]
   picture: '9(3)'
 
 agencia_favorecido:
-  #AGÊNCIA CONTA AGÊNCIA CONTA FAVORECIDO 024 043 X(20) NOTA 11
+  #AGï¿½NCIA CONTA AGï¿½NCIA CONTA FAVORECIDO 024 043 X(20) NOTA 11
   pos: [24, 43]
   picture: 'X(20)'
 
@@ -67,26 +67,26 @@ nome_favorecido:
   picture: 'X(30)'
   
 seu_numero:
-  #SEU NÚMERO Nº DOCTO ATRIBUÍDO PELA EMPRESA 074 093 X(20)
+  #SEU Nï¿½MERO Nï¿½ DOCTO ATRIBUï¿½DO PELA EMPRESA 074 093 X(20)
   pos: [74, 93]
   picture: 'X(20)'
   
-seu_numero:
+data_pagamento:
   #(1) DATA DE PAGTO DATA PREVISTA PARA PAGTO 094 101 9(08) DDMMAAAA
   pos: [94, 101]
   picture: '9(8)'
 
 
 tipo_moeda:
-  #MOEDA – TIPO TIPO DA MOEDA 102 104 X(03) REA OU 009
+  #MOEDA ï¿½ TIPO TIPO DA MOEDA 102 104 X(03) REA OU 009
   pos: [102, 104]
   picture: 'X(3)'
   default: '009'
 
 
 codigo_ispb:
-  #CÓDIGO ISPB IDENTIFICAÇÃO DA INSTITUIÇÃO PARA O SPB 105 112 9(08) NOTA 37
-  #Codigo opcional para pagamentos através de Nota Fiscal – Liquidação Eletrônica ele vira zeros complemento de registro. 
+  #Cï¿½DIGO ISPB IDENTIFICAï¿½ï¿½O DA INSTITUIï¿½ï¿½O PARA O SPB 105 112 9(08) NOTA 37
+  #Codigo opcional para pagamentos atravï¿½s de Nota Fiscal ï¿½ Liquidaï¿½ï¿½o Eletrï¿½nica ele vira zeros complemento de registro. 
   pos: [105, 112]
   picture: '9(8)'
   default: '00000000'
@@ -104,7 +104,7 @@ valor_pagamento:
 
 
 nosso_numero:
-  #(*) NOSSO NÚMERO Nº DOCTO ATRIBUÍDO PELO BANCO 135 149 X(15) NOTA 12
+  #(*) NOSSO Nï¿½MERO Nï¿½ DOCTO ATRIBUï¿½DO PELO BANCO 135 149 X(15) NOTA 12
   pos: [135, 149]
   picture: 'X(15)'
 
@@ -114,17 +114,17 @@ branco_01:
   picture: 'X(5)'
 
 data_efetivacao:
-  #(*) DATA EFETIVA DATA REAL EFETIVAÇÃO DO PAGTO 155 162 9(08) DDMMAAAA
+  #(*) DATA EFETIVA DATA REAL EFETIVAï¿½ï¿½O DO PAGTO 155 162 9(08) DDMMAAAA
   pos: [155, 162]
   picture: '9(8)'
 
 valor_efetivacao:
-  #(*) VALOR EFETIVO VALOR REAL EFETIVAÇÃO DO PAGTO 163 177 9(13)V9(02)
+  #(*) VALOR EFETIVO VALOR REAL EFETIVAï¿½ï¿½O DO PAGTO 163 177 9(13)V9(02)
   pos: [163, 177]
   picture: '9(13)V9(2)'
 
 finalidade_detalhe:
-  #FINALIDADE DETALHE INFORMAÇÃO COMPLEMENTAR P/ HIST. DE C/C 178 195 X(18) NOTA 13
+  #FINALIDADE DETALHE INFORMAï¿½ï¿½O COMPLEMENTAR P/ HIST. DE C/C 178 195 X(18) NOTA 13
   pos: [178, 195]
   picture: 'X(18)'
 
@@ -135,19 +135,19 @@ branco_02:
 
 
 numero_documento:
-  #(*) N DO DOCUMENTO Nº DO DOC/TED/ OP/ CHEQUE NO RETORNO 198 203 9(6) NOTA 14
+  #(*) N DO DOCUMENTO Nï¿½ DO DOC/TED/ OP/ CHEQUE NO RETORNO 198 203 9(6) NOTA 14
   pos: [198, 203]
   picture: '9(6)'
 
 
 numero_inscricao:
-  #N DE INSCRIÇÃO N DE INSCRIÇÃO DO FAVORECIDO (CPF/CNPJ) 204 217 9(14) NOTA 15
+  #N DE INSCRIï¿½ï¿½O N DE INSCRIï¿½ï¿½O DO FAVORECIDO (CPF/CNPJ) 204 217 9(14) NOTA 15
   pos: [204, 217]
   picture: '9(14)'
 
 
 finalidade_doc_status_funcionario:
-  #FINALIDADE DO DOC E STATUS DO FUNCIONÁRIO NA EMPRESA 218 219 X(02) NOTA 30
+  #FINALIDADE DO DOC E STATUS DO FUNCIONï¿½RIO NA EMPRESA 218 219 X(02) NOTA 30
   pos: [218, 219]
   picture: 'X(2)'
 
@@ -164,6 +164,6 @@ aviso_favorecido:
   picture: 'X(1)'
 
 codigo_ocorrencias_retorno:
-  #(*) OCORRÊNCIAS CÓDIGO OCORRÊNCIAS NO RETORNO 231 240 X(10) NOTA 8
+  #(*) OCORRï¿½NCIAS Cï¿½DIGO OCORRï¿½NCIAS NO RETORNO 231 240 X(10) NOTA 8
   pos: [231, 240]
   picture: 'X(10)'

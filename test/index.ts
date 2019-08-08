@@ -8,20 +8,29 @@ describe('Parse yml files', function () {
   it('CNAB 240', () => {
     let filelist = [];
     filelist = walkSync('./cnab240/', filelist);
-    const ymls = filelist.forEach(f=>{
+    const ymls = filelist.forEach(f => {
       console.log('CNAB 240', f);
-      const yml = readYaml(f);
-      expect(yml).not.empty;
+      if (f.endsWith('.yml')) {
+        console.log('CNAB 240', f);
+        const yml = readYaml(f);
+        expect(yml).not.empty;
+      } else {
+        console.log('CNAB 240 - SKIP - ', f);
+      }
     });
   });
 
   it('CNAB 400', () => {
     let filelist = [];
     filelist = walkSync('./cnab400/', filelist);
-    const ymls = filelist.forEach(f=>{
-      console.log('CNAB 400', f);
-      const yml = readYaml(f);
-      expect(yml).not.empty;
+    const ymls = filelist.forEach(f => {
+      if(f.endsWith('.yml')){
+        console.log('CNAB 400', f);
+        const yml = readYaml(f);
+        expect(yml).not.empty;
+      }else{
+        console.log('CNAB 400 - SKIP - ', f);
+      }
     });
   });
 });
