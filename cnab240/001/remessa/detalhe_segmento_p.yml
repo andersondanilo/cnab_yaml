@@ -1,10 +1,14 @@
+agencia_dv:
+  pos: [23,23]
+  picture: 'X(1)'
+  
 conta:
   pos: [24,35]
   picture: '9(12)'
 
 conta_dv:
   pos: [36,36]
-  picture: '9(1)'
+  picture: 'X(1)'
 
 agencia_mais_conta_dv:
   # Campo não tratado pelo Banco do Brasil. Informar 'branco' (espaço) OU zero
