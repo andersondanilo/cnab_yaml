@@ -1,0 +1,195 @@
+codigo_banco:
+  pos: [1, 3]
+  picture: '9(3)'
+  default: '041'
+
+lote_servico:
+  pos: [4, 7]
+  picture: '9(4)'
+
+tipo_registro:
+  pos: [8, 8]
+  picture: '9(1)'
+  default: '3'
+
+numero_sequencial_lote:
+  pos: [9, 13]
+  picture: '9(5)'
+
+codigo_segmento:
+  pos: [14, 14]
+  picture: 'X(1)'
+  default: 'P'
+
+uso_exclusivo_febraban_01:
+  pos: [15, 15]
+  picture: 'X(1)'
+  default: ''
+
+codigo_ocorrencia:
+  pos: [16, 17]
+  picture: '9(2)'
+
+agencia:
+  pos: [18, 22]
+  picture: '9(5)'
+
+agencia_dv:
+  pos: [23,23]
+  picture: 'X(1)'
+
+codigo_cedente:
+  pos: [24,35]
+  picture: '9(12)'
+
+codigo_cedente_dv:
+  pos: [36,36]
+  picture: '9(1)'
+
+agencia_mais_cedente_dv:
+  pos: [37,37]
+  picture: 'X(1)'
+
+nosso_numero:
+  pos: [38,47]
+  picture: '9(10)'
+
+nosso_numero_branco:
+  pos: [48,57]
+  picture: 'X(10)'
+
+codigo_carteira:
+  pos: [58,58]
+  picture: '9(1)'
+  default: '1'
+
+forma_cadastramento:
+  pos: [59,59]
+  picture: '9(1)'
+  default: '1'
+
+tipo_documento:
+  pos: [60,60]
+  picture: '9(1)'
+  default: '1'
+
+identificacao_emissao:
+  pos: [61,61]
+  picture: '9(1)'
+  default: '2'
+
+identificacao_distribuicao:
+
+  pos: [62,62]
+  picture: '9(1)'
+  default: '2'
+
+numero_documento:
+  pos: [63,77]
+  picture: '9(15)'
+  default: ''
+
+vencimento:
+  pos: [78,85]
+  picture: '9(8)'
+  date_format: '%d%m%Y'
+
+valor_titulo:
+  pos: [86, 100]
+  picture: '9(13)V9(2)'
+
+agencia_cobradora:
+  pos: [101, 105]
+  picture: '9(5)'
+  default: '0'
+
+agencia_cobradora_dv:
+  pos: [106, 106]
+  picture: 'X(1)'
+
+especie:
+  pos: [107,108]
+  picture: 'X(2)'
+  default: 'AA'
+
+aceite:
+  pos: [109,109]
+  picture: 'X(1)'
+  default: 'N'
+
+data_emissao:
+  pos: [110,117]
+  picture: '9(8)'
+  date_format: '%d%m%Y'
+
+codigo_juros_mora:
+  pos: [118,118]
+  picture: '9(1)'
+  default: 3
+
+data_juros_mora:
+  pos: [119,126]
+  picture: '9(8)'
+  date_format: '%d%m%Y'
+
+valor_juros_mora:
+  pos: [127, 141]
+  picture: '9(13)V9(2)'
+
+codigo_desconto_1:
+  pos: [142, 142]
+  picture: '9(1)'
+  default: '0'
+
+data_desconto_1:
+  pos: [143, 150]
+  picture: '9(8)'
+  date_format: '%d%m%Y'
+  default: '0'
+
+valor_desconto_1:
+  pos: [151, 165]
+  picture: '9(13)V9(2)'
+  default: '0'
+
+valor_iof:
+  pos: [166, 180]
+  picture: '9(13)V9(2)'
+  default: '0'
+
+valor_abatimento:
+  pos: [181, 195]
+  picture: '9(13)V9(2)'
+
+uso_empresa:
+  pos: [196, 220]
+  picture: '9(25)'
+
+codigo_protesto:
+  pos: [221, 221]
+  picture: '9(1)'
+  default: 3
+
+prazo_protesto:
+  pos: [222, 223]
+  picture: '9(2)'
+
+codigo_baixa:
+  pos: [224, 224]
+  picture: '9(1)'
+  default: '1'
+
+prazo_baixa:
+  pos: [225, 227]
+  picture: '9(3)'
+  default: '29'
+
+codigo_moeda:
+  pos: [228, 229]
+  picture: '9(2)'
+  default: '09'
+
+uso_exclusivo_banco_03:
+  pos: [230, 240]
+  picture: '9(11)'
+  default: '0'
