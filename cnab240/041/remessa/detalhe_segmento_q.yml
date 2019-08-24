@@ -6,6 +6,7 @@ codigo_banco:
 lote_servico:
   pos: [4, 7]
   picture: '9(4)'
+  default: '1'
 
 tipo_registro:
   pos: [8, 8]
@@ -33,6 +34,7 @@ codigo_ocorrencia:
 sacado_codigo_inscricao:
   pos: [18, 18]
   picture: '9(1)'
+  default: '3'
 
 sacado_numero_inscricao:
   pos: [19, 33]

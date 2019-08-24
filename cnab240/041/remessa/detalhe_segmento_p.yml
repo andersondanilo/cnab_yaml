@@ -6,6 +6,7 @@ codigo_banco:
 lote_servico:
   pos: [4, 7]
   picture: '9(4)'
+  default: '1'
 
 tipo_registro:
   pos: [8, 8]
@@ -29,6 +30,7 @@ uso_exclusivo_febraban_01:
 codigo_ocorrencia:
   pos: [16, 17]
   picture: '9(2)'
+  default: '01'
 
 agencia:
   pos: [18, 22]
@@ -190,6 +192,11 @@ codigo_moeda:
   default: '09'
 
 uso_exclusivo_banco_03:
-  pos: [230, 240]
-  picture: '9(11)'
+  pos: [230, 239]
+  picture: '9(10)'
   default: '0'
+
+uso_exclusivo_banco_04:
+  pos: [240, 240]
+  picture: 'X(1)'
+  default: ''
