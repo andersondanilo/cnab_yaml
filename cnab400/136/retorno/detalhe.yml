@@ -1,0 +1,96 @@
+# 136 = Unicred
+
+agencia:
+  pos: [18, 21]
+  picture: '9(04)'
+
+agencia_cobradora_dac:
+  pos: [22, 22]
+  picture: '9(01)'
+
+conta:
+  pos: [23, 30]
+  picture: '9(08)'
+
+dac:
+  pos: [31, 31]
+  picture: 'X(01)'
+
+codigo_beneficiario:
+  pos: [32, 45]
+  picture: '9(14)'
+
+nosso_numero:
+  #Identificação Do Título No Banco
+  pos: [46, 62]
+  picture: '9(17)'
+
+brancos00:
+  pos: [63, 73]
+  picture: 'X(11)'
+
+brancos01:
+  pos: [74, 74]
+  picture: '9(01)'
+
+brancos02:
+  pos: [76, 85]
+  picture: 'X(10)'
+
+fixo00:
+  pos: [86, 88]
+  picture: '9(03)'
+  default: '019'
+
+fixo01:
+  pos: [89, 106]
+  picture: '9(18)'
+
+fixo02:
+  pos: [107, 108]
+  picture: '9(02)'
+  default: 18
+
+brancos03:
+  pos: [117, 146]
+  picture: 'X(30)'
+
+data_credito:
+  #Data De Crédito Desta Liquidação
+  pos: [176, 181]
+  picture: '9(06)'
+  date_format: '%d%m%y'
+
+valor_tarifa:
+  #Valor Da Despesa De Cobrança
+  pos: [182, 188]
+  picture: '9(5)V9(2)'
+
+brancos04:
+  pos: [189, 227]
+  picture: 'X(39)'
+
+valor_juros:
+  pos: [267, 279]
+  picture: '9(11)V9(2)'
+
+seu_numero:
+  pos: [280, 305]
+  picture: 'X(26)'
+
+valor_lancamento:
+  pos: [306, 318]
+  picture: '9(11)V9(2)'
+
+complemento_movimento:
+  pos: [319, 326]
+  picture: 'X(08)'
+
+instrucao_origem:
+  pos: [327, 328]
+  picture: 'X(02)'
+
+brancos05:
+  pos: [329, 394]
+  picture: 'X(66)'
+

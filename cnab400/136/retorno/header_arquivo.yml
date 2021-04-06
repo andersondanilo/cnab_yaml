@@ -1,0 +1,54 @@
+# 136 = Unicred
+
+literal_de_servico:
+  #Identificação Por Extenso Do Tipo De Serviço
+  pos: [12, 19]
+  picture: 'X(8)'
+  default: 'COBRANCA'
+
+brancos00:
+  pos: [20, 26]
+  picture: 'X(7)'
+  default: ''
+
+agencia_beneficiario:
+  pos: [27, 30]
+  picture: '9(04)'
+
+agencia_beneficiario_dv:
+  pos: [31, 31]
+  picture: '9(01)'
+
+conta_beneficiario:
+  pos: [32, 39]
+  picture: '9(08)'
+  default: 0
+
+conta_beneficiario_dv:
+  pos: [40, 40]
+  picture: 'X(1)'
+  default: ''
+
+fixo01:
+  pos: [41, 46]
+  picture: '9(06)'
+
+n_seq_arquivo_ret:
+  pos: [101, 107]
+  picture: '9(07)'
+
+codigo_beneficiario:
+  pos: [108, 121]
+  picture: 'X(14)'
+  default: ''
+
+brancos02:
+  pos: [122, 394]
+  picture: 'X(273)'
+  default: ''
+
+numero_sequencial:
+  #Número Seqüencial Do Registro No Arquivo
+  pos: [395, 400]
+  picture: '9(06)'
+  default: 1
